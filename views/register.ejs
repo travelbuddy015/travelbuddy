@@ -1,15 +1,48 @@
-<form action="/registration" method="post">
-    <section>
-        <label for="username">Email</label>
-        <input id="username" name="username" type="emai" autocomplete="username" required autofocus>
-    </section>
-    <section>
-        <label for="name">Name</label>
-        <input id="name" name="name" type="text" autocomplete="name" required autofocus>
-    </section>
-    <section>
-        <label for="current-password">Password</label>
-        <input id="current-password" name="password" type="password" autocomplete="current-password" required>
-    </section>
-    <button type="submit">Sigup</button>
-</form>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial scale=1.0">
+    <title>Signup</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <div class="main">
+        <div class="navbar">
+            <div class="icon">
+                <img src="image/logo.jpg" class="logohome">
+            </div>
+
+            <div class="menu">
+                <ul>
+                    <li><a href="home.html">HOME</a></li>
+                    <li><a href="#">ABOUT</a></li>
+                    <li><a href="#">SERVICE</a></li>
+                    <li><a href="#">DESIGN</a></li>
+                    <li><a href="#">CONTACT</a></li>
+                </ul>
+            </div>
+
+
+
+        </div>
+        <div class="formregister">
+            <h2>Register</h2>
+            <form action="/registration" method="POST">
+                <input id="name" name="name" type="text" autocomplete="name" placeholder="Enter Your Name" autofocus>
+                <input id="username" name="username" type="email" autocomplete="username" required
+                    placeholder="Enter Your Email">
+                <input id="current-password" name="password" type="password" placeholder="Enter Your Password"
+                    autocomplete="current-password" required>
+                <button type="submit" class="btnn">Sign in</button>
+            </form>
+            <p class="link">Already have an account ?<br>
+                <a href="login">Login here</a>
+            </p>
+        </div>
+    </div>
+</body>

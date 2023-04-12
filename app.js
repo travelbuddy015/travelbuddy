@@ -6,16 +6,17 @@ const session = require("express-session")
 const db = require('./database/connection')
 const auth = require('./routes/auth')
 const index = require('./routes/index')
-const app = express()
 const path = require('path')
 const user = require('./models/user')
 // database config
+const app = express()
+app.use(express.static(path.join(__dirname, 'public')))
 db()
 
 // view engine setup
 app.set('view engine', 'ejs')
-
-app.use(bodyParser.urlencoded({ extended: false }))
+app.use(bodyParser.urlencoded({ extended: true, useNewUrlParser: true }))
+// app.use(bodyParser.urlencoded({ extended: false }))
 app.use(bodyParser.json())
 
 // passport.js config
@@ -24,14 +25,14 @@ app.use(session({
     resave: false,
     saveUninitialized: false,
 })
-);
+)
 
-app.use(passport.initialize());
-app.use(passport.session());
+app.use(passport.initialize())
+app.use(passport.session())
 
-passport.use('userlocal', new LocalStrategy(user.authenticate()));
-passport.serializeUser(user.serializeUser());
-passport.deserializeUser(user.deserializeUser());
+passport.use('userlocal', new LocalStrategy(user.authenticate()))
+passport.serializeUser(user.serializeUser())
+passport.deserializeUser(user.deserializeUser())
 
 passport.serializeUser((user, done) => {
     done(null, user.id);
