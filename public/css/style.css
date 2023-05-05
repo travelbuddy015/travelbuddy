@@ -1,395 +1,89 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: 'Poppins', sans-serif;
-}
+/* Made with love by Mutiullah Samim*/
 
-.main {
-    width: 100%;
-    background: linear-gradient(to top, rgba(0, 0, 0, 0.5)50%, rgba(0, 0, 0, 0.5)50%), url(../image/b2.jpg);
-    background-position: center;
+@import url('https://fonts.googleapis.com/css?family=Numans');
+
+html,
+body {
+    background-image: url('/b5.jpg');
     background-size: cover;
-    height: 100vh;
+    background-repeat: no-repeat;
+    height: 100%;
+    font-family: 'Numans', sans-serif;
 }
 
-.navbar {
-    width: 1200px;
-    height: 75px;
-    margin: auto;
+.container {
+    height: 100%;
+    align-content: center;
 }
 
-.icon {
-    width: 200px;
-    float: left;
-    height: 70px;
-}
-
-.logo {
-    color: black;
-    font-size: 35px;
-    font-family: Arial;
-    padding-left: 20px;
-    float: left;
-    padding-top: 10px;
-    margin-top: 5px
-}
-
-.menu {
+.card {
+    height: 370px;
+    margin-top: auto;
+    margin-bottom: auto;
     width: 400px;
-    float: left;
-    height: 70px;
+    background-color: rgba(0, 0, 0, 0.5) !important;
 }
 
-ul {
-    float: left;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.social_icon span {
+    font-size: 60px;
+    margin-left: 10px;
+    color: rgb(8, 141, 170);
 }
 
-ul li {
-    list-style: none;
-    margin-left: 62px;
-    margin-top: 27px;
-    font-size: 14px;
-}
-
-ul li a {
-    text-decoration: none;
-    color: #fff;
-    font-family: Arial;
-    font-weight: bold;
-    transition: 0.4s ease-in-out;
-}
-
-ul li a:hover {
-    color: rgb(28, 184, 156)
-}
-
-.search {
-    width: 330px;
-    float: left;
-    margin-left: 270px;
-}
-
-.srch {
-    font-family: 'Times New Roman';
-    width: 200px;
-    height: 40px;
-    background: transparent;
-    border: 1px solid #ff7200;
-    margin-top: 13px;
-    color: #fff;
-    border-right: none;
-    font-size: 16px;
-    float: left;
-    padding: 10px;
-    border-bottom-left-radius: 5px;
-    border-top-left-radius: 5px;
-}
-
-.btn {
-    width: 100px;
-    height: 40px;
-    background: rgb(16, 176, 194);
-    border: 2px solid rgb(16, 176, 194);
-    margin-top: 13px;
-    color: #fff;
-    font-size: 15px;
-    border-bottom-right-radius: 5px;
-    border-bottom-right-radius: 5px;
-    transition: 0.2s ease;
+.social_icon span:hover {
+    color: white;
     cursor: pointer;
 }
 
-.btn:hover {
-    color: #000;
-}
-
-.btn:focus {
-    outline: none;
-}
-
-.srch:focus {
-    outline: none;
-}
-
-.content {
-    width: 1200px;
-    height: auto;
-    margin: auto;
-    color: #fff;
-    position: relative;
-}
-
-.content .par {
-    padding-left: 20px;
-    padding-bottom: 25px;
-    font-family: Arial;
-    letter-spacing: 1.2px;
-    line-height: 30px;
-}
-
-.content h1 {
-    font-family: 'Times New Roman';
-    font-size: 50px;
-    padding-left: 20px;
-    margin-top: 9%;
-    letter-spacing: 2px;
-}
-
-.content .cn {
-    width: 160px;
-    height: 40px;
-    background: rgb(8, 141, 170);
-    border: none;
-    margin-bottom: 10px;
-    margin-left: 20px;
-    font-size: 18px;
-    border-radius: 10px;
-    cursor: pointer;
-    transition: .4s ease;
-
-}
-
-.content .cn a {
-    text-decoration: none;
-    color: #000;
-    transition: .3s ease;
-}
-
-.cn:hover {
-    background-color: #fff;
-}
-
-.content span {
-    color: rgb(8, 141, 170);
-    font-size: 65px
-}
-
-.form {
-    width: 250px;
-    height: 380px;
-    background: linear-gradient(to top, rgba(0, 0, 0, 0.8)50%, rgba(0, 0, 0, 0.8)50%);
-    position: absolute;
-    top: -20px;
-    left: 870px;
-    transform: translate(0%, -5%);
-    border-radius: 10px;
-    padding: 25px;
-}
-
-.form h2 {
-    width: 220px;
-    font-family: sans-serif;
-    text-align: center;
-    color: rgb(8, 141, 170);
-    font-size: 22px;
-    background-color: #fff;
-    border-radius: 10px;
-    margin: 2px;
-    padding: 8px;
-}
-
-.form input {
-    width: 240px;
-    height: 35px;
-    background: transparent;
-    border-bottom: 1px solid #1b99a7;
-    border-top: none;
-    border-right: none;
-    border-left: none;
-    color: #fff;
-    font-size: 15px;
-    letter-spacing: 1px;
-    margin-top: 30px;
-    font-family: sans-serif;
-}
-
-.form input:focus {
-    outline: none;
-}
-
-::placeholder {
-    color: #fff;
-    font-family: Arial;
-}
-
-.btnn {
-    width: 240px;
-    height: 40px;
-    background: #35c4c7;
-    border: none;
-    margin-top: 30px;
-    font-size: 18px;
-    border-radius: 10px;
-    cursor: pointer;
-    color: #fff;
-    transition: 0.4s ease;
-}
-
-.btnn:hover {
-    background: #fff;
-    color: #ff7200;
-}
-
-.btnn a {
-    text-decoration: none;
-    color: #000;
-    font-weight: bold;
-}
-
-.form .link {
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 17px;
-    padding-top: 20px;
-    text-align: center;
-}
-
-.form .link a {
-    text-decoration: none;
-    color: rgb(8, 109, 152);
-}
-
-.liw {
-    padding-top: 15px;
-    padding-bottom: 10px;
-    text-align: center;
-}
-
-.icons a {
-    text-decoration: none;
-    color: #fff;
-}
-
-.icons ion-icon {
-    color: #fff;
-    font-size: 30px;
-    padding-left: 14px;
-    padding-top: 5px;
-    transition: 0.3s ease;
-}
-
-.icons ion-icon:hover {
-    color: rgb(38, 122, 200);
-}
-
-.formregister {
-    width: 250px;
-    height: 480px;
-    background: linear-gradient(to top, rgba(0, 0, 0, 0.8)50%, rgba(0, 0, 0, 0.8)50%);
-    position: absolute;
-    top: 150px;
-    left: 600px;
-    transform: translate(0%, -5%);
-    border-radius: 10px;
-    padding: 25px;
-
-}
-
-.formregister h2 {
-    width: 220px;
-    font-family: sans-serif;
-    text-align: center;
-    color: rgb(8, 141, 170);
-    font-size: 22px;
-    background-color: #fff;
-    border-radius: 10px;
-    margin: 2px;
-    padding: 8px;
-}
-
-.formregister input {
-    width: 240px;
-    height: 35px;
-    background: transparent;
-    border-bottom: 1px solid #1b99a7;
-    border-top: none;
-    border-right: none;
-    border-left: none;
-    color: #fff;
-    font-size: 15px;
-    letter-spacing: 1px;
-    margin-top: 30px;
-    font-family: sans-serif;
-}
-
-.formregister input:focus {
-    outline: none;
-}
-
-::placeholder {
-    color: #fff;
-    font-family: Arial;
-}
-
-.formregister .link {
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 17px;
-    padding-top: 20px;
-    text-align: center;
+.card-header h3 {
     color: white;
 }
 
-.formregister .link a {
-    text-decoration: none;
-    color: rgb(8, 109, 152);
-}
-
-#banner {
-    background: url(../image/b1.jpg);
-    background-size: cover;
-    background-position: center;
-    height: 100vh;
-}
-
-.logohome {
-    width: 140px;
+.social_icon {
     position: absolute;
-    top: 4%;
-    left: 5%;
-    border-radius: 50%;
+    right: 20px;
+    top: -45px;
 }
 
-.banner-text {
-    text-align: center;
-    color: #fff;
-    padding-top: 180px;
+.input-group-prepend span {
+    width: 50px;
+    background-color: rgb(8, 141, 170);
+    color: black;
+    border: 0 !important;
 }
 
-.banner-text h1 {
-    font-size: 150px;
-
-}
-
-.banner-text p {
-    font-size: 20px;
-    font-style: italic;
+input:focus {
+    outline: 0 0 0 0 !important;
+    box-shadow: 0 0 0 0 !important;
 
 }
 
-.banner-btn {
-    margin: 70px auto 0;
+.remember {
+    color: white;
 }
 
-.banner-btn a {
-
-    width: 550px;
-    height: 250px;
-    text-decoration: none;
-    display: center;
-    margin: 0 10px;
-    padding: 15px 32px;
-    color: azure;
-    border: .5px solid #fff;
-    position: relative;
+.remember input {
+    width: 20px;
+    height: 20px;
+    margin-left: 15px;
+    margin-right: 5px;
 }
 
-.banner-btn :hover {
-    background-color: black;
+.login_btn {
+    color: black;
+    background-color: rgb(8, 141, 170);
+    width: 100px;
 }
 
-.banner-btn :active {
-    background-color: rgb(8, 109, 152);
-    transform: translateY(4px);
+.login_btn:hover {
+    color: black;
+    background-color: white;
+}
+
+.links {
+    color: white;
+}
+
+.links a {
+    margin-left: 4px;
 }

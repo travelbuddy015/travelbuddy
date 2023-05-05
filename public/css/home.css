@@ -1,0 +1,104 @@
+html,
+body {
+  background-image: url("/b6.jpg");
+  background-size: cover;
+  height: 100vh;
+  font-family: "Numans", sans-serif;
+}
+
+.card-header {
+  padding: .75rem 1.25rem;
+  margin-bottom: 0;
+  background-color: rgba(0, 0, 0, .0);
+  border-bottom: 1px solid rgba(0, 0, 0, 0);
+}
+
+.card {
+  height: 370px;
+  margin-top: auto;
+  margin-bottom: auto;
+  width: 75%;
+  border: none;
+  background-color: rgba(0, 0, 0, 0);
+  color: #fff;
+}
+
+.container {
+  height: 100%;
+  align-content: center;
+}
+
+.h1 {
+  font-size: 120px;
+
+  letter-spacing: 2px;
+}
+
+.h1 span {
+  color: rgb(8, 141, 170);
+}
+
+.h3 {
+  font-size: 40px;
+}
+
+.h3 span {
+  display: flex;
+  color: rgb(8, 141, 170);
+  font-size: 60px;
+  flex-direction: row;
+  justify-content: space-between;
+  text-align: center;
+}
+
+
+.banner-btn a {
+
+  width: 550px;
+  height: 250px;
+  text-decoration: none;
+  display: center;
+  margin: 0 10px;
+  padding: 15px 32px;
+  color: azure;
+  border: .5px solid #fff;
+  position: relative;
+}
+
+.banner-btn :hover {
+  background-color: rgb(8, 141, 170);
+}
+
+.banner-btn :active {
+  background-color: rgb(8, 109, 152);
+  transform: translateY(4px);
+}
+
+@media (max-width: 480px) {
+  .h1 {
+    font-size: 40px;
+  }
+
+  .h3 {
+    font-size: 21px;
+  }
+
+  .h3 span {
+    font-size: 30px;
+  }
+}
+
+@media (max-width: 768px) {
+  .h1 {
+    font-size: 100px;
+
+  }
+
+  .h3 {
+    font-size: 30px;
+  }
+
+  .h3 span {
+    font-size: 50px;
+  }
+}

@@ -49,10 +49,10 @@ passport.deserializeUser((id, done) => {
 app.use(index)
 app.use(auth)
 
-app.listen(6969, (err) => {
+app.listen(3000, (err) => {
     if (err) {
         console.log(err);
     } else {
-        console.log("Server Started At Port 6969");
+        console.log("Server Started At Port 3000");
     }
 })
