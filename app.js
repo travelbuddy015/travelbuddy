@@ -8,7 +8,7 @@ const auth = require("./routes/auth");
 const index = require("./routes/index");
 const path = require("path");
 const user = require("./models/user");
-const dashboard = require("./routes/dashboard");
+const dashboard = require("./routes/tripplaner");
 
 // database config
 const app = express();
