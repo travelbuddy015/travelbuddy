@@ -1,53 +1,206 @@
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="/css/bootstrap.min.css">
-    <link rel="stylesheet" href="/css/home.css">
-
-</head>
-<style>
-    body {
-        background-image: url("image/b6.jpg");
-    }
-</style>
-
+<%- include('layouts/header.ejs'); -%>
 <body>
-    <div class=" container">
-        <div class="row ">
-            <div class="col mt-4 ">
-                <div class="banner-btn float-right">
-                    <a href="/login">Log In</a>
-                </div>
+    <%- include('layouts/navbar.ejs'); -%>
+    <div class="home" style="  background-image: linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.2)), url(image/kerala.jpg)">
+    
+        <div class="content">
+            <h1>Travel Buddy</h1>
+            <br>
+                <p>Want to travel India , Travel with Travel Buddy</p>
+            <h1>Visit <span class="changecontent"></span></h1>
+            <!-- <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quae, nisi.</p> -->
+            <!-- <a href="#book">Book Place</a> -->
+        </div>
+    </div>
+
+
+
+
+
+
+
+    <!-- Section Services Start -->
+    <section class="services" id="services">
+      <div class="container">
+
+        <div class="main-txt">
+          <h1><span>S</span>ervices</h1>
+        </div>
+
+        <div class="row" style="margin-top: 30px;">
+
+          <div class="col-md-4 py-3 py-md-0">
+
+            <div class="card">
+              <i class="fas fa-hotel"></i>
+              <div class="card-body">
+                <h3>Hotels</h3>
+                <p>Friendly Stay</p>
+              </div>
             </div>
 
-        </div>
-        <div class="d-flex justify-content-center h-100 cards">
-            <div class="card content">
+          </div>
+          <div class="col-md-4 py-3 py-md-0">
 
-                <div class="card-header">
-                    <div class="d-flex justify-content-center">
-                        <p class="h1"> Travel <span>Guide</span></p>
-                    </div>
-                    <div class="d-flex justify-content-center">
-
-                        <p class="h3"> Want to travel India ,<br>Travel with<br><span> Travel Buddy</span> </p>
-                    </div>
-                </div>
-                <div class="d-flex justify-content-center">
-
-                    <div class="banner-btn">
-                        <a href="/registration">Explore</a>
-
-                    </div>
-
-                </div>
+            <div class="card">
+              <i class="fas fa-utensils"></i>
+              <div class="card-body">
+                <h3>Food & Drinks</h3>
+                <p>Hygenic and healthy food</p>
+              </div>
             </div>
+
+          </div>
+          <div class="col-md-4 py-3 py-md-0">
+
+            <div class="card">
+              <i class="fas fa-bullhorn"></i>
+              <div class="card-body">
+                <h3>Safety Guide</h3>
+                <p>Your safety , our priority</p>
+              </div>
+            </div>
+
+          </div>
+
+
+
         </div>
+
+
+        <div class="row" style="margin-top: 30px;">
+
+          <div class="col-md-4 py-3 py-md-0">
+
+            <div class="card">
+              <i class="fas fa-globe-asia"></i>
+              <div class="card-body">
+                <h3>Around The India</h3>
+                <p>Just travel and enjoy</p>
+              </div>
+            </div>
+
+          </div>
+          <div class="col-md-4 py-3 py-md-0">
+
+            <div class="card">
+              <i class="fas fa-plane"></i>
+              <div class="card-body">
+                <h3>Manage your trip</h3>
+                <p>Manage your trip according to your wish</p>
+              </div>
+            </div>
+
+          </div>
+          <div class="col-md-4 py-3 py-md-0">
+
+            <div class="card">
+              <i class="fas fa-hiking"></i>
+              <div class="card-body">
+                <h3>Customization</h3>
+                <p>Customize your trip</p>
+              </div>
+            </div>
+
+          </div>
+
+
+
+        </div>
+
+      </div>
+    </section>
+    <!-- Section Services End -->
+
+
+
+
+    <!-- Section Gallary Start -->
+    <section class="gallary" id="gallary">
+      <div class="container">
+
+        <div class="main-txt">
+          <h1><span>G</span>allery</h1>
+        </div>
+
+        <div class="row" style="margin-top: 30px;">
+          <div class="col-md-4 py-3 py-md-0">
+            <div class="card">
+              <img src="image/Sikkim.jpg" alt="" height="230px">
+            </div>
+          </div>
+          <div class="col-md-4 py-3 py-md-0">
+            <div class="card">
+              <img src="image/kedarnath.jpg" alt="" height="230px">
+            </div>
+          </div>
+          <div class="col-md-4 py-3 py-md-0">
+            <div class="card">
+              <img src="image/kashmir.jpg" alt="" height="230px">
+            </div>
+          </div>
+        </div>
+
+
+        <div class="row" style="margin-top: 30px;">
+          <div class="col-md-4 py-3 py-md-0">
+            <div class="card">
+              <img src="image/Mumbai.jpg" alt="" height="230px">
+            </div>
+          </div>
+          <div class="col-md-4 py-3 py-md-0">
+            <div class="card">
+              <img src="image/Punjab.jpg" alt="" height="230px">
+            </div>
+          </div>
+          <div class="col-md-4 py-3 py-md-0">
+            <div class="card">
+              <img src="image/Delhi.jpg" alt="" height="230px">
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+    <!-- Section Gallary End -->
+
+
+
+
+
+
+
+    <!-- About Start -->
+    <section class="about" id="about">
+      <div class="container">
+
+        <div class="main-txt">
+          <h1>Why to plan a Vacation with <span>Travel Buddy</span>?</h1>
+        </div>
+
+        <div class="row" style="margin-top: 50px;">
+
+          <div class="col-md-6 py-3 py-md-0">
+            <div class="card">
+              <img src="./images/about-img.png" alt="">
+            </div>
+          </div>
+
+          <div class="col-md-6 py-3 py-md-0">
+            <h2>How Travel Buddy Works</h2>
+            <p>We are allowinng our users to customize their trip as per their convinence. Starting from selection of Destination to Selection of their stays and managing their stay our user can easily manage their Trip on their fingertips.</p>
+           <br>
+           <p> Starting from cheapest to expensive , our user will be able to go with any customization </p>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+    <%- include('layouts/footer.ejs'); -%>
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
 </body>
 
 </html>
