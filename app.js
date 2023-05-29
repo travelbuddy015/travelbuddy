@@ -9,11 +9,14 @@ const index = require("./routes/index");
 const path = require("path");
 const user = require("./models/user");
 const dashboard = require("./routes/tripplaner");
+<<<<<<< HEAD
+=======
+// database config
+>>>>>>> 943bdac3faca54a580aec70bc0cf2761b449b144
 const app = express();
 const flash = require("express-flash");
 app.use(express.static(path.join(__dirname, "public")));
 db();
-
 // view engine setup
 app.set("view engine", "ejs");
 
