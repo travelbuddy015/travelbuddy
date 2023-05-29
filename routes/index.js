@@ -1,15 +1,8 @@
 const express = require("express");
 const router = express.Router();
+const { index, logout } = require("../cotroller/index_controller");
 
-router.get("/", function (req, res, next) {
-  if (req.isAuthenticated()) {
-    return res.redirect("/dashboard");
-  }
-  res.render("home");
-});
+router.get("/", index);
+router.get("/logout", logout);
 
-router.get("/logout", (req, res) => {
-  req.logout(() => {});
-  res.redirect("/");
-});
 module.exports = router;

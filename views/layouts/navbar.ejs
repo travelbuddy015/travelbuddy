@@ -1,0 +1,53 @@
+<nav class="navbar navbar-expand-lg" id="navbar">
+  <div class="container">
+    <a class="navbar-brand" href="/" id="logo"><span>Travel</span>Buddy</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mynavbar">
+      <span><i class="fa-solid fa-bars"></i></span>
+    </button>
+    <div class="collapse navbar-collapse" id="mynavbar">
+      <ul class="navbar-nav me-auto">
+        <li class="nav-item">
+          <a class="nav-link active" href="/">Home</a>
+        </li>
+        <!-- <li class="nav-item">
+            <a class="nav-link" href="#book">Book</a>
+          </li> -->
+        <!-- <li class="nav-item">
+            <a class="nav-link" href="#packages">Packages</a>
+          </li> -->
+        <li class="nav-item">
+          <a class="nav-link" href="#services">Services</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#gallary">Gallery</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#about">About</a>
+        </li>
+
+      </ul>
+      <div class="d-flex">
+        <ul class="navbar-nav me-auto">
+          <% if (user.name !='' ) { %>
+            <li class="nav-item ">
+
+              <a class="nav-link" href="">
+                <%= user.name %>
+              </a>
+            </li>
+            <% } else { %>
+              <!-- <input class="form-control me-2" type="text" placeholder="Search">
+          <button class="btn btn-primary" type="button">Search</button> -->
+              <li class="nav-item">
+                <a class="nav-link" href="/login">Login</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="/registration">Sign Up</a>
+              </li>
+        </ul>
+
+        <% } %>
+      </div>
+    </div>
+  </div>
+</nav>

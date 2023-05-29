@@ -9,9 +9,8 @@ const index = require("./routes/index");
 const path = require("path");
 const user = require("./models/user");
 const dashboard = require("./routes/tripplaner");
-
-// database config
 const app = express();
+const flash = require("express-flash");
 app.use(express.static(path.join(__dirname, "public")));
 db();
 
@@ -20,7 +19,7 @@ app.set("view engine", "ejs");
 
 app.use(bodyParser.urlencoded({ extended: true, useNewUrlParser: true }));
 app.use(bodyParser.json());
-
+app.use(flash());
 // passport.js config
 app.use(
   session({

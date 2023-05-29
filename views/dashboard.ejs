@@ -1,19 +1,223 @@
-<!DOCTYPE html>
-<html lang="en">
+<html>
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <%- include('layouts/header.ejs'); -%>
+        <link rel="stylesheet" href="css/dashboard.css">
 </head>
 
 <body>
-<<<<<<< HEAD
-    <%= "Hello, " + data.user.name %>
-=======
-    <%= "Hello, " + data.user.name  %>
->>>>>>> ea40544671ce6a02adea3d4dd204db680de2030f
+
+
+    <%- include('layouts/navbar.ejs'); -%>
+        <section class="book" id="book" style="background-image: url('image/g5.jpg'); background-size: cover;">
+            <div class="container">
+                <div>
+                    <div class="main-text">
+                        <h1><span>Plan your next Vaccation</span></h1>
+                    </div>
+
+                    <div class="row justify-content-center">
+
+                        <div class="col-md-6 py-4 py-md-6">
+
+                            <form action="/planning" method="post">
+                                <input type="text" class="form-control" placeholder="destination" name="destination"
+                                    required><br>
+                                <!-- <input type="int" class="form-control" placeholder="How Many" required><br> -->
+
+                                <input type="date" class="form-control" name="startdate" required>
+
+
+                                <br>
+
+                                <input type="date" class="form-control" placeholder="End Date" name="enddate"
+                                    required><br>
+                                <!-- <textarea class="form-control" rows="5" name="text" placeholder="Enter Your Name & Details"></textarea> -->
+                                <input type="submit" class="submit" value="submit">
+
+                            </form>
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+        </section>
+        <section class="services" id="services">
+            <div class="container">
+
+                <div class="main-txt">
+                    <h1><span>S</span>ervices</h1>
+                </div>
+
+                <div class="row" style="margin-top: 30px;">
+
+                    <div class="col-md-4 py-3 py-md-0">
+
+                        <div class="card">
+                            <i class="fas fa-hotel"></i>
+                            <div class="card-body">
+                                <h3>Hotels</h3>
+                                <p>Friendly Stay</p>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="col-md-4 py-3 py-md-0">
+
+                        <div class="card">
+                            <i class="fas fa-utensils"></i>
+                            <div class="card-body">
+                                <h3>Food & Drinks</h3>
+                                <p>Hygenic and healthy food</p>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="col-md-4 py-3 py-md-0">
+
+                        <div class="card">
+                            <i class="fas fa-bullhorn"></i>
+                            <div class="card-body">
+                                <h3>Safety Guide</h3>
+                                <p>Your safety , our priority</p>
+                            </div>
+                        </div>
+
+                    </div>
+
+
+
+                </div>
+
+
+                <div class="row" style="margin-top: 30px;">
+
+                    <div class="col-md-4 py-3 py-md-0">
+
+                        <div class="card">
+                            <i class="fas fa-globe-asia"></i>
+                            <div class="card-body">
+                                <h3>Around The India</h3>
+                                <p>Just travel and enjoy</p>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="col-md-4 py-3 py-md-0">
+
+                        <div class="card">
+                            <i class="fas fa-plane"></i>
+                            <div class="card-body">
+                                <h3>Manage your trip</h3>
+                                <p>Manage your trip according to your wish</p>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="col-md-4 py-3 py-md-0">
+
+                        <div class="card">
+                            <i class="fas fa-hiking"></i>
+                            <div class="card-body">
+                                <h3>Customization</h3>
+                                <p>Customize your trip</p>
+                            </div>
+                        </div>
+
+                    </div>
+
+
+
+                </div>
+
+            </div>
+        </section>
+        <section class="gallary" id="gallary">
+            <div class="container">
+
+                <div class="main-txt">
+                    <h1><span>G</span>allery</h1>
+                </div>
+
+                <div class="row" style="margin-top: 30px;">
+                    <div class="col-md-4 py-3 py-md-0">
+                        <div class="card">
+                            <img src="image/Sikkim.jpg" alt="" height="230px">
+                        </div>
+                    </div>
+                    <div class="col-md-4 py-3 py-md-0">
+                        <div class="card">
+                            <img src="image/kedarnath.jpg" alt="" height="230px">
+                        </div>
+                    </div>
+                    <div class="col-md-4 py-3 py-md-0">
+                        <div class="card">
+                            <img src="image/kashmir.jpg" alt="" height="230px">
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="row" style="margin-top: 30px;">
+                    <div class="col-md-4 py-3 py-md-0">
+                        <div class="card">
+                            <img src="image/Mumbai.jpg" alt="" height="230px">
+                        </div>
+                    </div>
+                    <div class="col-md-4 py-3 py-md-0">
+                        <div class="card">
+                            <img src="image/Punjab.jpg" alt="" height="230px">
+                        </div>
+                    </div>
+                    <div class="col-md-4 py-3 py-md-0">
+                        <div class="card">
+                            <img src="image/Delhi.jpg" alt="" height="230px">
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+        <!-- Section Gallary End -->
+
+
+
+
+
+
+
+        <!-- About Start -->
+        <section class="about" id="about">
+            <div class="container">
+
+                <div class="main-txt">
+                    <h1>Why to plan a Vacation with <span>Travel Buddy</span>?</h1>
+                </div>
+
+                <div class="row" style="margin-top: 50px;">
+
+                    <div class="col-md-6 py-3 py-md-0">
+                        <div class="card">
+                            <img src="image/about-img.png" alt="">
+                        </div>
+                    </div>
+
+                    <div class="col-md-6 py-3 py-md-0">
+                        <h2>How Travel Buddy Works</h2>
+                        <p>We are allowinng our users to customize their trip as per their convinence. Starting from
+                            selection of Destination to Selection of their stays and managing their stay our user
+                            can easily manage their Trip on their fingertips.</p>
+                        <br>
+                        <p> Starting from cheapest to expensive , our user will be able to go with any customization
+                        </p>
+                    </div>
+
+                </div>
+
+            </div>
+        </section>
+        <%- include('layouts/footer.ejs'); -%>
 </body>
 
 </html>

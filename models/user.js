@@ -1,16 +1,26 @@
-const mongoose = require('mongoose');
-const passportLocalMongoose = require('passport-local-mongoose');
-
+const mongoose = require("mongoose");
+const passportLocalMongoose = require("passport-local-mongoose");
+const Trip = require("./trip").Trip;
 const userSchema = new mongoose.Schema({
-    username: {
-        type: String,
-        required: true,
-        unique: true
+  username: {
+    type: String,
+    required: true,
+    unique: true,
+  },
+  name: {
+    type: String,
+    required: true,
+  },
+  password: {
+    type: String,
+  },
+  trips: [
+    {
+      type: mongoose.Schema.Types.ObjectId,
+      ref: "Trip",
     },
-    name: String,
-    password: String,
-
+  ],
 });
 
 userSchema.plugin(passportLocalMongoose);
-module.exports = mongoose.model('User', userSchema);    
+module.exports = mongoose.model("User", userSchema);
