@@ -1,4 +1,4 @@
-<nav class="navbar navbar-expand-lg" id="navbar">
+<nav class="navbar navbar-expand-lg " id="navbar">
   <div class="container">
     <a class="navbar-brand" href="/" id="logo"><span>Travel</span>Buddy</a>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mynavbar">
@@ -9,12 +9,6 @@
         <li class="nav-item">
           <a class="nav-link active" href="/">Home</a>
         </li>
-        <!-- <li class="nav-item">
-            <a class="nav-link" href="#book">Book</a>
-          </li> -->
-        <!-- <li class="nav-item">
-            <a class="nav-link" href="#packages">Packages</a>
-          </li> -->
         <li class="nav-item">
           <a class="nav-link" href="#services">Services</a>
         </li>
@@ -24,6 +18,9 @@
         <li class="nav-item">
           <a class="nav-link" href="#about">About</a>
         </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/mytrip">Your Itineraries</a>
+        </li>
 
       </ul>
       <div class="d-flex">
@@ -31,7 +28,7 @@
           <% if (user.name !='' ) { %>
             <li class="nav-item ">
 
-              <a class="nav-link" href="">
+              <a class="nav-link" href="/profile">
                 <%= user.name %>
               </a>
 

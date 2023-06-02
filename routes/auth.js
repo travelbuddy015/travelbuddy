@@ -7,7 +7,7 @@ const {
   getRegistration,
   postLogin,
   postRegistration,
-} = require("../cotroller/auth_controller");
+} = require("../controller/auth_controller");
 
 router.get("/login", getLogin);
 
