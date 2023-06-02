@@ -6,6 +6,7 @@ const TripSchema = new mongoose.Schema({
   destination: [{ type: String }],
   startdate: { type: Date, required: true },
   enddate: { type: Date, required: true },
+  rating: { type: Number },
   // members: { type: Number, required: true },
   // children: { type: Number },
   // triptype: { type: String },

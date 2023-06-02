@@ -8,9 +8,25 @@
   font-family: 'Lato', sans-serif;
 }
 
+body {
+  padding-top: 64px;
+}
+
+
+
 /* Navbar Start */
 #navbar {
-  background: #f9f9f9;
+  background: #dbdada;
+  overflow: hidden;
+  position: fixed;
+  /* Set the navbar to fixed position */
+  top: 0;
+  z-index: 2;
+  /* Position the navbar at the top of the page */
+  width: 100%;
+  height: 4rem;
+  /* Full width */
+
 }
 
 #logo {
@@ -34,17 +50,20 @@
 }
 
 .nav-item .nav-link {
+  display: inline;
+  padding: 5px;
   font-size: 16px;
   font-weight: 550;
   color: black;
   letter-spacing: 1px;
-  border-radius: 3px;
-  transition: 0.5s ease;
+  transition: 0.3s ease;
+  border-right: 1.5px #909090 solid;
+  height: 2rem;
 }
 
 .nav-item .nav-link:hover {
-  background: rgb(12, 160, 157);
-  color: white;
+  /* background: rgb(12, 160, 157); */
+  color: rgb(12, 160, 157);
 }
 
 #navbar form button {
@@ -58,7 +77,7 @@
 /* Home Section Start */
 .home {
   width: 100%;
-  height: 90vh;
+  height: 95vh;
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -182,11 +201,12 @@
 }
 
 /* Home Section End */
-
 /* Section Book Start */
 .book {
-  background: #f9f9f9;
+  /* background: white;  */
   padding: 50px;
+
+
 }
 
 .main-text h1 {
@@ -202,10 +222,11 @@
 .book .card {
   border-radius: 10px;
   box-shadow: 0px 5px 5px -6px black;
+
 }
 
 .book .row {
-  margin-top: 30px;
+  margin-top: 0px;
 }
 
 .book form input {
@@ -230,8 +251,8 @@
   width: 160px;
   font-size: 16px;
   font-weight: 550;
-  background: blue;
-  color: white;
+  background: rgb(83, 212, 222);
+  color: black;
   margin-top: 10px;
   transition: 0.5s;
 }
@@ -239,6 +260,8 @@
 .book .submit:hover {
   width: 170px;
 }
+
+
 
 @media (max-width:765px) {
   .book {
@@ -251,6 +274,67 @@
 }
 
 /* Section Book End */
+
+
+
+
+
+/* Section Packages Start */
+.main-txt h1 {
+  text-align: center;
+  margin-top: 30px;
+  font-weight: 600;
+  text-shadow: 0px 1px 1px black;
+}
+
+.main-txt h1 span {
+  color: rgb(76, 198, 228);
+}
+
+.packages .card {
+  border-radius: 5px;
+  border: none;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+}
+
+.packages .card img {
+  border-radius: 5px;
+}
+
+.packages .card .card-body {
+  background: transparent;
+}
+
+.packages .card .card-body h3 {
+  font-size: 25px;
+  font-weight: 600;
+}
+
+.packages .card .card-body p {
+  font-size: 15px;
+}
+
+.checked {
+  color: #ffa500;
+}
+
+.star i {
+  font-size: 15px;
+}
+
+.packages .card .card-body h6 {
+  font-size: 20px;
+}
+
+.packages .card .card-body a {
+  padding: 10px;
+  text-decoration: none;
+  background: #ffa500;
+  color: white;
+  border-radius: 5px;
+}
+
+/* Section Packages End */
 
 
 
@@ -423,7 +507,53 @@
 
 /* About End */
 
+/* Profile sectoin start */
+body {
+  background-color: rgb(8, 141, 170);
+}
 
+.form-control:focus {
+  box-shadow: none;
+  border-color: #BA68C8
+}
+
+.profile-button {
+  background: rgb(8, 141, 170);
+  box-shadow: none;
+  border: none
+}
+
+.profile-button:hover {
+  background: black;
+}
+
+.profile-button:focus {
+  background: rgb(8, 141, 170);
+  box-shadow: none
+}
+
+.profile-button:active {
+  background: rgb(8, 141, 170);
+  box-shadow: none
+}
+
+.back:hover {
+  color: #682773;
+  cursor: pointer
+}
+
+.labels {
+  font-size: 16px
+}
+
+.add-experience:hover {
+  background: #BA68C8;
+  color: #fff;
+  cursor: pointer;
+  border: solid 1px #BA68C8
+}
+
+/* Profile sectoin end */
 
 
 /* Footer Start */
@@ -432,6 +562,7 @@
   margin-top: 150px;
   text-align: center;
   background: #f9f9f9;
+  position: absolute;
 }
 
 #footer h1 {

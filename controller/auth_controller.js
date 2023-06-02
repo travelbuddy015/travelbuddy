@@ -40,6 +40,11 @@ exports.postRegistration = (req, res) => {
   const newUser = new User({
     username: req.body.username,
     name: req.body.name,
+    phone:'',
+    city:'',
+    gender:'',
+    age:0,
+    
   });
 
   User.register(newUser, req.body.password, (err, user) => {

@@ -8,6 +8,8 @@ const auth = require("./routes/auth");
 const index = require("./routes/index");
 const path = require("path");
 const user = require("./models/user");
+const profile = require("./routes/profile");
+const mytrip = require("./routes/mytrip");
 const dashboard = require("./routes/tripplaner");
 const app = express();
 const flash = require("express-flash");
@@ -49,6 +51,8 @@ passport.deserializeUser((id, done) => {
 app.use(index);
 app.use(auth);
 app.use(dashboard);
+app.use(profile);
+app.use(mytrip);
 
 app.listen(3000, (err) => {
   if (err) {
