@@ -14,6 +14,12 @@ exports.getTrip = (req, res, next) => {
 exports.deleteTrip = (req, res) => {
   const user = req.user;
   Trip.findByIdAndDelete(req.params.id).then((trip) => {
-    res.redirect("/mytrip");
+    const index = user.trips.indexOf(req.params.id);
+    if (index > -1) {
+      user.trips.splice(index, 1);
+    }
+    user.save().then(() => {
+      res.redirect("/mytrip");
+    });
   });
 };
