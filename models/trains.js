@@ -24,10 +24,6 @@ const Trains = {
   train_date: { type: String, required: true },
   class_type: { type: [String], required: true },
 };
-const TrainSchema = new mongoose.Schema({
-
-  data: [Trains],
-});
-const Train = mongoose.model("Train", TrainSchema);
+const Train = mongoose.model("Train", Trains);
 
 module.exports = Train;
