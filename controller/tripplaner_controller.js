@@ -13,8 +13,13 @@ exports.getDashboard = (req, res, next) => {
     });
 };
 exports.postPlanning = function (req, res, next) {
+  if(req.user.city==''){
+    var source = 'Select';
+  }else{
+    source= req.user.city;
+  }
   const trip = new Trip({
-    source: "Test",
+    source: source,
     destination: req.body.destination,
     startdate: req.body.startdate,
     enddate: req.body.enddate,
