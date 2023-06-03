@@ -63,10 +63,13 @@
                                                                 <% const s_dateObj=new Date(user.trips[i].startdate) %>
                                                                     <% const e_dateObj=new Date(user.trips[i].enddate)
                                                                         %>
-                                                                        <% const
-                                                                            days=e_dateObj.getDate()-s_dateObj.getDate()
-                                                                            %>
-                                                                            <%= days %> Days
+
+                                                                        <% const diffTime=Math.abs(e_dateObj -
+                                                                            s_dateObj);%>
+                                                                            <% const
+                                                                                days=Math.ceil(diffTime/(1000*60*60*24))
+                                                                                %>
+                                                                                <%= days %> Days
                                                             </small>
                                                             <small class="flex-fill text-center py-2"><i
                                                                     class="fa fa-user  me-2"></i>

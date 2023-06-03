@@ -6,7 +6,6 @@ exports.getDashboard = (req, res, next) => {
     .populate("trips")
     .then((user) => {
       res.render("dashboard", { user: user });
-      console.log(user);
     })
     .catch((err) => {
       console.error("Failed to retrieve user:", err);
