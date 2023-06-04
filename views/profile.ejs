@@ -4,7 +4,7 @@
     <%- include('layouts/header.ejs'); -%>
     <style>
         .text{
-            color: rgb(8, 141, 170);
+            /* color: rgb(8, 141, 170); */
             font-size: 21px;
         }
     </style>
@@ -32,27 +32,27 @@
                         </div>
 
 
-                        <div class="row mt-5  ">
+                        <div class="row mt-2">
                             <form action="/profile" method="post">
-                                <div class="col-md-12 "><label class="labels text">Name</label><input type="text"
+                                <div class="col-md-8 "><label class="labels text">Name</label><input type="text"
                                         class="form-control text-center" placeholder="Name" value="<%= user.name %>" name="name">
                                 </div>
-                                <div class="col-md-12 "><label class="labels text">Email</label><input type="text"
+                                <div class="col-md-8"><label class="labels text">Email</label><input type="text"
                                         class="form-control text-center" placeholder="email id" value="<%= user.username %>"
                                         name="email"></div>
-                                <div class="col-md-12"><label class="labels text">Mobile Number</label><input type="text"
+                                <div class="col-md-8"><label class="labels text">Mobile Number</label><input type="text"
                                         class="form-control text-center" placeholder="phone number" value="<%= user.phone %>"
                                         name="phone"></div>
-                                <div class="col-md-12"><label class="labels text">Gender</label>
+                                <div class="col-md-8"><label class="labels text">Gender</label>
                                     <select name="gender" id="" class="form-control text-center">
                                         <option value="Male">Male</option>
                                         <option value="Female">Female</option>
                                         <option value="Notdefined">Notdefined</option>
                                     </select>
                                 </div>
-                                <div class="col-md-12 "><label class="labels text">Age</label><input type="number"
+                                <div class="col-md-8 "><label class="labels text">Age</label><input type="number"
                                         class="form-control text-center" placeholder="Age" value="<%= user.age %>" name="age"></div>
-                                <div class="col-md-12"><label class="labels text">City</label><input type="text"
+                                <div class="col-md-8"><label class="labels text">City</label><input type="text"
                                         class="form-control text-center" placeholder="city" value="<%= user.city %>" name="city">
                                 </div>
 
