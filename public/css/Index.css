@@ -441,17 +441,31 @@ body {
 .gallary .card {
   border-radius: 10px;
   box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+  overflow: hidden;
   cursor: pointer;
 }
 
 .gallary .card img {
   border-radius: 10px;
   transition: 0.5s;
+  object-fit: cover;
+}
+.card-body-gallary{
+  width: 100%;
+  height: 100%;
+  bottom: -100%;
+  right: 0;
+  position: absolute;
+  background-color: rgba(210, 252, 253, 0.788);
+  backdrop-filter: blur(5px);
+  transition: 1s;
+  text-align: center;
+}
+.card:hover .card-body-gallary{
+  bottom: 0;
+  
 }
 
-.gallary .card img:hover {
-  transform: scale(1.1);
-}
 
 /* Section Gallary End */
 
