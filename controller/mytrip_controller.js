@@ -13,13 +13,18 @@ exports.getTrip = (req, res, next) => {
 };
 exports.deleteTrip = (req, res) => {
   const user = req.user;
-  Trip.findByIdAndDelete(req.params.id).then((trip) => {
-    const index = user.trips.indexOf(req.params.id);
-    if (index > -1) {
-      user.trips.splice(index, 1);
-    }
-    user.save().then(() => {
-      res.redirect("/mytrip");
+  Trip.findByIdAndDelete(req.params.id)
+    .then((trip) => {
+      const index = user.trips.indexOf(req.params.id);
+      if (index > -1) {
+        user.trips.splice(index, 1);
+      }
+      user.save().then(() => {
+        res.json({ success: true });
+      });
+    })
+    .catch((error) => {
+      console.error("Error deleting trip:", error);
+      res.status(500).json({ success: false, error: "Error deleting trip" });
     });
-  });
 };
