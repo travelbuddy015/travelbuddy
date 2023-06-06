@@ -30,8 +30,7 @@ app.use(
     resave: false,
     saveUninitialized: false,
     store: MongoStore.create({
-      mongoUrl:
-        "mongodb+srv://dustin:1234@nodeexpressproject.ihoq4gl.mongodb.net/travelbuddy",
+      mongoUrl: process.env.url,
       ttl: 3600,
     }),
   })
