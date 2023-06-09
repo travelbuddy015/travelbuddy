@@ -6,9 +6,11 @@ const users = require("../models/user");
 const {
   getDashboard,
   postPlanning,
+  getPlaning,
 } = require("../controller/tripplaner_controller");
 router.get("/dashboard", isLoggedIn, getDashboard);
 
 router.post("/planning", postPlanning);
+router.get("/planning",getPlaning);
 
 module.exports = router;

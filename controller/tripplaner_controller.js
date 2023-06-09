@@ -31,6 +31,11 @@ exports.postPlanning = function (req, res, next) {
     }
     req.user.trips.push(trip);
     req.user.save();
-    res.redirect("/dashboard");
+    res.redirect("/planning");
   });
+ 
 };
+exports.getPlaning= (req,res,next)=>{
+  res.render("duration",{user:req.user});
+  next();
+}
