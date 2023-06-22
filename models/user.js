@@ -23,10 +23,9 @@ const userSchema = new mongoose.Schema({
   phone: {
     type: String,
   },
-  gender:{type:String},
-  age:{type:Number},
-  city:{type:String},
-  
+  gender: { type: String },
+  age: { type: Number },
+  city: { type: String },
 });
 
 userSchema.plugin(passportLocalMongoose);

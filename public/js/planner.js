@@ -649,35 +649,157 @@ const cities = [
   "Uttar Dinajpur",
   "Nadiad",
 ];
-const datalist = document.getElementById("destinationOptions");
+
 // Function to generate datalist options
+const datalist = $("#destinationOptions");
 function generateOptions() {
-  datalist.innerHTML = ""; // Clear existing options
+  datalist.empty();
 
   cities.forEach((city) => {
-    const option = document.createElement("option");
-    option.value = city;
-    datalist.appendChild(option);
+    const option = $("<option></option>").val(city);
+    datalist.append(option);
   });
 }
 generateOptions();
-const form = document.getElementById("myForm");
-form.addEventListener("submit", function (event) {
-  destinationInput.value =
-    destinationInput.value.charAt(0).toUpperCase() +
-    destinationInput.value.slice(1);
-  const selectedOption = document.querySelector(
-    "#destinationOptions option[value='" + destinationInput.value + "']"
-  );
 
-  if (!selectedOption) {
-    event.preventDefault();
-    alert("Please select a valid city from the options.");
+// section handling
+$(document).ready(function () {
+  function showSection() {
+    var sections = $(".section");
+    var hash = window.location.hash;
+
+    sections.removeClass("active");
+
+    var activeSection = $(hash);
+
+    if (activeSection.length > 0) {
+      activeSection.addClass("active");
+    }
   }
-  const startdate = new Date(document.getElementById("startdate").value);
-  const enddate = new Date(document.getElementById("enddate").value);
-  if (startdate >= enddate) {
-    event.preventDefault();
-    alert("Please select a valid date.");
-  }
+
+  showSection();
+
+  $(window).on("hashchange", showSection);
 });
+
+// scroll up page
+window.onload = () => {
+  window.scrollTo(0, 0);
+};
+
+// Update trip
+function isValidCity(city) {
+  const options = $("#destinationOptions option");
+  return Array.from(options).some((option) => option.value === city);
+}
+$(document).ready(() => {
+  const tripId = $('script[src="/js/planner.js"]').attr("trip-id");
+
+  function isValidCity(city) {
+    const options = $("#destinationOptions option");
+    return Array.from(options).some((option) => option.value === city);
+  }
+
+  $("#next_city_page").click(function (e) {
+    e.preventDefault();
+    const sourceCityInput = $("#box1Content");
+    const returnCityInput = $("#box2Content");
+
+    const sourceCity = sourceCityInput.val();
+    const returnCity = returnCityInput.val();
+
+    if (!isValidCity(sourceCity) || !isValidCity(returnCity)) {
+      alert("Please select a valid city from the options.");
+      return;
+    }
+
+    const data = {
+      sourceCity: sourceCity,
+      returnCity: returnCity,
+      id: tripId,
+    };
+
+    $.ajax({
+      type: "POST",
+      url: "/trip/save-city",
+      data: data,
+      success: (response) => {
+        window.location.href = "/trip/edit/" + tripId + "#user-profile";
+      },
+      error: (error) => {
+        // Handle the error response
+        console.log("Failed to update the trip:", error);
+        alert("An error occurred while updating the trip.");
+      },
+    });
+  });
+
+  $(".select-member").click(function (e) {
+    e.preventDefault();
+    const selectedMembers = $(this).data("members");
+    const type = $(this).data("type");
+    const children = $("children");
+    const data = {
+      type: type,
+      members: selectedMembers,
+      id: tripId,
+    };
+    $.ajax({
+      type: "POST",
+      url: "/trip/save-member",
+      data: data,
+      success: (response) => {
+        if (type)
+          window.location.href = "/trip/edit/" + tripId + "#member-selection";
+        else window.location.href = "/trip/edit/" + tripId + "#transportation";
+      },
+      error: (error) => {
+        // Handle the error response
+        console.log("Failed to update the trip:", error);
+        alert("An error occurred while updating the trip.");
+      },
+    });
+  });
+
+  $("#next_member_selection").click(function (e) {
+    e.preventDefault();
+    const adults = parseInt($("#adults").val());
+    const children = parseInt($("#children").val());
+    const data = {
+      adults: adults,
+      children: children,
+      id: tripId,
+    };
+    $.ajax({
+      type: "POST",
+      url: "/trip/save-member",
+      data: data,
+      success: (response) => {
+        window.location.href = "/trip/edit/" + tripId + "#transportation";
+      },
+      error: (error) => {
+        // Handle the error response
+        console.log("Failed to update the trip:", error);
+        alert("An error occurred while updating the trip.");
+      },
+    });
+  });
+});
+
+// member increment and decrement
+function increment(inputId) {
+  const input = document.getElementById(inputId);
+  const currentValue = parseInt(input.value);
+  if (currentValue <= parseInt(input.getAttribute("max"))) {
+    input.value = currentValue + 1;
+  }
+}
+function decrement(inputId) {
+  const input = document.getElementById(inputId);
+  const currentValue = parseInt(input.value);
+  if (currentValue > parseInt(input.getAttribute("min"))) {
+    input.value = currentValue - 1;
+  }
+}
+
+// Get station name

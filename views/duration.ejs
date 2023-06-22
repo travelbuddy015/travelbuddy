@@ -1,0 +1,67 @@
+<html>
+
+<head>
+    <%- include('layouts/header.ejs'); -%>
+</head>
+
+<body>
+    <%- include('layouts/navbar.ejs'); -%>
+        <section class="duration" id="duration">
+            <div class="container">
+
+                <div class="main-txt">
+                    <h1>Select Duration For Your Cities</h1>
+                </div>
+
+                <div class="row" style="margin-top: 50px;">
+
+                    <div class="col-md-4 py-4 py-md-0">
+                        <div class="card">
+                            <img src="sidemap.jpg" alt="" style="max-width: 100%;">
+                        </div>
+                    </div>
+
+                    <div class="col-md-6 py-3 py-md-0">
+                        <div class="container">
+                            <div class="row justify-content-center">
+                                <div class="col-md-8">
+                                    <div class="card mb-4" style="background-color: rgba(128, 128, 128, 0.5);">
+                                        <div class="card-body">
+                                            <h4 class="card-title">Your Source City</h4>
+                                            <input type="text" class="form-control" id="box1Content" value="Mumbai"
+                                                style="border: 1px solid black;">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row justify-content-center">
+                                <div class="col-md-8">
+                                    <div class="card mb-4" style="background-color: rgba(128, 128, 128, 0.5);">
+                                        <div class="card-body">
+                                            <h4 class="card-title">Destination</h4>
+                                            <p class="card-text" style="border-bottom: 1px solid black; color: white">
+                                                Goa</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row justify-content-center">
+                                <div class="col-md-8">
+                                    <div class="card mb-4" style="background-color: rgba(128, 128, 128, 0.5);">
+                                        <div class="card-body">
+                                            <h4 class="card-title">Your Return City</h4>
+                                            <input type="text" class="form-control" id="box1Content" value="Mumbai"
+                                                style="border:1px solid black;">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <%- include('layouts/footer.ejs'); -%>
+</body>
+
+</html>
