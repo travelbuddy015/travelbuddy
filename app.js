@@ -13,6 +13,8 @@ const mytrip = require("./routes/mytrip");
 const dashboard = require("./routes/tripplaner");
 const app = express();
 const flash = require("express-flash");
+const MongoStore = require("connect-mongo");
+const { Mongoose } = require("mongoose");
 app.use(express.static(path.join(__dirname, "public")));
 db();
 // view engine setup
@@ -27,6 +29,10 @@ app.use(
     secret: "Hakuna mata taa...!",
     resave: false,
     saveUninitialized: false,
+    store: MongoStore.create({
+      mongoUrl: process.env.url,
+      ttl: 3600,
+    }),
   })
 );
 app.use(passport.initialize());

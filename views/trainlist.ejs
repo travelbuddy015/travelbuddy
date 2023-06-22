@@ -1,0 +1,75 @@
+<html>
+
+<head>
+    <%- include('layouts/header.ejs'); -%>
+</head>
+
+<body>
+    <%- include('layouts/navbar.ejs'); -%>
+
+        <!-- <div class="train-container">
+            <div class="train-box">
+                <div class="train-name">
+                    <h1 style="color: black;">Shatabdi</h1>
+                </div>
+
+                <div class="train-section">
+                    <p style="font-weight: bold;">Runs on: <span>S M T W T F S</span></p>
+                </div>
+                <div class="train-info">
+                    <div class="train-source">
+                        <h4 style="font-weight:bold;">Source</h4>
+                        <p>Mumbai</p>
+                    </div>
+                    <div class="line"></div>
+                    <div class="train-destination">
+                        <h4 style="font-weight:bold;">Destination</h4>
+                        <p>Goa</p>
+                    </div>
+                </div>
+                <div class="check-availability">
+                    <button>Check Availability</button>
+                </div>
+            </div> -->
+
+        <!-- </div> -->
+        <div class="train-container">
+            <div class="train-container">
+                <% trains.forEach((train)=>{ %>
+                    <div class="train-box">
+                        <div class="train-name">
+                            <p style="color: black;font-size: 1rem;">
+                                <%= train.train_name %>
+                            </p>
+                        </div>
+
+                        <div class="train-section">
+                            <p style="font-weight: bold;">Runs on: <span>
+                                    <%= train.run_days %>
+                                </span></p>
+                        </div>
+                        <div class="train-info">
+                            <div class="train-source">
+                                <h4 style="font-weight:bold;">Source</h4>
+                                <p>
+                                    <%= train.from_station_name %>
+                                </p>
+                            </div>
+                            <div class="line"></div>
+                            <div class="train-destination">
+                                <h4 style="font-weight:bold;">Destination</h4>
+                                <p>
+                                    <%= train.to_station_name %>
+                                </p>
+                            </div>
+                        </div>
+                        <div class="check-availability">
+                            <button>Check Availability</button>
+                        </div>
+                    </div>
+                    <% }) %>
+            </div>
+        </div>
+</body>
+
+</html>

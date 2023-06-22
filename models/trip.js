@@ -2,12 +2,14 @@ const mongoose = require("mongoose");
 const Train = require("./trains").Trains;
 const User = require("./user");
 const TripSchema = new mongoose.Schema({
-  source: { type: String, required: true },
+  source: { type: String },
+  return_city: { type: String },
   destination: [{ type: String }],
   startdate: { type: Date, required: true },
   enddate: { type: Date, required: true },
   rating: { type: Number },
-  // members: { type: Number, required: true },
+  members: { type: Number, required: true },
+  children: { type: Number },
   // children: { type: Number },
   // triptype: { type: String },
   // StoD_train: { type: Train },
