@@ -647,7 +647,6 @@ const cities = [
   "South 24 Parganas",
   "Purulia",
   "Uttar Dinajpur",
-  "Nadiad",
 ];
 const datalist = document.getElementById("destinationOptions");
 // Function to generate datalist options
@@ -663,19 +662,16 @@ function generateOptions() {
 generateOptions();
 const form = document.getElementById("myForm");
 form.addEventListener("submit", function (event) {
-  destinationInput.value =
-    destinationInput.value.charAt(0).toUpperCase() +
-    destinationInput.value.slice(1);
+  const destinationInput = document.getElementById("destinationInput");
   const selectedOption = document.querySelector(
     "#destinationOptions option[value='" + destinationInput.value + "']"
   );
-
+  const startdate = new Date(document.getElementById("startdate").value);
+  const enddate = new Date(document.getElementById("enddate").value);
   if (!selectedOption) {
     event.preventDefault();
     alert("Please select a valid city from the options.");
   }
-  const startdate = new Date(document.getElementById("startdate").value);
-  const enddate = new Date(document.getElementById("enddate").value);
   if (startdate >= enddate) {
     event.preventDefault();
     alert("Please select a valid date.");
