@@ -26,6 +26,11 @@ const userSchema = new mongoose.Schema({
   gender: { type: String },
   age: { type: Number },
   city: { type: String },
+  userType: {
+    type: String,
+    enum: ["user", "admin"],
+    default: "user",
+  },
 });
 
 userSchema.plugin(passportLocalMongoose);

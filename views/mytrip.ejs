@@ -19,78 +19,95 @@
 
 <body>
 
-    <%- include('layouts/navbar.ejs'); -%>
+    <nav class="navbar navbar-expand-lg " id="navbar">
+        <div class="container">
+            <a class="navbar-brand" href="/" id="logo"><span>Travel</span>Buddy</a>
+            <div class="collapse navbar-collapse" id="mynavbar">
+                <ul class="navbar-nav me-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="/">Home</a>
+                    </li>
+                </ul>
+                <div class="d-flex">
+                    <ul class="navbar-nav me-auto">
 
-        <!-- Package Start -->
-        <div class="container-xxl py-5">
-            <div class="container">
-                <div class="text-center wow fadeInUp">
-                    <h6 class="section-title bg-white text-center text-primary px-3">Trips</h6>
-                    <h1 class="mb-5">Your Itineraries</h1>
-                </div>
-                <div class="row g-4 justify-content-center" id="tripContainer">
-                    <% if (!user.trips.length) { %>
-                        <p>No Trip To Display</p>
-                        <% } %>
-                            <% for (var i=0; i <user.trips.length; i++ ) { %>
-                                <div class="col-lg-4 col-md-6 wow fadeInUp trip-item">
-                                    <div class="package-item">
-                                        <div class="d-flex border-bottom">
-                                            <small class="flex-fill text-center border-end py-2"><i
-                                                    class="fa fa-map-marker-alt  me-2"></i>
-                                                <%= user.trips[i].destination %>
-                                            </small>
-                                            <small class="flex-fill text-center border-end py-2"><i
-                                                    class="fa fa-calendar-alt  me-2"></i>
-                                                <% const s_dateObj=new Date(user.trips[i].startdate) %>
-                                                    <% const e_dateObj=new Date(user.trips[i].enddate) %>
-                                                        <% const diff_time=Math.abs(e_dateObj-s_dateObj) %>
-                                                            <% const days=Math.ceil(diff_time/(1000*60*60*24)) %>
-                                                                <%= days %> Days
-                                            </small>
-                                            <small class="flex-fill text-center py-2"><i class="fa fa-user  me-2"></i>
-                                                <%= user.trips[i].members %> Person
-                                            </small>
-                                        </div>
-                                        <div class="overflow-hidden">
-                                            <img class="img-fluid" src="image/g5.jpg" alt="">
-                                        </div>
-                                        <div class="text-center p-4">
-                                            <!-- price -->
-                                            <!-- <h3 class="mb-0">$149.00</h3> -->
-                                            <div class="mb-3">
-                                                <% if (user.trips[i].rating) { %>
-                                                    <% for( let index=0; index < user.trips[i].rating; index++ ) { %>
-                                                        <small class="fa fa-star text-primary"></small>
-                                                        <% } %>
-                                                            <% } %>
-                                            </div>
-                                            <p>
-                                                <%= days %> Day Trip to <%= user.trips[i].destination %> from <%=
-                                                            user.trips[i].source %>
-                                            </p>
-                                            <div class="d-flex justify-content-center mb-2">
-                                                <a href="#"
-                                                    class="btn btn-sm btn-danger px-3 border-end delete-trip-btn"
-                                                    style="border-radius: 30px 0 0 30px;"
-                                                    data-trip-id="<%= user.trips[i]._id %>">
-                                                    Delete
-                                                    Trip
-                                                </a>
-                                                <a href="#" class="btn btn-sm btn-primary px-3"
-                                                    style="border-radius: 0 30px 30px 0;">View Trip</a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <% } %>
+                        <li class="nav-item ">
+                            <a class="nav-link" href="/logout">
+                                Logout
+                            </a>
+                        </li>
+                    </ul>
                 </div>
             </div>
+    </nav>
+    <!-- Package Start -->
+    <div class="container py-5">
+        <div class="text-center wow fadeInUp">
+            <h6 class="section-title bg-white text-center text-primary px-3">Trips</h6>
+            <h1 class="mb-5">Your Itineraries</h1>
+        </div>
+        <div class="row g-4 justify-content-center" id="tripContainer">
+            <% if (!user.trips.length) { %>
+                <p>No Trip To Display</p>
+                <% } %>
+                    <% for (var i=0; i <user.trips.length; i++ ) { %>
+                        <div class="col-lg-4 col-md-6 wow fadeInUp trip-item">
+                            <div class="package-item">
+                                <div class="d-flex border-bottom">
+                                    <small class="flex-fill text-center border-end py-2"><i
+                                            class="fa fa-map-marker-alt  me-2"></i>
+                                        <%= user.trips[i].destination %>
+                                    </small>
+                                    <small class="flex-fill text-center border-end py-2"><i
+                                            class="fa fa-calendar-alt  me-2"></i>
+                                        <% const s_dateObj=new Date(user.trips[i].startdate) %>
+                                            <% const e_dateObj=new Date(user.trips[i].enddate) %>
+                                                <% const diff_time=Math.abs(e_dateObj-s_dateObj) %>
+                                                    <% const days=Math.ceil(diff_time/(1000*60*60*24)) %>
+                                                        <%= days %> Days
+                                    </small>
+                                    <small class="flex-fill text-center py-2"><i class="fa fa-user  me-2"></i>
+                                        <%= user.trips[i].members %> Person
+                                    </small>
+                                </div>
+                                <div class="overflow-hidden">
+                                    <img class="img-fluid" src="image/g5.jpg" alt="">
+                                </div>
+                                <div class="text-center p-4">
+                                    <!-- price -->
+                                    <!-- <h3 class="mb-0">$149.00</h3> -->
+                                    <div class="mb-3">
+                                        <% if (user.trips[i].rating) { %>
+                                            <% for( let index=0; index < user.trips[i].rating; index++ ) { %>
+                                                <small class="fa fa-star text-primary"></small>
+                                                <% } %>
+                                                    <% } %>
+                                    </div>
+                                    <p>
+                                        <%= days %> Day Trip to <%= user.trips[i].destination %> from <%=
+                                                    user.trips[i].source %>
+                                    </p>
+                                    <div class="d-flex justify-content-center mb-2">
+                                        <a href="#" class="btn btn-sm btn-danger px-3 border-end delete-trip-btn"
+                                            style="border-radius: 30px 0 0 30px;"
+                                            data-trip-id="<%= user.trips[i]._id %>">
+                                            Delete
+                                            Trip
+                                        </a>
+                                        <a href="#" class="btn btn-sm btn-primary px-3"
+                                            style="border-radius: 0 30px 30px 0;">View Trip</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <% } %>
         </div>
 
-        <%- include('layouts/footer.ejs') %>
+    </div>
 
-            <script src="js/mytrip.js"></script>
+
+    <script src="js/mytrip.js"></script>
+    <%- include('layouts/footer.ejs') %>
 </body>
 
 </html>

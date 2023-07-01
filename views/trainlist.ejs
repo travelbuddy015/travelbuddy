@@ -6,70 +6,68 @@
 
 <body>
     <%- include('layouts/navbar.ejs'); -%>
-
-        <!-- <div class="train-container">
-            <div class="train-box">
-                <div class="train-name">
-                    <h1 style="color: black;">Shatabdi</h1>
-                </div>
-
-                <div class="train-section">
-                    <p style="font-weight: bold;">Runs on: <span>S M T W T F S</span></p>
-                </div>
-                <div class="train-info">
-                    <div class="train-source">
-                        <h4 style="font-weight:bold;">Source</h4>
-                        <p>Mumbai</p>
+        <% trains.forEach(function(train) { %>
+            <div class="container mt-5">
+                <div class="card">
+                    <div class="card-header">
+                        <h4><span style="color: #0b9a9a">
+                                <%= train.train_number %>
+                            </span>
+                            <%= ': ' + train.train_name %>
+                        </h4>
                     </div>
-                    <div class="line"></div>
-                    <div class="train-destination">
-                        <h4 style="font-weight:bold;">Destination</h4>
-                        <p>Goa</p>
+                    <div class="card-body">
+                        <div class="row justify-content-center">
+                            <div class="col-4 train-section">
+                                <p style="font-weight: bold;">Runs on:
+                                    <% train.run_days.forEach(function(day){ %>
+                                        <span>
+                                            <%= day[0] %>
+                                        </span>
+                                        <% }); %>
+                                </p>
+                            </div>
+                            <div class="vr col-2"></div>
+                            <div class="col-6 train-info">
+                                <h4 style="font-weight:bold;">Duration</h4>
+                                <p>
+                                    <%= train.duration + ' Hrs' %>
+                                </p>
+                            </div>
+                        </div>
                     </div>
-                </div>
-                <div class="check-availability">
-                    <button>Check Availability</button>
-                </div>
-            </div> -->
-
-        <!-- </div> -->
-        <div class="train-container">
-            <div class="train-container">
-                <% trains.forEach((train)=>{ %>
-                    <div class="train-box">
-                        <div class="train-name">
-                            <p style="color: black;font-size: 1rem;">
-                                <%= train.train_name %>
+                    <div class="row justify-content-center">
+                        <div class="col-3 train-info">
+                            <h4 style="font-weight:bold;">
+                                <%= source %>
+                            </h4>
+                            <p>
+                                <%= train.from_std %>
                             </p>
                         </div>
+                        <div class="col-2">
+                            <h6><b>
+                                    <%= train.train_type %>
+                                </b></h6>
+                            <i class="fa-solid fa-arrow-right fa-2xl"></i>
 
-                        <div class="train-section">
-                            <p style="font-weight: bold;">Runs on: <span>
-                                    <%= train.run_days %>
-                                </span></p>
                         </div>
-                        <div class="train-info">
-                            <div class="train-source">
-                                <h4 style="font-weight:bold;">Source</h4>
-                                <p>
-                                    <%= train.from_station_name %>
-                                </p>
-                            </div>
-                            <div class="line"></div>
-                            <div class="train-destination">
-                                <h4 style="font-weight:bold;">Destination</h4>
-                                <p>
-                                    <%= train.to_station_name %>
-                                </p>
-                            </div>
+                        <div class="col-3 train-info">
+                            <h4 style="font-weight:bold;">
+                                <%= destination %>
+                            </h4>
+                            <p>
+                                <%= train.to_std %>
+                            </p>
                         </div>
-                        <div class="check-availability">
-                            <button>Check Availability</button>
+                        <div class="col-4 check-availability">
+                            <button class="form-control">Check Availability</button>
                         </div>
                     </div>
-                    <% }) %>
+                </div>
             </div>
-        </div>
+            </div>
+            <% }); %>
 </body>
 
 </html>

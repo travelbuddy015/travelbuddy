@@ -5,7 +5,7 @@
   text-decoration: none;
   list-style: none;
   scroll-behavior: smooth;
-  font-family: 'Lato', sans-serif;
+  font-family: "Lato", sans-serif;
 }
 
 body {
@@ -46,7 +46,6 @@ body {
   width: 100%;
   height: 4rem;
   /* Full width */
-
 }
 
 #logo {
@@ -123,7 +122,7 @@ body {
 }
 
 .changecontent::after {
-  content: ' ';
+  content: " ";
   color: rgb(20, 130, 155);
   text-shadow: 0px 1px 1px black;
   animation: changetext 10s infinite linear;
@@ -200,13 +199,13 @@ body {
   color: white;
 }
 
-@media (max-width:850px) {
+@media (max-width: 850px) {
   .home {
     background-position: 50%;
   }
 }
 
-@media (max-width:450px) {
+@media (max-width: 450px) {
   .home .content h5 {
     font-size: 25px;
   }
@@ -225,8 +224,6 @@ body {
 .book {
   /* background: white;  */
   padding: 50px;
-
-
 }
 
 .main-text h1 {
@@ -247,7 +244,6 @@ body {
 .book .card {
   border-radius: 10px;
   box-shadow: 0px 5px 5px -6px black;
-
 }
 
 .book .row {
@@ -290,9 +286,7 @@ body {
   background: rgb(162, 233, 237);
 }
 
-
-
-@media (max-width:765px) {
+@media (max-width: 765px) {
   .book {
     padding: 0;
   }
@@ -304,10 +298,6 @@ body {
 
 /* Section Book End */
 
-
-
-
-
 /* Section Packages Start */
 .main-txt h1 {
   text-align: center;
@@ -365,10 +355,6 @@ body {
 
 /* Section Packages End */
 
-
-
-
-
 /* Section Packages Start */
 .main-txt h1 {
   text-align: center;
@@ -425,9 +411,6 @@ body {
 }
 
 /* Section Packages End */
-
-
-
 
 /* Section Services Start */
 .services {
@@ -457,10 +440,6 @@ body {
 }
 
 /* Section Services End */
-
-
-
-
 
 /* Section Gallary Start */
 .gallary {
@@ -494,14 +473,9 @@ body {
 
 .card:hover .card-body-gallary {
   bottom: 0;
-
 }
 
-
 /* Section Gallary End */
-
-
-
 
 /* About Start */
 .about {
@@ -544,7 +518,7 @@ body {
   width: 170px;
 }
 
-@media (max-width:765px) {
+@media (max-width: 765px) {
   .about {
     padding: 0;
   }
@@ -559,13 +533,13 @@ body {
 
 .form-control:focus {
   box-shadow: none;
-  border-color: #BA68C8
+  border-color: #ba68c8;
 }
 
 .profile-button {
   background: rgb(8, 141, 170);
   box-shadow: none;
-  border: none
+  border: none;
 }
 
 .profile-button:hover {
@@ -574,37 +548,36 @@ body {
 
 .profile-button:focus {
   background: rgb(8, 141, 170);
-  box-shadow: none
+  box-shadow: none;
 }
 
 .profile-button:active {
   background: rgb(8, 141, 170);
-  box-shadow: none
+  box-shadow: none;
 }
 
 .back:hover {
   color: #682773;
-  cursor: pointer
+  cursor: pointer;
 }
 
 .labels {
-  font-size: 16px
+  font-size: 16px;
 }
 
 .add-experience:hover {
-  background: #BA68C8;
+  background: #ba68c8;
   color: #fff;
   cursor: pointer;
-  border: solid 1px #BA68C8
+  border: solid 1px #ba68c8;
 }
 
 /* Profile sectoin end */
 
-
 /* Footer Start */
 #footer {
+  margin-top: 5rem;
   width: 100%;
-  margin-top: 150px;
   text-align: center;
   background: #dbdada;
   position: absolute;
@@ -661,7 +634,6 @@ label {
   margin: auto;
   width: 300px;
   height: 180px;
-
 }
 
 .card {
@@ -726,7 +698,7 @@ label {
 /* user profile */
 
 /* trainlist start */
-.train-container {
+/* .train-container {
   max-width: 800px;
   margin: 0 auto;
   padding-top: 60px;
@@ -808,6 +780,30 @@ label {
   height: 70px;
   background-color: black;
   margin-left: 45px;
+} */
+/* Trainlist start */
+.train-section span {
+  color: rgb(33, 129, 203);
+}
+
+.train-info p {
+
+  font-weight: bold;
+  color: rgb(33, 129, 203);
+}
+
+.check-availability button {
+
+  background-color: rgb(22, 189, 189);
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+
+}
+
+.check-availability button:hover {
+  background-color: #0b9a9a;
 }
 
 /* trainlist end */

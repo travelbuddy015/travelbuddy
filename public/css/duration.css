@@ -1,7 +1,7 @@
  #city-shuffle {
    padding: 10px;
    background: #f9f9f9;
-   background-image: url("/image/maps.svg");
+   background-image: url("/image/map.jpg");
    object-fit: cover;
    background-size: cover;
    background-position: center;

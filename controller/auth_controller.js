@@ -23,7 +23,7 @@ exports.getRegistration = (req, res) => {
 exports.postLogin = (req, res, next) => {
   passport.authenticate("userlocal", (err, user, info) => {
     if (!user) {
-      req.flash("error", "Invalid email         or password");
+      req.flash("error", "Invalid email or password");
       return res.redirect("/login");
     }
     req.logIn(user, (err) => {
@@ -40,11 +40,10 @@ exports.postRegistration = (req, res) => {
   const newUser = new User({
     username: req.body.username,
     name: req.body.name,
-    phone:'',
-    city:'',
-    gender:'',
-    age:0,
-    
+    phone: "",
+    city: "",
+    gender: "",
+    age: 0,
   });
 
   User.register(newUser, req.body.password, (err, user) => {
