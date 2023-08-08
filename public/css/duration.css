@@ -1,21 +1,26 @@
  #city-shuffle {
    padding: 10px;
-   background: #f9f9f9;
-   background-image: url("/image/map.jpg");
-   object-fit: cover;
-   background-size: cover;
-   background-position: center;
+   /* background: #90bcc9; */
+   background-image: url("/image/CitySelect.svg");
+   /* object-fit: cover; */
+   background-size: 40rem;
+   /* background-position: center; */
    background-repeat: no-repeat;
  }
 
  .section {
    padding: 10px;
-   background: #f9f9f9;
-
  }
 
  .section .card {
    border-radius: 10px;
+   background-color: rgba(219, 218, 218, 0.5);
+   backdrop-filter: blur(5px);
+ }
+
+ .usp .card {
+   border-radius: 10px;
+   background-color: white;
  }
 
  .section .card img {
@@ -88,6 +93,7 @@
    text-decoration: none;
    display: inline-block;
    padding: 10px 20px;
+   border-radius: 5px;
  }
 
  .next {
@@ -96,11 +102,19 @@
    text-decoration: none;
    display: inline-block;
    padding: 10px 20px;
+   border-radius: 5px;
  }
 
- .next:hover .previous:hover {
-   background-color: #ddd;
+ .previous:hover {
+   /* background-color: hwb(0 100% 0%); */
    color: black;
+   /* transition: 0.5s ease-in-out; */
+ }
+
+ .next:hover {
+   /* background-color: #ffffff; */
+   color: black;
+   /* transition: 0.5s ease-in-out; */
  }
 
  .about {

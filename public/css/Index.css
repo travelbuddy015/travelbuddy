@@ -76,7 +76,7 @@ body {
   color: black;
   letter-spacing: 1px;
   transition: 0.3s ease;
-  border-right: 1.5px #909090 solid;
+  /* border-right: 1.5px #909090 solid; */
   height: 2rem;
 }
 
@@ -415,11 +415,15 @@ body {
 /* Section Services Start */
 .services {
   background: #f9f9f9;
-  margin-top: 50px;
+}
+
+#user-profile {
+  background: #ffffff;
 }
 
 .services .card {
   box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+  background-color: white;
   border: none;
   cursor: pointer;
 }
@@ -592,6 +596,8 @@ body {
 #footer h1 span {
   color: rgb(112, 218, 241);
 }
+
+
 
 .social-links i {
   padding: 10px;

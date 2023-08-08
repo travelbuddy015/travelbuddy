@@ -7,6 +7,7 @@
                 font-size: 21px;
             }
         </style>
+
 </head>
 
 <body style="background-color: rgb(194, 239, 249); ;">
@@ -88,7 +89,9 @@
                                 <label class="labels text">Age</label>
                                 <input type="number" class="form-control text-center"
                                     placeholder="<%= user.age === 0 ? 'Enter your age' : '' %>"
-                                    value="<%= user.age !== 0 ? user.age : '' %>" name="age">
+                                    value="<%= user.age !== 0 ? user.age : '' %>" name="age" id="age">
+
+
                             </div>
                             <div class="col-md-8"><label class="labels text">City</label>
                                 <input type="text" class="form-control text-center" id="destinationInput"
@@ -120,7 +123,15 @@
 
     <%- include('layouts/footer.ejs'); -%>
         <script src="js/dashboard.js"></script>
-
+        <script>
+            form.addEventListener("submit", function (event) {
+                var age = document.getElementById('age');
+                if (age.value <= 0) {
+                    event.preventDefault();
+                    alert("Age can not Be Neagativex`");
+                }
+            });
+        </script>
 </body>
 
 </html>

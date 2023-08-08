@@ -10,7 +10,6 @@ const TripSchema = new mongoose.Schema({
   rating: { type: Number },
   members: { type: Number, required: true },
   children: { type: Number },
-  // children: { type: Number },
   // triptype: { type: String },
   // StoD_train: { type: Train },
   // DtoS_train: { type: Train },

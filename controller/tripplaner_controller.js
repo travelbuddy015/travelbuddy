@@ -81,6 +81,7 @@ exports.saveMembers = (req, res, next) => {
     });
 };
 exports.getTrip = (req, res, next) => {
+  console.log(req.url);
   const tripID = req.params["id"];
   Trip.findById(tripID)
     .then((trip) => {
