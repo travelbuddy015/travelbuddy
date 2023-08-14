@@ -27,7 +27,7 @@ body {
 .social_icon span {
     font-size: 60px;
     margin-left: 10px;
-    color:white;
+    color: white;
 }
 
 .social_icon span:hover {
@@ -90,5 +90,4 @@ input:focus {
 
 
 /* Duration Start*/
-  /*Duration End*/
-  
+/*Duration End*/

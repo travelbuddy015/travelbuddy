@@ -6,6 +6,11 @@
 
 <body>
     <%- include('layouts/navbar.ejs'); -%>
+        <form id="search-books" method="get">
+            <label for="search">Search:</label>
+            <input type="text" name="search" id="search">
+            <button type="submit">Search</button>
+        </form>
         <% trains.forEach(function(train) { %>
             <div class="container mt-5">
                 <div class="card">

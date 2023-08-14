@@ -25,24 +25,66 @@ exports.getTrainlist = (req, res, next) => {
         from: source_station,
         to: destination_station,
       }).then((train) => {
-        console.log(train);
-        res.render("trainlist", {
-          startdate: startdate,
-          enddate: enddate,
-          user: req.user,
-          trains: train,
-          source: source_station,
-          destination: destination_station,
-        });
+        // console.log(train);
+
+        if (req.query.search == undefined) {
+          console.log(train);
+          res.render("trainlist", {
+            startdate: startdate,
+            enddate: enddate,
+            user: req.user,
+            trains: train,
+            source: source_station,
+            destination: destination_station,
+          });
+        } else {
+          var search_input = req.query.search;
+          var tokens = search_input.split(" ").filter(function (token) {
+            return token.trim() !== "";
+          });
+
+          if (tokens.length) {
+            var searchTermRegex = new RegExp(tokens.join("|"), "gim");
+            console.log(searchTermRegex);
+
+            var filteredList = train.filter(function (train) {
+              var trainString = "";
+              for (var key in train) {
+                if (train[key] !== "" && train[key] !== undefined) {
+                  trainString += train[key].toString().trim() + " ";
+                }
+              }
+
+              return trainString.match(searchTermRegex);
+            });
+
+            console.log(filteredList);
+          }
+          res.render("trainlist", {
+            startdate: startdate,
+            enddate: enddate,
+            user: req.user,
+            trains: filteredList,
+            source: source_station,
+            destination: destination_station,
+          });
+        }
       });
     });
+};
+exports.searchtrain = (req, res, next) => {
+  var handleSearch = function (event) {
+    event.preventDefault();
+
+    var searchTerm = event.target.elements["search"].value;
+    // Tokenize the search terms and remove empty spaces
+  };
 };
 const getstationname = (name) => {
   const regex = new RegExp(name + "\\s", "i");
   return Station.find({
     $or: [{ name: regex }, { name: name }],
   }).then((s) => {
-    console.log(s[0]);
     return s[0].code;
   });
 };

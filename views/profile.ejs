@@ -104,10 +104,10 @@
 
 
                             <div class="mt-5 ">
-                                <a href="/dashboard">
+                                <!-- <a href="/dashboard">
                                     <button class="btn btn-primary profile-button"
                                         style="background-color:  #BA68C8;">Back
-                                        to Dashboard</button></a>
+                                        to Dashboard</button></a> -->
 
                                 <button class="btn btn-primary profile-button" type="submit" class="submit">Save
                                     Profile</button>
@@ -126,9 +126,9 @@
         <script>
             form.addEventListener("submit", function (event) {
                 var age = document.getElementById('age');
-                if (age.value <= 0) {
+                if (age.value < 0) {
                     event.preventDefault();
-                    alert("Age can not Be Neagativex`");
+                    alert("Age can not be neagative");
                 }
             });
         </script>

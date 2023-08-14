@@ -12,7 +12,7 @@ exports.updateProfile = async (req, res, next) => {
   } else {
     user = req.user;
   }
-  user.name = req.body.name;
+  user.name = capitalize(req.body.name);
   user.username = req.body.email;
   user.phone = req.body.phone;
   user.age = req.body.age;
@@ -42,4 +42,8 @@ exports.deleteUser = (req, res) => {
     .catch((err) => {
       res.send(err);
     });
+};
+const capitalize = (s) => {
+  if (typeof s !== "string") return "";
+  return s.charAt(0).toUpperCase() + s.slice(1);
 };

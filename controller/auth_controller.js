@@ -45,7 +45,7 @@ exports.postRegistration = (req, res) => {
     gender: "",
     age: 0,
   });
-
+  newUser.name = capitalize(newUser.name);
   User.register(newUser, req.body.password, (err, user) => {
     if (err) {
       console.log(err);
@@ -55,4 +55,9 @@ exports.postRegistration = (req, res) => {
       res.redirect("/dashboard");
     });
   });
+};
+
+const capitalize = (s) => {
+  if (typeof s !== "string") return "";
+  return s.charAt(0).toUpperCase() + s.slice(1);
 };
