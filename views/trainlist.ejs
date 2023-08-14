@@ -1,0 +1,88 @@
+<html>
+
+<head>
+    <%- include('layouts/header.ejs'); -%>
+</head>
+
+<body>
+    <%- include('layouts/navbar.ejs'); -%>
+        <form id="search-books" method="get">
+            <label for="search">Search:</label>
+            <input type="text" name="search" id="search">
+            <button type="submit">Search</button>
+        </form>
+        <% trains.forEach(function(train) { %>
+            <div class="container mt-5">
+                <div class="card">
+                    <div class="card-header">
+                        <h4><span style="color: #0b9a9a">
+                                <%= train.train_number %>
+                            </span>
+                            <%= ': ' + train.train_name %>
+                        </h4>
+                    </div>
+                    <div class="card-body">
+                        <div class="row justify-content-center">
+                            <div class="col-4 train-section">
+                                <p style="font-weight: bold;">Runs on:
+                                    <% train.run_days.forEach(function(day){ %>
+                                        <span>
+                                            <%= day[0] %>
+                                        </span>
+                                        <% }); %>
+                                </p>
+                            </div>
+                            
+                            <div class="col-4 train-info">
+                                <h4 style="font-weight:bold;">Duration</h4>
+                                <p>
+                                    <%= train.duration + ' Hrs' %>
+                                </p>
+                            </div>
+                            
+                        </div>
+                    </div>
+                    <div class="row justify-content-center">
+                        <div class="col-3 train-info">
+                            <h4 style="font-weight:bold;">
+                                <%= source %>
+                            </h4>
+                            <p>
+                                <%= train.from_std %>
+                            </p>
+                        </div>
+                        <div class="col-2">
+                            <h6><b>
+                                    <%= train.train_type %>
+                                </b></h6>
+                            <i class="fa-solid fa-arrow-right fa-2xl"></i>
+
+                        </div>
+                        <div class="col-3 train-info">
+                            <h4 style="font-weight:bold;">
+                                <%= destination %>
+                            </h4>
+                            <p>
+                                <%= train.to_std %>
+                            </p>
+                        </div>
+                        <div class="col-4 check-availability" >
+                            <a href="https://www.ixigo.com/trains/<%=train.train_number%>?orgn=<%=train.from%>&dstn=<%=train.to%>&departDate=<%=startdate%>"
+                                target="_blank"style = "text-decoration: none;">
+                                <button class="form-control">Check Availability</button>
+                            </a>
+                            <form action="" method="post">
+                                <input type="hidden" name="train" value="<%= train.train_number %>">
+                                <button class="form-control save-btn" style="background-color: #dbdada; color: #000;" type="submit">Save this</button>
+                            </form>
+                            
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+            </div>
+            <% }); %>
+</body>
+
+</html>

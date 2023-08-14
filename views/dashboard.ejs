@@ -1,0 +1,170 @@
+<html>
+
+<head>
+    <%- include('layouts/header.ejs'); -%>
+        <script src="datepicker/dist/esm/wc-datepicker.js" type="module"></script>
+        <link rel="stylesheet" href="datepicker/dist/themes/light.css" />
+</head>
+
+<body>
+
+
+    <%- include('layouts/navbar.ejs'); -%>
+        <section class="book" id="book" style="background-image: url('image/g5.jpg'); background-size: cover;">
+            <div class="container">
+                <div>
+                    <div class="main-text" style="color: #dbdada;">
+                        <h1>Plan Your Dream Trip:<span> Customize Your Itinerary</span></h1>
+                        <h3>Book Accommodation, Tours & Flights</h3>
+                    </div>
+
+                    <div class="row justify-content-center">
+
+                        <div class="col-md-6 py-4 py-md-6">
+
+                            <form action="/trip" id="myForm" method="post" style="display: flex; flex-direction: column; justify-content: space-evenly;">
+                                <!-- To give blur effect add this -->
+                                <!-- style="backdrop-filter: blur(2px);" -->
+
+                                <input type="text" class="form-control" id="destinationInput"
+                                    placeholder="Enter destination" name="destination" list="destinationOptions"
+                                    required>
+
+                                <!-- <input type="text" id="destinationInput" class="form-control" name="destination"
+                                    placeholder="Enter destination" list="destinationOptions" required> -->
+                                <br>
+                                <datalist id="destinationOptions">
+                                </datalist>
+                                <wc-datepicker  range id="datepicker"
+                                    style="display: flex; justify-content: center;">
+                                </wc-datepicker>
+
+                                <input type="date" style="display: none;" name="startdate" id="startdate" required>
+
+                                <input type="date" style="display: none;" placeholder="End Date" id="enddate"
+                                    name="enddate" required><br>
+
+                                <input type="submit" class="submit" value="Start Planning">
+
+                            </form>
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+        </section>
+        <section class="services" id="services">
+            <div class="container">
+
+                <div class="main-txt">
+                    <h1><span>S</span>ervices</h1>
+                </div>
+
+                <div class="row" style="margin-top: 30px;">
+
+                    <div class="col-md-4 py-3 py-md-0">
+
+                        <div class="card">
+                            <i class="fas fa-hotel"></i>
+                            <div class="card-body">
+                                <h3>Hotels</h3>
+                                <p>Friendly Stay</p>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="col-md-4 py-3 py-md-0">
+
+                        <div class="card">
+                            <i class="fas fa-utensils"></i>
+                            <div class="card-body">
+                                <h3>Food & Drinks</h3>
+                                <p>Hygenic and healthy food</p>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="col-md-4 py-3 py-md-0">
+
+                        <div class="card">
+                            <i class="fas fa-bullhorn"></i>
+                            <div class="card-body">
+                                <h3>Safety Guide</h3>
+                                <p>Your safety , our priority</p>
+                            </div>
+                        </div>
+
+                    </div>
+
+
+
+                </div>
+
+
+                <div class="row" style="margin-top: 30px;">
+
+                    <div class="col-md-4 py-3 py-md-0">
+
+                        <div class="card">
+                            <i class="fas fa-globe-asia"></i>
+                            <div class="card-body">
+                                <h3>Around The India</h3>
+                                <p>Just travel and enjoy</p>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="col-md-4 py-3 py-md-0">
+
+                        <div class="card">
+                            <i class="fas fa-plane"></i>
+                            <div class="card-body">
+                                <h3>Manage your trip</h3>
+                                <p>Manage your trip according to your wish</p>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="col-md-4 py-3 py-md-0">
+
+                        <div class="card">
+                            <i class="fas fa-hiking"></i>
+                            <div class="card-body">
+                                <h3>Customization</h3>
+                                <p>Customize your trip</p>
+                            </div>
+                        </div>
+
+                    </div>
+
+
+
+                </div>
+
+            </div>
+        </section>
+        <%- include('layouts/gallary.ejs'); -%>
+            <!-- Section Gallary End -->
+            <!-- About Start -->
+            <%- include('layouts/about.ejs'); -%>
+                <%- include('layouts/footer.ejs'); -%>
+                    <script src="js/dashboard.js"></script>
+                    <script>
+                        const datepicker = document.getElementById('datepicker');
+                        // const timeElapsed = Date.now();
+                        // const today = new Date(timeElapsed);
+                        datepicker.setAttribute("start-date", today);
+                        datepicker.addEventListener('selectDate', function (event) {
+                            if (event.detail.length == 2) {
+                                document.getElementById("startdate").value = event.detail[0];
+                                document.getElementById("enddate").value = event.detail[1];
+                            }
+                            else if (event.detail[1] === null) {
+                                alert("Select both endDate and startDate")
+                            }
+                        });
+                    </script>
+</body>
+
+</html>

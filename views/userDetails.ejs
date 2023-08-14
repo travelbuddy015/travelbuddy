@@ -1,0 +1,97 @@
+<html>
+
+<head>
+    <%- include('layouts/header.ejs'); -%>
+
+        <style>
+            .text {
+                /* color: rgb(8, 141, 170); */
+                font-size: 21px;
+            }
+        </style>
+</head>
+
+<body style="background-color: rgb(194, 239, 249); ;">
+    <nav class="navbar navbar-expand-lg " id="navbar">
+        <div class="container">
+            <a class="navbar-brand" href="/" id="logo"><span>Travel</span>Buddy</a>
+            <div class="collapse navbar-collapse" id="mynavbar">
+                <ul class="navbar-nav me-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="/manageuser">User List</a>
+                    </li>
+                </ul>
+                <div class="d-flex">
+                    <ul class="navbar-nav me-auto">
+
+                        <li class="nav-item ">
+                            <a class="nav-link" href="/logout">
+                                Logout
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+    </nav>
+    <div class="container rounded bg-white mt-2 mb-5 profile">
+
+        <div class="row" style="justify-content: center;">
+            <div class="col-md-7">
+                <div class="p-3 py-5">
+                    <div class="d-flex align-items-center mb-3">
+                        <h4 class="text-right">Profile Settings</h4>
+                    </div>
+
+
+                    <div class="row mt-2">
+                        <form action="/profile" id="myForm" method="post">
+                            <input type="hidden" name="id" value="<%= user.id %>">
+                            <div class="col-md-8 "><label class="labels text">Name :</label><input type="text"
+                                    class="form-control text-center" placeholder="Name" value="<%= user.name %>"
+                                    name="name">
+                            </div>
+                            <div class="col-md-8"><label class="labels text">Email :</label><input type="text"
+                                    class="form-control text-center" placeholder="email id" value="<%= user.username %>"
+                                    name="email"></div>
+                            <div class="col-md-8"><label class="labels text">Mobile Number :</label><input type="text"
+                                    class="form-control text-center" placeholder="phone number"
+                                    value="<%= user.phone %>" name="phone"></div>
+                            <div class="col-md-8"><label class="labels text">Gender :</label>
+                                <select name="gender" id="" class="form-control text-center">
+                                    <option value="Male" <%=user.gender==='Male' ? 'selected' : '' %>>Male</option>
+                                    <option value="Female" <%=user.gender==='Female' ? 'selected' : '' %>>Female
+                                    </option>
+                                    <option value="Notdefined" <%=user.gender==='Notdefined' ? 'selected' : '' %>
+                                        >Not Defined</option>
+                                </select>
+                            </div>
+                            <div class="col-md-8 "><label class="labels text">Age :</label><input type="number"
+                                    class="form-control text-center" placeholder="Age" value="<%= user.age %>"
+                                    name="age"></div>
+                            <div class="col-md-8"><label class="labels text">City :</label>
+                                <input type="text" class="form-control text-center" id="destinationInput"
+                                    placeholder="city" value="<%= user.city %>" name="city" list="destinationOptions">
+
+                                <br>
+                                <datalist id="destinationOptions">
+                                </datalist>
+                            </div>
+                            <div class="mt-5 ">
+                                <button class="btn btn-danger profile-button"><a href="/deleteuser/<%= user.id %>"
+                                        style="text-decoration: none;color: white;">Delete
+                                        User</a></button>
+                                <button class="btn btn-primary profile-button" type="submit" class="submit">Save
+                                    Profile</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <%- include('layouts/footer.ejs'); -%>
+</body>
+
+</html>

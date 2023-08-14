@@ -1,0 +1,48 @@
+<html>
+
+<head>
+    <%- include('layouts/header.ejs'); -%>
+        <base href="/manageuser/">
+        <style>
+            .user {
+                margin: auto;
+                /* width: 450px; */
+                padding: 20px;
+                box-shadow: 3px 10px 20px rgba(0, 0, 0, 0.2);
+                border-radius: 3px;
+
+                background-color: aliceblue;
+                border-radius: 1rem;
+            }
+
+            .user:hover {
+                background-color: whitesmoke;
+            }
+        </style>
+</head>
+
+<body>
+
+
+    <%- include('layouts/navbar.ejs'); -%>
+        <div class="container mt-5">
+            <% user.forEach(function(user){ %>
+                <a href='<%= user._id %>' style="text-decoration: none;color: black;">
+                    <div class="my-3 user">
+                        <p>
+                            <span>Email:</span>
+                            <%= user.username %>
+                        </p>
+                        <p><span>Name:</span>
+                            <%= user.name %>
+                        </p>
+                    </div>
+                </a>
+                <br>
+                <% }); %>
+        </div>
+
+
+</body>
+
+</html>
