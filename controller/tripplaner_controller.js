@@ -94,6 +94,7 @@ exports.getTrip = (req, res, next) => {
 };
 
 exports.getHotellist = async (req, res, next) => {
+  var test;
   const tripID = req.params["id"];
   const options = {
     method: "GET",
