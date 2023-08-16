@@ -9,6 +9,7 @@ const {
   getTrip,
   saveCity,
   saveMembers,
+  getHotellist,
 } = require("../controller/tripplaner_controller");
 const { getTrainlist } = require("../controller/transportation_controller");
 
@@ -16,6 +17,7 @@ const { getTrainlist } = require("../controller/transportation_controller");
 router.get("/dashboard", isLoggedIn, getDashboard);
 router.get("/trip/edit/:id", getTrip);
 router.get("/trip/edit/:id/trainlist", getTrainlist);
+router.get("/trip/edit/:id/hotellist", getHotellist);
 
 // POST
 router.post("/trip", postTrip);

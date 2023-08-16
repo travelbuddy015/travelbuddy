@@ -21,6 +21,7 @@
     "express-flash": "^0.0.2",
     "express-session": "^1.17.3",
     "mongoose": "^7.0.3",
+    "node-fetch": "^2.6.12",
     "nodemon": "^2.0.22",
     "passport": "^0.6.0",
     "passport-local": "^1.0.0",

@@ -2,6 +2,7 @@ const User = require("../models/user");
 const Trip = require("../models/trip");
 const Train = require("../models/trains");
 const Station = require("../models/stations");
+const helper = require("./helper");
 exports.getTrainlist = (req, res, next) => {
   const tripId = req.params.id;
   let startdate, enddate;
@@ -16,8 +17,8 @@ exports.getTrainlist = (req, res, next) => {
       }
       const source = trip.source.toUpperCase();
       const destination = trip.destination[0].toUpperCase();
-      startdate = formatDateToCustomFormat(trip.startdate);
-      enddate = formatDateToCustomFormat(trip.enddate);
+      startdate = helper.formatDateToCustomFormat(trip.startdate);
+      enddate = helper.formatDateToCustomFormat(trip.enddate);
       return Promise.all([getstationname(source), getstationname(destination)]);
     })
     .then(([source_station, destination_station]) => {
@@ -28,7 +29,7 @@ exports.getTrainlist = (req, res, next) => {
         // console.log(train);
 
         if (req.query.search == undefined) {
-          console.log(train);
+          // console.log(train);
           res.render("trainlist", {
             startdate: startdate,
             enddate: enddate,
@@ -88,10 +89,3 @@ const getstationname = (name) => {
     return s[0].code;
   });
 };
-function formatDateToCustomFormat(date) {
-  const year = date.getFullYear();
-  const month = String(date.getMonth() + 1).padStart(2, "0"); // Months are zero-based
-  const day = String(date.getDate()).padStart(2, "0");
-
-  return `${year}-${month}-${day}`;
-}

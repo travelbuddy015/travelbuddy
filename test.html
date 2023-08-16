@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Date Picker Example</title>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/jquery/latest/jquery.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/momentjs/latest/moment.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.css" />
+</head>
+
+<body>
+    <form id="dateRangeForm" method="post" action="your_server_endpoint">
+        <label for="dateRangePicker">Select Date Range:</label>
+        <input type="text" id="dateRangePicker" name="daterange" />
+        <input type="hidden" id="startDate" name="startDate" />
+        <input type="hidden" id="endDate" name="endDate" />
+        <button type="submit">Submit</button>
+    </form>
+
+    <script>
+        $(document).ready(function () {
+            // Initialize the date range picker
+            $('#dateRangePicker').daterangepicker({
+                opens: 'left', // Calendar opens to the left of the input field
+                startDate: moment().subtract(6, 'days'), // Initial start date (7 days ago)
+                endDate: moment(), // Initial end date (today)
+
+            }, function (start, end, label) {
+                // Update the hidden input fields with the selected dates
+                $('#startDate').val(start.format('YYYY-MM-DD'));
+                $('#endDate').val(end.format('YYYY-MM-DD'));
+
+                console.log('A date range was selected: ' + start.format('YYYY-MM-DD') + ' to ' + end.format('YYYY-MM-DD'));
+            });
+        });
+    </script>
+</body>
+
+
+</html>

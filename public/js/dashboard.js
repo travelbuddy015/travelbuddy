@@ -23,23 +23,8 @@ async function fetchCityNames() {
   }
 }
 fetchCityNames();
+
 const form = document.getElementById("myForm");
-// form.addEventListener("submit", function (event) {
-//   const destinationInput = document.getElementById("destinationInput");
-//   const selectedOption = document.querySelector(
-//     "#destinationOptions option[value='" + destinationInput.value + "']"
-//   );
-//   const startdate = new Date(document.getElementById("startdate").value);
-//   const enddate = new Date(document.getElementById("enddate").value);
-//   if (!selectedOption) {
-//     event.preventDefault();
-//     alert("Please select a valid city from the options.");
-//   }
-//   if (startdate >= enddate) {
-//     event.preventDefault();
-//     alert("Please select a valid date.");
-//   }
-// });
 form.addEventListener("submit", function (event) {
   const destinationInput = document.getElementById("destinationInput");
   destinationInput.value =
@@ -52,12 +37,4 @@ form.addEventListener("submit", function (event) {
     event.preventDefault();
     alert("Please select a valid city from the options.");
   }
-  // if (!document.getElementById("profile")) {
-  const startdate = new Date(document.getElementById("startdate").value);
-  const enddate = new Date(document.getElementById("enddate").value);
-  if (startdate >= enddate) {
-    event.preventDefault();
-    alert("Please select a valid date.");
-  }
-  // }
 });

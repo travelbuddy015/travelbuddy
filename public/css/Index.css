@@ -674,7 +674,7 @@ label {
   border-color: #495056;
 }
 
-.next {
+section .next {
   background-color: rgb(112, 218, 241);
   color: black;
   text-decoration: none;
@@ -813,3 +813,8 @@ label {
 }
 
 /* trainlist end */
+/* daterangepicker start */
+
+
+
+/* daterangepicker ends */

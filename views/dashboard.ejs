@@ -2,7 +2,32 @@
 
 <head>
     <%- include('layouts/header.ejs'); -%>
+        <script type="text/javascript" src="https://cdn.jsdelivr.net/jquery/latest/jquery.min.js"></script>
+        <script type="text/javascript" src="https://cdn.jsdelivr.net/momentjs/latest/moment.min.js"></script>
+        <script type="text/javascript"
+            src="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.min.js"></script>
+        <link rel="stylesheet" type="text/css"
+            href="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.css" />
+        <style>
+            .daterangepicker td.active,
+            .daterangepicker td.active:hover {
+                background-color: rgb(22, 189, 189);
+                border-color: transparent;
+                color: #fff;
+            }
 
+            .btn-primary {
+                color: #fff;
+                background-color: rgb(22, 189, 189);
+                border-color: rgb(22, 189, 189);
+            }
+
+            .btn-primary:hover {
+                border-color: rgb(93 171 171);
+                background-color: rgb(93 171 171);
+
+            }
+        </style>
 </head>
 
 <body>
@@ -35,12 +60,13 @@
                                 <datalist id="destinationOptions">
                                 </datalist>
 
-                                <input type="date" class="form-control" name="startdate" id="startdate" required>
-                                <br>
-                                <input type="date" class="form-control" placeholder="End Date" id="enddate"
-                                    name="enddate" required><br>
-                                <input type="submit" class="submit" value="Start Planning">
+                                <input type="hidden" class="form-control" name="startdate" id="startdate">
+                                <input type="hidden" class="form-control" id="enddate" name="enddate">
 
+                                <label for="dateRangePicker">Select Date Range </label>
+                                <input type="text" id="dateRangePicker" name="daterange" required />
+
+                                <input type="submit" class="submit" value="Start Planning">
                             </form>
                         </div>
 
@@ -145,6 +171,24 @@
             <%- include('layouts/about.ejs'); -%>
                 <%- include('layouts/footer.ejs'); -%>
                     <script src="js/dashboard.js"></script>
+                    <script>
+                        $(document).ready(function () {
+
+                            $('#dateRangePicker').daterangepicker({
+                                opens: 'left',
+                                startDate: moment(),
+                                endDate: moment().add(6, 'days'),
+                                minDate: moment(),
+                                locale: {
+                                    format: 'ddd, MMM D'
+                                }
+
+                            }, function (start, end, label) {
+                                $('#startdate').val(start.format('YYYY-MM-DD'));
+                                $('#enddate').val(end.format('YYYY-MM-DD'));
+                            });
+                        });
+                    </script>
 </body>
 
 </html>
