@@ -48,7 +48,7 @@
 
                             <form action="/trip" id="myForm" method="post">
                                 <input type="text" class="form-control" id="destinationInput"
-                                    placeholder="Enter destination" name="destination" list="destinationOptions"
+                                    placeholder="Where do you want to go?" name="destination" list="destinationOptions"
                                     required>
                                 <br>
                                 <datalist id="destinationOptions">
@@ -57,8 +57,9 @@
                                 <input type="hidden" class="form-control" name="startdate" id="startdate">
                                 <input type="hidden" class="form-control" id="enddate" name="enddate">
 
-                                <label for="dateRangePicker">Select Date Range </label>
-                                <input type="text" id="dateRangePicker" name="daterange" required />
+                                <!-- <label for="dateRangePicker">Select Date Range </label> -->
+                                <input type="text" id="dateRangePicker" name="daterange" required
+                                    style="color: #6C757D;" />
 
                                 <input type="submit" class="submit" value="Start Planning">
                             </form>
@@ -160,14 +161,13 @@
             </div>
         </section>
         <%- include('layouts/gallary.ejs'); -%>
-            <!-- Section Gallary End -->
-            <!-- About Start -->
             <%- include('layouts/about.ejs'); -%>
                 <%- include('layouts/footer.ejs'); -%>
                     <script src="js/dashboard.js"></script>
                     <script>
                         $(document).ready(function () {
 
+                            // Date Range Picker Handler
                             $('#dateRangePicker').daterangepicker({
                                 opens: 'left',
                                 startDate: moment(),
@@ -176,11 +176,20 @@
                                 locale: {
                                     format: 'ddd, MMM D'
                                 }
-
                             }, function (start, end, label) {
                                 $('#startdate').val(start.format('YYYY-MM-DD'));
                                 $('#enddate').val(end.format('YYYY-MM-DD'));
                             });
+                            $('#dateRangePicker').val('Start Date    →    End Date');
+
+                            // On focus and On blur feature added
+                            const originalPlaceholder = $('#destinationInput').attr("placeholder");
+                            $('#destinationInput').focus(function () {
+                                $(this).attr("placeholder", "Enter The City");
+                            })
+                            $('#destinationInput').blur(function () {
+                                $(this).attr("placeholder", originalPlaceholder);
+                            })
                         });
                     </script>
 </body>
