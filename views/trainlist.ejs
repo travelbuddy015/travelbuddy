@@ -64,13 +64,14 @@
                                         <% }); %>
                                 </p>
                             </div>
-                            <div class="vr col-2"></div>
-                            <div class="col-6 train-info">
+                            
+                            <div class="col-4 train-info">
                                 <h4 style="font-weight:bold;">Duration</h4>
                                 <p>
                                     <%= train.duration + ' Hrs' %>
                                 </p>
                             </div>
+                            
                         </div>
                     </div>
                     <div class="row justify-content-center">
@@ -97,12 +98,18 @@
                                 <%= train.to_std %>
                             </p>
                         </div>
-                        <div class="col-4 check-availability">
+                        <div class="col-4 check-availability" >
                             <a href="https://www.ixigo.com/trains/<%=train.train_number%>?orgn=<%=train.from%>&dstn=<%=train.to%>&departDate=<%=startdate%>"
-                                target="_blank">
+                                target="_blank"style = "text-decoration: none;">
                                 <button class="form-control">Check Availability</button>
                             </a>
+                            <form action="" method="post">
+                                <input type="hidden" name="train" value="<%= train.train_number %>">
+                                <button class="form-control save-btn" style="background-color: #dbdada; color: #000;" type="submit">Save this</button>
+                            </form>
+                            
                         </div>
+                        
                     </div>
                 </div>
             </div>

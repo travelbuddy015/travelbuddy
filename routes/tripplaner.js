@@ -11,7 +11,7 @@ const {
   saveMembers,
   getHotellist,
 } = require("../controller/tripplaner_controller");
-const { getTrainlist } = require("../controller/transportation_controller");
+const { getTrainlist ,postTrainlist } = require("../controller/transportation_controller");
 
 // GET
 router.get("/dashboard", isLoggedIn, getDashboard);
@@ -23,5 +23,5 @@ router.get("/trip/edit/:id/hotellist", getHotellist);
 router.post("/trip", postTrip);
 router.post("/trip/save-city", saveCity);
 router.post("/trip/save-member", saveMembers);
-
+router.post("/trip/edit/:id/trainlist",postTrainlist);
 module.exports = router;

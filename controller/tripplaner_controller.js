@@ -115,10 +115,10 @@ exports.getHotellist = async (req, res, next) => {
     console.log(url);
     const response = await fetch(url, options);
     const data = await response.json();
-
+    console.log(data);
     const hotelName = data.result.map((hotel) => hotel.url);
     res.render("hotelList", { user: req.user });
-    console.log(hotelName);
+    // console.log(hotelName);
   } catch (error) {
     console.error(error);
   }
