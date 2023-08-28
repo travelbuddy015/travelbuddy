@@ -1,8 +1,8 @@
 const User = require("../models/user");
 const Trip = require("../models/trip");
-const Train = require("../models/trains");
+const Train = require("../models/trains").Train;
 const Station = require("../models/stations");
-const helper = require("./helper");
+const { formatDateToCustomFormat } = require("./helper");
 exports.getTrainlist = (req, res, next) => {
   const tripId = req.params.id;
   let startdate, enddate;
@@ -17,8 +17,8 @@ exports.getTrainlist = (req, res, next) => {
       }
       const source = trip.source.toUpperCase();
       const destination = trip.destination[0].toUpperCase();
-      startdate = helper.formatDateToCustomFormat(trip.startdate);
-      enddate = helper.formatDateToCustomFormat(trip.enddate);
+      startdate = formatDateToCustomFormat(trip.startdate);
+      enddate = formatDateToCustomFormat(trip.enddate);
       return Promise.all([getstationname(source), getstationname(destination)]);
     })
     .then(([source_station, destination_station]) => {
@@ -29,7 +29,6 @@ exports.getTrainlist = (req, res, next) => {
         // console.log(train);
 
         if (req.query.search == undefined) {
-          // console.log(train);
           res.render("trainlist", {
             startdate: startdate,
             enddate: enddate,
@@ -58,8 +57,6 @@ exports.getTrainlist = (req, res, next) => {
 
               return trainString.match(searchTermRegex);
             });
-
-            console.log(filteredList);
           }
           res.render("trainlist", {
             startdate: startdate,
@@ -73,13 +70,20 @@ exports.getTrainlist = (req, res, next) => {
       });
     });
 };
-exports.searchtrain = (req, res, next) => {
-  var handleSearch = function (event) {
-    event.preventDefault();
 
-    var searchTerm = event.target.elements["search"].value;
-    // Tokenize the search terms and remove empty spaces
-  };
+exports.postTrainlist = (req, res, next) => {
+  var train_number = req.body.train;
+  Train.find({
+    train_number: train_number,
+  })
+    .limit(1)
+    .then((train) => {
+      Trip.findById(req.params.id).then((trip) => {
+        trip.StoD_train = train[0];
+        trip.save();
+        res.redirect("hotellist");
+      });
+    });
 };
 const getstationname = (name) => {
   const regex = new RegExp(name + "\\s", "i");

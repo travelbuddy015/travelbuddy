@@ -1,0 +1,3420 @@
+{
+  "page_loading_threshold": 10,
+  "extended_count": 0,
+  "search_id": "18a2f80ab11692123687089d1aa6fbd2417:2:121",
+  "copyright": [
+    "Standard Room - 2 Twins",
+    "Deluxe Room, Guest room, 1 King, City view",
+    "Two-Bedroom Apartment",
+    "Executive Double or Twin Room",
+    "Classic Triple Room",
+    "One-Bedroom Apartment",
+    "Apartment with Pool View ",
+    "Large Double or Twin Room",
+    "Deluxe King Studio",
+    "Deluxe Family Suite",
+    "Apartment with Garden View",
+    "Double Room"
+  ],
+  "unfiltered_primary_count": 185,
+  "recommended_filters": [
+    {
+      "generic_id": "property_type::204",
+      "name": "Hotels"
+    },
+    {
+      "name": "Free cancellation",
+      "generic_id": "free_cancellation::1"
+    },
+    {
+      "generic_id": "property_type::201",
+      "name": "Apartments"
+    }
+  ],
+  "is_beach_ufi": 0,
+  "applied_filters": [],
+  "search_metadata": "last_x_property_ids=9629987,hotels_cc1=in",
+  "has_low_availability": "",
+  "sort": [
+    {
+      "name": "Distance From Downtown",
+      "id": "distance"
+    },
+    {
+      "name": "Popularity",
+      "id": "popularity"
+    },
+    {
+      "id": "class_descending",
+      "name": "Stars (5 to 0)"
+    },
+    {
+      "id": "class_ascending",
+      "name": "Stars (0 to 5)"
+    },
+    {
+      "name": "Guest Review Score",
+      "id": "bayesian_review_score"
+    },
+    {
+      "name": "Price (low to high)",
+      "id": "price"
+    }
+  ],
+  "sorting": {
+    "selected_identifier": "popularity",
+    "options": [
+      {
+        "loading_message": "",
+        "identifier": "distance",
+        "name": "Distance From Downtown"
+      },
+      {
+        "name": "Popularity",
+        "loading_message": "",
+        "identifier": "popularity"
+      },
+      {
+        "loading_message": "",
+        "identifier": "class_descending",
+        "name": "Stars (5 to 0)"
+      },
+      {
+        "loading_message": "",
+        "identifier": "class_ascending",
+        "name": "Stars (0 to 5)"
+      },
+      {
+        "identifier": "bayesian_review_score",
+        "loading_message": "",
+        "name": "Guest Review Score"
+      },
+      {
+        "identifier": "price",
+        "loading_message": "",
+        "name": "Price (low to high)"
+      }
+    ]
+  },
+  "b_max_los_data": {
+    "has_extended_los": 1,
+    "extended_los": 90,
+    "default_los": 45,
+    "experiment": "long_stays_android_extend_los_2",
+    "is_fullon": 0,
+    "max_allowed_los": 90
+  },
+  "search_radius": 0,
+  "room_distribution": [
+    {
+      "children": [
+        5,
+        7
+      ],
+      "adults": "1"
+    }
+  ],
+  "result": [
+    {
+      "cc1": "in",
+      "id": "property_card_8308265",
+      "matching_units_configuration": {
+        "matching_units_common_config": {
+          "localized_area": null,
+          "unit_type_id": 7
+        }
+      },
+      "countrycode": "in",
+      "review_recommendation": "",
+      "is_genius_deal": 0,
+      "currencycode": "INR",
+      "distance_to_cc": "5.45",
+      "checkout": {
+        "until": "12:00",
+        "from": "10:00"
+      },
+      "bwallet": {
+        "hotel_eligibility": 0
+      },
+      "accommodation_type_name": "Hotels",
+      "url": "https://www.booking.com/hotel/in/park-inn-by-radisson-surat.html",
+      "timezone": "Asia/Kolkata",
+      "mobile_discount_percentage": 0,
+      "hotel_include_breakfast": 0,
+      "latitude": 21.1873350091361,
+      "country_trans": "India",
+      "hotel_name": "Park Inn by Radisson Surat",
+      "min_total_price": 19348.5,
+      "hotel_facilities": "134,464,142,459,91,457,44,467,28,454,185,222,451,438,425,186,107,109,418,304,461,52,496,158,49,445,492,501,161,458,64,177,420,486,48,468,22,423,96,422,485,439,437,493,108,465,500,81,8,160,73,23,494,189,187,410,421,47,184,2,205,455,6,499,11,181,424,456,449,46,466,80,488,3,305,188,127,129,506,43,16,462,124,452,213,484,448,75,450,25,453,53,463,133,489,487,505,51,5",
+      "ufi": -2112243,
+      "in_best_district": 0,
+      "longitude": 72.7858125667953,
+      "address_trans": "ADAJAN, PAL, BESIDE SUMER 370",
+      "district": "",
+      "type": "property_card",
+      "soldout": 0,
+      "city_trans": "Surat",
+      "city_in_trans": "in Surat",
+      "has_free_parking": 1,
+      "city_name_en": "Surat",
+      "default_wishlist_name": "Surat",
+      "price_breakdown": {
+        "gross_price": "19348.50",
+        "has_tax_exceptions": 0,
+        "has_incalculable_charges": 0,
+        "sum_excluded_raw": 3482.73,
+        "has_fine_print_charges": 0,
+        "currency": "INR",
+        "all_inclusive_price": 22831.23
+      },
+      "block_ids": [
+        "830826504_348272402_3_42_0"
+      ],
+      "native_ads_tracking": "",
+      "distance": "5.43",
+      "zip": "395009",
+      "accommodation_type": 204,
+      "cc_required": 1,
+      "badges": [],
+      "native_ads_cpc": 0,
+      "district_id": 0,
+      "class_is_estimated": 0,
+      "currency_code": "INR",
+      "main_photo_id": 356913483,
+      "is_free_cancellable": 0,
+      "wishlist_count": 0,
+      "review_score": 8.6,
+      "updated_checkout": null,
+      "cant_book": 0,
+      "main_photo_url": "https://cf.bstatic.com/xdata/images/hotel/square60/356913483.jpg?k=4a68a15df3274c90d6d301aab8b9f6cc1303f89f277484f32e33ba493f6999e6&o=",
+      "is_geo_rate": "",
+      "hotel_name_trans": "Park Inn by Radisson Surat",
+      "genius_discount_percentage": 0,
+      "preferred_plus": 0,
+      "is_no_prepayment_block": 1,
+      "review_score_word": "Excellent",
+      "hotel_has_vb_boost": 0,
+      "selected_review_topic": null,
+      "is_city_center": 0,
+      "address": "ADAJAN, PAL, BESIDE SUMER 370",
+      "updated_checkin": null,
+      "price_is_final": 0,
+      "native_ad_id": "",
+      "deals": {
+        "deals_available": {},
+        "deal_attributes": {},
+        "deal_events_killswitch": 0
+      },
+      "city": "Surat",
+      "review_nr": 436,
+      "urgency_room_c": 0,
+      "is_smart_deal": 0,
+      "class": 5,
+      "children_not_allowed": 0,
+      "checkin": {
+        "until": "15:00",
+        "from": "14:00"
+      },
+      "extended": 0,
+      "hotel_id": 8308265,
+      "is_mobile_deal": 0,
+      "default_language": "en",
+      "districts": "",
+      "preferred": 1
+    },
+    {
+      "district": "",
+      "type": "property_card",
+      "city_trans": "Surat",
+      "soldout": 0,
+      "city_in_trans": "in Surat",
+      "has_free_parking": 1,
+      "has_swimming_pool": 1,
+      "city_name_en": "Surat",
+      "default_wishlist_name": "Surat",
+      "price_breakdown": {
+        "has_tax_exceptions": 0,
+        "gross_price": "16800.00",
+        "sum_excluded_raw": "3024.00",
+        "has_fine_print_charges": 0,
+        "currency": "INR",
+        "all_inclusive_price": 19824,
+        "has_incalculable_charges": 0
+      },
+      "block_ids": [
+        "7471324_91461507_2_2_0"
+      ],
+      "native_ads_tracking": "",
+      "zip": "395007",
+      "distance": "4.66",
+      "cc_required": 1,
+      "badges": [],
+      "accommodation_type": 204,
+      "native_ads_cpc": 0,
+      "district_id": 0,
+      "cc1": "in",
+      "id": "property_card_74713",
+      "matching_units_configuration": {
+        "matching_units_common_config": {
+          "localized_area": null,
+          "unit_type_id": 9
+        }
+      },
+      "countrycode": "in",
+      "review_recommendation": "",
+      "is_genius_deal": 0,
+      "distance_to_cc": "4.70",
+      "currencycode": "INR",
+      "checkout": {
+        "until": "12:00",
+        "from": ""
+      },
+      "bwallet": {
+        "hotel_eligibility": 0
+      },
+      "accommodation_type_name": "Hotels",
+      "url": "https://www.booking.com/hotel/in/gateway-on-athwa-lines.html",
+      "timezone": "Asia/Kolkata",
+      "mobile_discount_percentage": 0,
+      "hotel_include_breakfast": 0,
+      "latitude": 21.1768962133066,
+      "country_trans": "India",
+      "hotel_name": "Surat Marriott Hotel",
+      "hotel_facilities": "48,486,420,423,22,226,468,458,161,440,492,443,177,64,257,14,442,490,504,493,419,238,485,422,96,439,467,185,454,78,301,464,134,240,231,446,44,457,91,459,418,143,109,242,107,234,445,52,496,158,49,461,219,140,104,222,451,186,239,237,452,27,124,15,241,230,188,462,233,16,436,43,506,487,232,489,227,460,229,5,435,244,51,450,75,448,484,176,17,110,65,53,453,256,25,47,421,6,497,21,455,205,2,184,160,8,81,441,500,187,189,494,55,23,236,163,433,491,502,466,46,228,305,3,444,235,488,11,449,447,456,253,20",
+      "min_total_price": 16800,
+      "in_best_district": 0,
+      "ufi": -2112243,
+      "longitude": 72.7897024154663,
+      "address_trans": "Ambika Niketan, Athwa Lines, Surat Dumas Road",
+      "price_is_final": 0,
+      "updated_checkin": null,
+      "deals": {
+        "deals_available": {},
+        "deal_attributes": {},
+        "deal_events_killswitch": 0
+      },
+      "native_ad_id": "",
+      "city": "Surat",
+      "review_nr": 623,
+      "urgency_room_c": 1,
+      "is_smart_deal": 0,
+      "checkin": {
+        "until": "",
+        "from": "15:00"
+      },
+      "class": 5,
+      "children_not_allowed": 0,
+      "extended": 0,
+      "hotel_id": 74713,
+      "is_mobile_deal": 0,
+      "default_language": "en",
+      "preferred": 1,
+      "districts": "",
+      "class_is_estimated": 0,
+      "currency_code": "INR",
+      "main_photo_id": 430825411,
+      "is_free_cancellable": 0,
+      "wishlist_count": 0,
+      "review_score": 8.4,
+      "updated_checkout": null,
+      "cant_book": 0,
+      "main_photo_url": "https://cf.bstatic.com/xdata/images/hotel/square60/430825411.jpg?k=0c14804c9ea4cff4bf636f682f9bcf49ffc5575da322db7cf6231af408a7ba21&o=",
+      "is_geo_rate": "",
+      "hotel_name_trans": "Surat Marriott Hotel",
+      "genius_discount_percentage": 0,
+      "preferred_plus": 0,
+      "is_no_prepayment_block": 0,
+      "review_score_word": "Very Good",
+      "hotel_has_vb_boost": 0,
+      "selected_review_topic": null,
+      "is_city_center": 0,
+      "address": "Ambika Niketan, Athwa Lines, Surat Dumas Road"
+    },
+    {
+      "cant_book": 0,
+      "main_photo_url": "https://cf.bstatic.com/xdata/images/hotel/square60/462672960.jpg?k=d5d494c0e29416236e13cdf577250d8e0180ca1359d26c71136fa6f380cc76c6&o=",
+      "is_geo_rate": "",
+      "hotel_name_trans": "twin tower stay inn",
+      "genius_discount_percentage": 0,
+      "preferred_plus": 0,
+      "is_no_prepayment_block": 1,
+      "review_score_word": "Pleasant",
+      "hotel_has_vb_boost": 0,
+      "selected_review_topic": null,
+      "is_city_center": 0,
+      "address": "rajhans belliza rajhans belliza near delhi public school, airport road",
+      "class_is_estimated": 0,
+      "currency_code": "INR",
+      "main_photo_id": 462672960,
+      "is_free_cancellable": 0,
+      "wishlist_count": 0,
+      "review_score": 6.5,
+      "updated_checkout": null,
+      "is_mobile_deal": 1,
+      "hotel_id": 10120362,
+      "default_language": "xu",
+      "preferred": 0,
+      "districts": "",
+      "updated_checkin": null,
+      "price_is_final": 0,
+      "deals": {
+        "deals_available": {},
+        "deal_events_killswitch": 0,
+        "deal_attributes": {}
+      },
+      "native_ad_id": "",
+      "city": "surat",
+      "review_nr": 6,
+      "urgency_room_c": 2,
+      "is_smart_deal": 0,
+      "class": 0,
+      "children_not_allowed": 0,
+      "checkin": {
+        "until": "",
+        "from": "13:00"
+      },
+      "extended": 0,
+      "bwallet": {
+        "hotel_eligibility": 0
+      },
+      "accommodation_type_name": "Apartments",
+      "url": "https://www.booking.com/hotel/in/twin-tower-stay-inn.html",
+      "mobile_discount_percentage": 344.25,
+      "timezone": "Asia/Kolkata",
+      "hotel_include_breakfast": 0,
+      "latitude": 21.123538182915,
+      "country_trans": "India",
+      "hotel_name": "twin tower stay inn",
+      "hotel_facilities": "449,173,424,456,403,475,3,444,488,57,80,502,491,466,46,63,503,494,433,163,160,8,465,499,497,455,2,7,476,47,421,172,10,17,121,110,472,256,224,453,75,450,484,460,5,505,51,487,489,302,463,133,462,43,436,166,16,127,77,4,470,255,452,147,473,498,103,15,124,425,438,451,222,474,158,49,445,461,304,418,109,107,446,457,459,464,471,454,78,28,467,225,437,167,439,485,126,12,96,422,493,108,29,419,14,511,490,442,443,118,64,407,458,161,492,440,404,423,468,48,486",
+      "min_total_price": 3098.25,
+      "in_best_district": 0,
+      "ufi": -2112243,
+      "longitude": 72.718062784082,
+      "address_trans": "rajhans belliza rajhans belliza near delhi public school, airport road",
+      "cc1": "in",
+      "id": "property_card_10120362",
+      "matching_units_configuration": {
+        "matching_units_common_config": {
+          "unit_type_id": 1,
+          "localized_area": "1,000"
+        }
+      },
+      "countrycode": "in",
+      "review_recommendation": "",
+      "is_genius_deal": 0,
+      "currencycode": "INR",
+      "distance_to_cc": "12.90",
+      "checkout": {
+        "until": "11:00",
+        "from": ""
+      },
+      "block_ids": [
+        "1012036201_373852757_3_0_0"
+      ],
+      "native_ads_tracking": "",
+      "zip": "395007",
+      "distance": "12.88",
+      "booking_home": {
+        "is_single_unit_property": 1,
+        "quality_class": 0,
+        "is_booking_home": 1,
+        "group": "apartment_like",
+        "segment": 2
+      },
+      "accommodation_type": 201,
+      "cc_required": 1,
+      "badges": [
+        {
+          "text": "Mobile-only price",
+          "badge_variant": "constructive",
+          "id": "Mobile Rate"
+        }
+      ],
+      "native_ads_cpc": 0,
+      "district_id": 0,
+      "district": "",
+      "type": "property_card",
+      "city_trans": "Surat",
+      "soldout": 0,
+      "city_in_trans": "in Surat",
+      "has_free_parking": 1,
+      "has_swimming_pool": 1,
+      "city_name_en": "surat",
+      "default_wishlist_name": "Surat",
+      "price_breakdown": {
+        "has_tax_exceptions": 0,
+        "gross_price": 3098.25,
+        "sum_excluded_raw": 371.79,
+        "has_fine_print_charges": 0,
+        "currency": "INR",
+        "all_inclusive_price": 3470.04,
+        "has_incalculable_charges": 0
+      }
+    },
+    {
+      "default_language": "en",
+      "is_mobile_deal": 0,
+      "hotel_id": 1911991,
+      "districts": "",
+      "preferred": 1,
+      "city": "Sūrat",
+      "review_nr": 168,
+      "native_ad_id": "",
+      "deals": {
+        "deals_available": {},
+        "deal_attributes": {},
+        "deal_events_killswitch": 0
+      },
+      "price_is_final": 0,
+      "updated_checkin": null,
+      "extended": 0,
+      "class": 0,
+      "children_not_allowed": 0,
+      "checkin": {
+        "from": "12:00",
+        "until": ""
+      },
+      "urgency_room_c": 3,
+      "is_smart_deal": 0,
+      "hotel_name_trans": "Hotel Orange International",
+      "genius_discount_percentage": 0,
+      "is_geo_rate": "",
+      "cant_book": 0,
+      "main_photo_url": "https://cf.bstatic.com/xdata/images/hotel/square60/83583855.jpg?k=74d5e2df612010c45dfe2bce3ce24140c9cb21233d76e431021bde3023f9ad96&o=",
+      "selected_review_topic": null,
+      "address": "Railway Station Main Road, Next to Mohan Mithai",
+      "is_city_center": 0,
+      "review_score_word": "Very Good",
+      "hotel_has_vb_boost": 0,
+      "preferred_plus": 0,
+      "is_no_prepayment_block": 1,
+      "is_free_cancellable": 0,
+      "main_photo_id": 83583855,
+      "currency_code": "INR",
+      "class_is_estimated": 0,
+      "updated_checkout": null,
+      "review_score": 8.1,
+      "wishlist_count": 0,
+      "distance": "4.28",
+      "zip": "395003",
+      "block_ids": [
+        "191199104_179892828_3_0_0"
+      ],
+      "native_ads_tracking": "",
+      "district_id": 0,
+      "native_ads_cpc": 0,
+      "cc_required": 1,
+      "accommodation_type": 204,
+      "badges": [],
+      "type": "property_card",
+      "city_trans": "Surat",
+      "soldout": 0,
+      "district": "",
+      "price_breakdown": {
+        "has_tax_exceptions": 0,
+        "gross_price": "8000.00",
+        "sum_excluded_raw": "960.00",
+        "has_fine_print_charges": 0,
+        "currency": "INR",
+        "all_inclusive_price": 8960,
+        "has_incalculable_charges": 0
+      },
+      "city_name_en": "Sūrat",
+      "default_wishlist_name": "Surat",
+      "city_in_trans": "in Surat",
+      "has_free_parking": 1,
+      "url": "https://www.booking.com/hotel/in/orange-international.html",
+      "timezone": "Asia/Kolkata",
+      "hotel_include_breakfast": 0,
+      "mobile_discount_percentage": 0,
+      "accommodation_type_name": "Hotels",
+      "bwallet": {
+        "hotel_eligibility": 0
+      },
+      "address_trans": "Railway Station Main Road, Next to Mohan Mithai",
+      "min_total_price": 8000,
+      "hotel_facilities": "452,15,462,436,43,16,127,129,460,435,5,133,110,25,453,53,75,450,6,184,2,205,455,21,421,47,163,23,494,81,73,160,8,465,135,3,305,80,46,449,424,20,253,456,11,468,22,423,174,48,411,420,177,118,64,458,492,440,161,493,419,183,439,485,96,422,180,454,426,185,101,78,28,467,44,142,459,91,457,134,464,49,158,445,304,461,418,107,109,425,451",
+      "ufi": -2112243,
+      "in_best_district": 0,
+      "longitude": 72.8386280871928,
+      "hotel_name": "Hotel Orange International",
+      "latitude": 21.2048759409367,
+      "country_trans": "India",
+      "countrycode": "in",
+      "matching_units_configuration": {
+        "matching_units_common_config": {
+          "unit_type_id": 24,
+          "localized_area": null
+        }
+      },
+      "cc1": "in",
+      "id": "property_card_1911991",
+      "checkout": {
+        "until": "11:00",
+        "from": ""
+      },
+      "currencycode": "INR",
+      "distance_to_cc": "4.30",
+      "review_recommendation": "",
+      "is_genius_deal": 0
+    },
+    {
+      "is_mobile_deal": 0,
+      "hotel_id": 10235578,
+      "default_language": "en",
+      "districts": "",
+      "preferred": 0,
+      "updated_checkin": null,
+      "price_is_final": 1,
+      "native_ad_id": "",
+      "deals": {
+        "deals_available": {
+          "has_preset": 1
+        },
+        "deal_events_killswitch": 0,
+        "deal_events": [
+          {
+            "code": 123,
+            "text_color": "#FFFFFF",
+            "icon_name": "percentage-circle",
+            "description_translation_tag": "deals_getaway23_customer_tooltip",
+            "preset_id": null,
+            "disabled": 0,
+            "localized_name": "Getaway Deal",
+            "icon_url": "https://summer_deal.com",
+            "localized_description": "You’re getting a reduced rate because this property is offering a discount on stays between April 4 and September 28, 2023.",
+            "name_translation_tag": "deals_getaway23_customer_label",
+            "discount_percentage": 40,
+            "bg_color": "#FF8000"
+          }
+        ],
+        "deal_attributes": {}
+      },
+      "city": "Surat",
+      "review_nr": null,
+      "urgency_room_c": 4,
+      "is_smart_deal": 0,
+      "class": 3,
+      "checkin": {
+        "from": "12:00",
+        "until": ""
+      },
+      "children_not_allowed": 0,
+      "extended": 0,
+      "cant_book": 0,
+      "main_photo_url": "https://cf.bstatic.com/xdata/images/hotel/square60/482849279.jpg?k=ca6da3d687e83c27dcc79ebc4018fbfe6095c0b807a6f454e6deca38a356c80f&o=",
+      "is_geo_rate": "",
+      "hotel_name_trans": "OYO Flagship 81442 Vr Hotel",
+      "genius_discount_percentage": 0,
+      "preferred_plus": 0,
+      "is_no_prepayment_block": 1,
+      "review_score_word": "",
+      "hotel_has_vb_boost": 1,
+      "address": "401, Marvela Corridor, VIP Road, near Bhagavan Mahavir College, Surat",
+      "selected_review_topic": null,
+      "is_city_center": 0,
+      "class_is_estimated": 0,
+      "currency_code": "INR",
+      "main_photo_id": 482849279,
+      "is_free_cancellable": 1,
+      "wishlist_count": 0,
+      "review_score": null,
+      "updated_checkout": null,
+      "block_ids": [
+        "1023557802_375712639_2_0_0"
+      ],
+      "native_ads_tracking": "",
+      "zip": "395007",
+      "distance": "5.25",
+      "badges": [
+        {
+          "badge_variant": "constructive",
+          "id": "Getaway 2021 Deals",
+          "text": "Getaway Deal "
+        },
+        {
+          "text": "New to Booking.com",
+          "id": "new_to_booking",
+          "badge_variant": "accent"
+        }
+      ],
+      "cc_required": 1,
+      "accommodation_type": 204,
+      "native_ads_cpc": 0,
+      "district_id": 0,
+      "district": "",
+      "type": "property_card",
+      "soldout": 0,
+      "city_trans": "Surat",
+      "city_in_trans": "in Surat",
+      "city_name_en": "Surat",
+      "default_wishlist_name": "Surat",
+      "price_breakdown": {
+        "has_incalculable_charges": 0,
+        "currency": "INR",
+        "has_fine_print_charges": 0,
+        "sum_excluded_raw": 192.98,
+        "all_inclusive_price": 1267.84,
+        "gross_price": 1074.86,
+        "has_tax_exceptions": 0
+      },
+      "bwallet": {
+        "hotel_eligibility": 0
+      },
+      "accommodation_type_name": "Hotels",
+      "url": "https://www.booking.com/hotel/in/oyo-flagship-81442-vr.html",
+      "hotel_include_breakfast": 0,
+      "timezone": "Asia/Kolkata",
+      "mobile_discount_percentage": 0,
+      "latitude": 21.142857,
+      "country_trans": "India",
+      "hotel_name": "OYO Flagship 81442 Vr Hotel",
+      "hotel_facilities": "462,457,163,459,464,458,454,468,455,47,452,48,467,449,456,453,450,451,96,460,461,109,466,463,107",
+      "min_total_price": 1074.86,
+      "ufi": -2112243,
+      "in_best_district": 0,
+      "longitude": 72.78963,
+      "address_trans": "401, Marvela Corridor, VIP Road, near Bhagavan Mahavir College, Surat",
+      "cc1": "in",
+      "id": "property_card_10235578",
+      "matching_units_configuration": {
+        "matching_units_common_config": {
+          "unit_type_id": 7,
+          "localized_area": null
+        }
+      },
+      "countrycode": "in",
+      "review_recommendation": "",
+      "is_genius_deal": 0,
+      "distance_to_cc": "5.25",
+      "currencycode": "INR",
+      "checkout": {
+        "from": "",
+        "until": "11:00"
+      }
+    },
+    {
+      "native_ads_cpc": 0,
+      "district_id": 0,
+      "booking_home": {
+        "segment": 2,
+        "group": "apartment_like",
+        "quality_class": 0,
+        "is_booking_home": 1,
+        "is_single_unit_property": 1
+      },
+      "cc_required": 1,
+      "badges": [
+        {
+          "text": "Mobile-only price",
+          "id": "Mobile Rate",
+          "badge_variant": "constructive"
+        }
+      ],
+      "accommodation_type": 201,
+      "zip": "395007",
+      "distance": "12.49",
+      "block_ids": [
+        "989794501_371606863_4_0_0"
+      ],
+      "native_ads_tracking": "",
+      "price_breakdown": {
+        "all_inclusive_price": 5597.42,
+        "sum_excluded_raw": 599.72,
+        "has_fine_print_charges": 0,
+        "currency": "INR",
+        "has_incalculable_charges": 0,
+        "has_tax_exceptions": 0,
+        "gross_price": "4997.70"
+      },
+      "city_in_trans": "in Surat",
+      "has_swimming_pool": 1,
+      "has_free_parking": 1,
+      "city_name_en": "Surat",
+      "default_wishlist_name": "Surat",
+      "district": "",
+      "type": "property_card",
+      "city_trans": "Surat",
+      "soldout": 0,
+      "hotel_facilities": "158,445,461,418,109,425,168,104,451,222,223,454,426,101,28,467,220,137,243,495,44,446,459,457,134,258,301,193,119,164,493,108,29,419,14,490,511,442,225,439,126,485,96,468,404,22,423,486,48,72,443,407,458,492,161,3,488,444,491,466,46,173,449,253,424,11,170,497,499,2,205,455,421,476,47,172,56,433,23,494,500,160,8,465,460,51,5,133,176,406,453,472,484,448,481,470,147,462,506,43,436,16,127",
+      "min_total_price": 4997.7,
+      "in_best_district": 0,
+      "ufi": -2112243,
+      "longitude": 72.720890554322,
+      "address_trans": "Surat - Dumas Road",
+      "latitude": 21.126262035927,
+      "country_trans": "India",
+      "hotel_name": "Weekend Address Managed By Stay Cation",
+      "accommodation_type_name": "Apartments",
+      "url": "https://www.booking.com/hotel/in/the-weekend-address-managed-by-stay-cation.html",
+      "timezone": "Asia/Kolkata",
+      "mobile_discount_percentage": 1665.9,
+      "hotel_include_breakfast": 0,
+      "bwallet": {
+        "hotel_eligibility": 0
+      },
+      "distance_to_cc": "12.50",
+      "currencycode": "INR",
+      "checkout": {
+        "until": "10:00",
+        "from": "09:00"
+      },
+      "review_recommendation": "",
+      "is_genius_deal": 0,
+      "countrycode": "in",
+      "cc1": "in",
+      "id": "property_card_9897945",
+      "matching_units_configuration": {
+        "matching_units_common_config": {
+          "localized_area": "29",
+          "unit_type_id": 1
+        }
+      },
+      "districts": "",
+      "preferred": 0,
+      "default_language": "en",
+      "is_mobile_deal": 1,
+      "hotel_id": 9897945,
+      "extended": 0,
+      "urgency_room_c": 5,
+      "is_smart_deal": 0,
+      "class": 0,
+      "children_not_allowed": 0,
+      "checkin": {
+        "from": "10:00",
+        "until": "11:00"
+      },
+      "deals": {
+        "deal_events_killswitch": 0,
+        "deal_attributes": {},
+        "deals_available": {}
+      },
+      "native_ad_id": "",
+      "city": "Surat",
+      "review_nr": 14,
+      "updated_checkin": null,
+      "price_is_final": 0,
+      "review_score_word": "Pleasant",
+      "hotel_has_vb_boost": 0,
+      "address": "Surat - Dumas Road",
+      "selected_review_topic": null,
+      "is_city_center": 0,
+      "preferred_plus": 0,
+      "is_no_prepayment_block": 1,
+      "hotel_name_trans": "Weekend Address Managed By Stay Cation",
+      "genius_discount_percentage": 0,
+      "cant_book": 0,
+      "main_photo_url": "https://cf.bstatic.com/xdata/images/hotel/square60/448054175.jpg?k=8946c66346944c46731b1134f23f776ca8a6babb67dced872a80bef8ffe3cc61&o=",
+      "is_geo_rate": "",
+      "review_score": 6.5,
+      "updated_checkout": null,
+      "wishlist_count": 0,
+      "main_photo_id": 448054175,
+      "is_free_cancellable": 0,
+      "class_is_estimated": 0,
+      "currency_code": "INR"
+    },
+    {
+      "hotel_name_trans": "Pool View Apartments Managed By Rhoof Hospitality Near Dumas Beach",
+      "genius_discount_percentage": 0,
+      "is_geo_rate": "",
+      "main_photo_url": "https://cf.bstatic.com/xdata/images/hotel/square60/437161767.jpg?k=b4348f5273424bd12844fec7fb5172b52bf3011468a42b25a396d0b59c9b0051&o=",
+      "cant_book": 0,
+      "is_city_center": 0,
+      "selected_review_topic": null,
+      "address": "Rajhans Belliza A Tower Near DPS School, Near Surat Airport, Silient Zone",
+      "hotel_has_vb_boost": 0,
+      "review_score_word": "Good",
+      "is_no_prepayment_block": 1,
+      "preferred_plus": 0,
+      "is_free_cancellable": 0,
+      "main_photo_id": 437161767,
+      "currency_code": "INR",
+      "class_is_estimated": 0,
+      "updated_checkout": null,
+      "review_score": 7.4,
+      "wishlist_count": 0,
+      "default_language": "xu",
+      "hotel_id": 6750010,
+      "is_mobile_deal": 1,
+      "districts": "",
+      "preferred": 1,
+      "review_nr": 105,
+      "city": "Surat",
+      "native_ad_id": "",
+      "deals": {
+        "deals_available": {},
+        "deal_events_killswitch": 0,
+        "deal_attributes": {}
+      },
+      "price_is_final": 0,
+      "updated_checkin": null,
+      "extended": 0,
+      "class": 0,
+      "checkin": {
+        "until": "00:00",
+        "from": "14:00"
+      },
+      "children_not_allowed": 0,
+      "is_smart_deal": 0,
+      "urgency_room_c": 6,
+      "mobile_discount_percentage": 1115.81,
+      "timezone": "Asia/Kolkata",
+      "hotel_include_breakfast": 0,
+      "url": "https://www.booking.com/hotel/in/7-apartments-at-rajhans-belliza-2bedrooms.html",
+      "accommodation_type_name": "Condo Hotels",
+      "bwallet": {
+        "hotel_eligibility": 0
+      },
+      "address_trans": "Rajhans Belliza A Tower Near DPS School, Near Surat Airport, Silient Zone",
+      "ufi": -2112243,
+      "longitude": 72.71953,
+      "in_best_district": 0,
+      "hotel_facilities": "199,424,121,425,110,46,109,418,14,305,445,158,161,193,301,160,16,64,433,63,103,48,28,421,2,423,223",
+      "min_total_price": 10042.33,
+      "hotel_name": "Pool View Apartments Managed By Rhoof Hospitality Near Dumas Beach",
+      "country_trans": "India",
+      "latitude": 21.123716,
+      "countrycode": "in",
+      "matching_units_configuration": {
+        "matching_units_common_config": {
+          "unit_type_id": 1,
+          "localized_area": "93"
+        }
+      },
+      "id": "property_card_6750010",
+      "cc1": "in",
+      "checkout": {
+        "until": "12:00",
+        "from": "12:00"
+      },
+      "distance_to_cc": "12.75",
+      "currencycode": "INR",
+      "is_genius_deal": 0,
+      "review_recommendation": "",
+      "zip": "395550",
+      "distance": "12.73",
+      "native_ads_tracking": "",
+      "block_ids": [
+        "675001001_295934195_3_0_0"
+      ],
+      "district_id": 0,
+      "native_ads_cpc": 0,
+      "cc_required": 1,
+      "badges": [
+        {
+          "text": "Mobile-only price",
+          "badge_variant": "constructive",
+          "id": "Mobile Rate"
+        }
+      ],
+      "accommodation_type": 219,
+      "booking_home": {
+        "segment": 2,
+        "quality_class": 3,
+        "group": "apartment_like",
+        "is_booking_home": 1,
+        "is_single_unit_property": 1
+      },
+      "city_trans": "Surat",
+      "soldout": 0,
+      "type": "property_card",
+      "district": "",
+      "price_breakdown": {
+        "gross_price": 10042.33,
+        "has_tax_exceptions": 0,
+        "has_incalculable_charges": 0,
+        "currency": "INR",
+        "has_fine_print_charges": 0,
+        "sum_excluded_raw": 1205.08,
+        "all_inclusive_price": 11247.41
+      },
+      "default_wishlist_name": "Surat",
+      "city_name_en": "Surat",
+      "has_free_parking": 1,
+      "has_swimming_pool": 1,
+      "city_in_trans": "in Surat"
+    },
+    {
+      "country_trans": "India",
+      "latitude": 21.1887,
+      "hotel_name": "OYO Flagship Hotel Secure Inn",
+      "ufi": -2112243,
+      "longitude": 72.89246,
+      "in_best_district": 0,
+      "hotel_facilities": "163,459,457,462,464,458,455,468,454,467,47,452,48,453,456,449,96,451,450,461,460,107,463,466,109",
+      "min_total_price": 1487.71,
+      "address_trans": "201 , 2 floor  sarthi complex opp shyam sangini Textile Kumbharia gam KUmbharia gam Kadidara Road Surat Gujrat, Surat, India - 395010, Surat",
+      "bwallet": {
+        "hotel_eligibility": 0
+      },
+      "accommodation_type_name": "Hotels",
+      "hotel_include_breakfast": 0,
+      "timezone": "Asia/Kolkata",
+      "mobile_discount_percentage": 0,
+      "url": "https://www.booking.com/hotel/in/oyo-flagship-secure-inn.html",
+      "is_genius_deal": 0,
+      "review_recommendation": "",
+      "distance_to_cc": "6.65",
+      "currencycode": "INR",
+      "checkout": {
+        "until": "11:00",
+        "from": ""
+      },
+      "id": "property_card_10547450",
+      "cc1": "in",
+      "matching_units_configuration": {
+        "matching_units_common_config": {
+          "localized_area": null,
+          "unit_type_id": 7
+        }
+      },
+      "countrycode": "in",
+      "cc_required": 1,
+      "accommodation_type": 204,
+      "badges": [
+        {
+          "text": "New to Booking.com",
+          "badge_variant": "accent",
+          "id": "new_to_booking"
+        }
+      ],
+      "native_ads_cpc": 0,
+      "district_id": 0,
+      "native_ads_tracking": "",
+      "block_ids": [
+        "1054745002_377666872_3_0_0"
+      ],
+      "distance": "6.60",
+      "zip": "395010",
+      "city_in_trans": "in Surat",
+      "default_wishlist_name": "Surat",
+      "city_name_en": "Surat",
+      "price_breakdown": {
+        "has_tax_exceptions": 0,
+        "gross_price": 1487.71,
+        "all_inclusive_price": 1762.24,
+        "has_fine_print_charges": 0,
+        "sum_excluded_raw": 274.53,
+        "currency": "INR",
+        "has_incalculable_charges": 0
+      },
+      "district": "",
+      "city_trans": "Surat",
+      "soldout": 0,
+      "type": "property_card",
+      "is_no_prepayment_block": 1,
+      "preferred_plus": 0,
+      "hotel_has_vb_boost": 0,
+      "review_score_word": "",
+      "selected_review_topic": null,
+      "address": "201 , 2 floor  sarthi complex opp shyam sangini Textile Kumbharia gam KUmbharia gam Kadidara Road Surat Gujrat, Surat, India - 395010, Surat",
+      "is_city_center": 0,
+      "main_photo_url": "https://cf.bstatic.com/xdata/images/hotel/square60/481829272.jpg?k=b6e9e1856ac47f8c14fb17dd3f0c0057ba6e371bf1cba58bd6f88e478e84fc4b&o=",
+      "cant_book": 0,
+      "is_geo_rate": 1,
+      "genius_discount_percentage": 0,
+      "hotel_name_trans": "OYO Flagship Hotel Secure Inn",
+      "wishlist_count": 0,
+      "review_score": null,
+      "updated_checkout": null,
+      "class_is_estimated": 0,
+      "currency_code": "INR",
+      "main_photo_id": 481829272,
+      "is_free_cancellable": 1,
+      "districts": "",
+      "preferred": 0,
+      "hotel_id": 10547450,
+      "is_mobile_deal": 0,
+      "default_language": "en",
+      "is_smart_deal": 0,
+      "urgency_room_c": 4,
+      "checkin": {
+        "from": "12:00",
+        "until": ""
+      },
+      "class": 3,
+      "children_not_allowed": 0,
+      "extended": 0,
+      "price_is_final": 1,
+      "updated_checkin": null,
+      "deals": {
+        "deals_available": {},
+        "deal_attributes": {},
+        "deal_events_killswitch": 0
+      },
+      "native_ad_id": "",
+      "review_nr": null,
+      "city": "Surat"
+    },
+    {
+      "default_language": "xu",
+      "is_mobile_deal": 0,
+      "hotel_id": 8708825,
+      "districts": "",
+      "preferred": 0,
+      "deals": {
+        "deals_available": {
+          "has_preset": 1
+        },
+        "deal_events": [
+          {
+            "bg_color": "#FF8000",
+            "name_translation_tag": "deals_getaway23_customer_label",
+            "discount_percentage": 40,
+            "localized_description": "You’re getting a reduced rate because this property is offering a discount on stays between April 4 and September 28, 2023.",
+            "icon_url": "https://summer_deal.com",
+            "disabled": 0,
+            "localized_name": "Getaway Deal",
+            "text_color": "#FFFFFF",
+            "icon_name": "percentage-circle",
+            "code": 123,
+            "preset_id": null,
+            "description_translation_tag": "deals_getaway23_customer_tooltip"
+          }
+        ],
+        "deal_events_killswitch": 0,
+        "deal_attributes": {}
+      },
+      "native_ad_id": "",
+      "review_nr": 53,
+      "city": "Surat",
+      "updated_checkin": null,
+      "price_is_final": 0,
+      "extended": 0,
+      "is_smart_deal": 0,
+      "urgency_room_c": 2,
+      "class": 0,
+      "checkin": {
+        "until": "00:00",
+        "from": "00:00"
+      },
+      "children_not_allowed": 0,
+      "hotel_name_trans": "Honest Homes at Rajhans Belliza, Appartment Units",
+      "genius_discount_percentage": 0,
+      "main_photo_url": "https://cf.bstatic.com/xdata/images/hotel/square60/406214738.jpg?k=5dace75cddb3866f3cc9adc698e606ce95872974432dba7300cb471d763b43ca&o=",
+      "cant_book": 0,
+      "is_geo_rate": "",
+      "hotel_has_vb_boost": 0,
+      "review_score_word": "Good",
+      "selected_review_topic": null,
+      "address": "Building 2, Wing C, Flat 911, Rajhans Beliza - 2, Opposite DPS, Dumas",
+      "is_city_center": 0,
+      "is_no_prepayment_block": 1,
+      "preferred_plus": 0,
+      "main_photo_id": 406214738,
+      "is_free_cancellable": 0,
+      "class_is_estimated": 0,
+      "currency_code": "INR",
+      "review_score": 7.6,
+      "updated_checkout": null,
+      "wishlist_count": 0,
+      "zip": "395007",
+      "distance": "12.79",
+      "native_ads_tracking": "",
+      "block_ids": [
+        "870882501_355766546_4_0_0"
+      ],
+      "native_ads_cpc": 0,
+      "district_id": 0,
+      "booking_home": {
+        "segment": 2,
+        "is_single_unit_property": 1,
+        "is_booking_home": 1,
+        "quality_class": 3,
+        "group": "apartment_like"
+      },
+      "accommodation_type": 201,
+      "cc_required": 1,
+      "badges": [
+        {
+          "text": "Getaway Deal ",
+          "badge_variant": "constructive",
+          "id": "Getaway 2021 Deals"
+        }
+      ],
+      "district": "",
+      "soldout": 0,
+      "city_trans": "Surat",
+      "type": "property_card",
+      "price_breakdown": {
+        "currency": "INR",
+        "has_fine_print_charges": 0,
+        "sum_excluded_raw": 720.25,
+        "all_inclusive_price": 6722.35,
+        "has_incalculable_charges": 0,
+        "has_tax_exceptions": 0,
+        "gross_price": "6002.10"
+      },
+      "has_free_parking": 1,
+      "has_swimming_pool": 1,
+      "city_in_trans": "in Surat",
+      "default_wishlist_name": "Surat",
+      "city_name_en": "Surat",
+      "accommodation_type_name": "Apartments",
+      "hotel_include_breakfast": 0,
+      "timezone": "Asia/Kolkata",
+      "mobile_discount_percentage": 0,
+      "url": "https://www.booking.com/hotel/in/rajhans-belliza-surat-surat.html",
+      "bwallet": {
+        "hotel_eligibility": 0
+      },
+      "ufi": -2112243,
+      "longitude": 72.718932972703,
+      "in_best_district": 0,
+      "min_total_price": 6002.1,
+      "hotel_facilities": "439,437,225,422,96,485,419,29,504,108,442,159,490,14,58,64,443,440,492,161,468,423,22,48,425,451,438,461,496,158,107,109,418,142,446,495,301,258,426,454,467,28,453,256,448,450,5,435,460,133,16,43,436,127,4,103,15,452,456,403,424,253,449,11,170,488,444,3,46,466,491,433,503,63,465,81,500,160,8,2,455,6,497,499,56,172,421,476,47",
+      "address_trans": "Building 2, Wing C, Flat 911, Rajhans Beliza - 2, Opposite DPS, Dumas",
+      "country_trans": "India",
+      "latitude": 21.123669758404,
+      "hotel_name": "Honest Homes at Rajhans Belliza, Appartment Units",
+      "countrycode": "in",
+      "id": "property_card_8708825",
+      "cc1": "in",
+      "matching_units_configuration": {
+        "matching_units_common_config": {
+          "localized_area": "600",
+          "unit_type_id": 1
+        }
+      },
+      "distance_to_cc": "12.80",
+      "currencycode": "INR",
+      "checkout": {
+        "from": "",
+        "until": "11:00"
+      },
+      "is_genius_deal": 0,
+      "review_recommendation": ""
+    },
+    {
+      "countrycode": "in",
+      "cc1": "in",
+      "id": "property_card_9986210",
+      "matching_units_configuration": {
+        "matching_units_common_config": {
+          "localized_area": "46",
+          "unit_type_id": 1
+        }
+      },
+      "currencycode": "INR",
+      "distance_to_cc": "10.70",
+      "checkout": {
+        "from": "10:00",
+        "until": "11:00"
+      },
+      "review_recommendation": "",
+      "is_genius_deal": 0,
+      "accommodation_type_name": "Apartments",
+      "url": "https://www.booking.com/hotel/in/rajhansbelliza-service-apartment.html",
+      "hotel_include_breakfast": 0,
+      "timezone": "Asia/Kolkata",
+      "mobile_discount_percentage": 0,
+      "bwallet": {
+        "hotel_eligibility": 0
+      },
+      "hotel_facilities": "192,2,107,220,109,46,103,28,47,163,433,121,96,161,160",
+      "min_total_price": 5398.2,
+      "in_best_district": 0,
+      "ufi": -2112243,
+      "longitude": 72.7430602,
+      "address_trans": "A 1305 RAJHANS BELLIZA SURAT DUMAS ROAD AIRPORT",
+      "latitude": 21.1205013,
+      "country_trans": "India",
+      "hotel_name": "RajhansBelliza Service Apartment",
+      "district": "",
+      "type": "property_card",
+      "soldout": 0,
+      "city_trans": "Surat",
+      "price_breakdown": {
+        "gross_price": "5398.20",
+        "has_tax_exceptions": 0,
+        "has_incalculable_charges": 0,
+        "has_fine_print_charges": 0,
+        "currency": "INR",
+        "sum_excluded_raw": 647.78,
+        "all_inclusive_price": 6045.98
+      },
+      "city_in_trans": "in Surat",
+      "has_free_parking": 1,
+      "has_swimming_pool": 1,
+      "city_name_en": "Surat",
+      "default_wishlist_name": "Surat",
+      "distance": "10.68",
+      "zip": "395007",
+      "block_ids": [
+        "998621001_372700453_3_0_0"
+      ],
+      "native_ads_tracking": "",
+      "native_ads_cpc": 0,
+      "district_id": 0,
+      "booking_home": {
+        "segment": 2,
+        "is_single_unit_property": 1,
+        "quality_class": 0,
+        "is_booking_home": 1,
+        "group": "apartment_like"
+      },
+      "cc_required": 1,
+      "badges": [],
+      "accommodation_type": 201,
+      "main_photo_id": 453771685,
+      "is_free_cancellable": 0,
+      "class_is_estimated": 0,
+      "currency_code": "INR",
+      "review_score": 7.4,
+      "updated_checkout": null,
+      "wishlist_count": 0,
+      "hotel_name_trans": "RajhansBelliza Service Apartment",
+      "genius_discount_percentage": 0,
+      "cant_book": 0,
+      "main_photo_url": "https://cf.bstatic.com/xdata/images/hotel/square60/453771685.jpg?k=3b720a35bfad6644ce95425de49cbe3470af73abdc79af3ad33da332d9271e0e&o=",
+      "is_geo_rate": "",
+      "review_score_word": "Good",
+      "hotel_has_vb_boost": 0,
+      "selected_review_topic": null,
+      "address": "A 1305 RAJHANS BELLIZA SURAT DUMAS ROAD AIRPORT",
+      "is_city_center": 0,
+      "preferred_plus": 0,
+      "is_no_prepayment_block": 1,
+      "native_ad_id": "",
+      "deals": {
+        "deals_available": {},
+        "deal_events_killswitch": 0,
+        "deal_attributes": {}
+      },
+      "city": "Surat",
+      "review_nr": 8,
+      "price_is_final": 0,
+      "updated_checkin": null,
+      "extended": 0,
+      "urgency_room_c": 5,
+      "is_smart_deal": 0,
+      "class": 0,
+      "checkin": {
+        "until": "",
+        "from": "11:00"
+      },
+      "children_not_allowed": 0,
+      "default_language": "xu",
+      "is_mobile_deal": 0,
+      "hotel_id": 9986210,
+      "districts": "",
+      "preferred": 0
+    },
+    {
+      "review_recommendation": "",
+      "is_genius_deal": 0,
+      "checkout": {
+        "from": "08:00",
+        "until": "11:00"
+      },
+      "distance_to_cc": "12.90",
+      "currencycode": "INR",
+      "matching_units_configuration": {
+        "matching_units_common_config": {
+          "localized_area": "1,000",
+          "unit_type_id": 1
+        }
+      },
+      "cc1": "in",
+      "id": "property_card_10429890",
+      "countrycode": "in",
+      "hotel_name": "Twin Tower Stays",
+      "latitude": 21.1235026,
+      "country_trans": "India",
+      "address_trans": "rajhans belliza",
+      "min_total_price": 4250,
+      "hotel_facilities": "161,96,160,163,433,63,15,109,46,107,47,80,14,4,2",
+      "ufi": -2112243,
+      "longitude": 72.7183231,
+      "in_best_district": 0,
+      "bwallet": {
+        "hotel_eligibility": 0
+      },
+      "url": "https://www.booking.com/hotel/in/twin-tower-stays.html",
+      "hotel_include_breakfast": 0,
+      "timezone": "Asia/Kolkata",
+      "mobile_discount_percentage": 0,
+      "accommodation_type_name": "Apartments",
+      "city_name_en": "surat",
+      "default_wishlist_name": "Surat",
+      "city_in_trans": "in Surat",
+      "has_free_parking": 1,
+      "price_breakdown": {
+        "has_tax_exceptions": 0,
+        "gross_price": "4250.00",
+        "currency": "INR",
+        "has_fine_print_charges": 0,
+        "sum_excluded_raw": "510.00",
+        "all_inclusive_price": 4760,
+        "has_incalculable_charges": 0
+      },
+      "type": "property_card",
+      "city_trans": "Surat",
+      "soldout": 0,
+      "district": "",
+      "accommodation_type": 201,
+      "cc_required": 1,
+      "badges": [
+        {
+          "badge_variant": "accent",
+          "id": "new_to_booking",
+          "text": "New to Booking.com"
+        }
+      ],
+      "booking_home": {
+        "is_booking_home": 1,
+        "quality_class": 0,
+        "group": "apartment_like",
+        "is_single_unit_property": 1,
+        "segment": 2
+      },
+      "district_id": 0,
+      "native_ads_cpc": 0,
+      "block_ids": [
+        "1042989001_376693311_3_0_0"
+      ],
+      "native_ads_tracking": "",
+      "distance": "12.85",
+      "zip": "395007",
+      "wishlist_count": 0,
+      "updated_checkout": null,
+      "review_score": null,
+      "currency_code": "INR",
+      "class_is_estimated": 0,
+      "is_free_cancellable": 0,
+      "main_photo_id": 476895697,
+      "preferred_plus": 0,
+      "is_no_prepayment_block": 1,
+      "is_city_center": 0,
+      "selected_review_topic": null,
+      "address": "rajhans belliza",
+      "review_score_word": "",
+      "hotel_has_vb_boost": 0,
+      "is_geo_rate": "",
+      "cant_book": 0,
+      "main_photo_url": "https://cf.bstatic.com/xdata/images/hotel/square60/476895697.jpg?k=feb2a92b9f79b2aebdc8f1e652e74d5769b7003644437d64a2e09d2a39a1875e&o=",
+      "genius_discount_percentage": 0,
+      "hotel_name_trans": "Twin Tower Stays",
+      "children_not_allowed": 0,
+      "class": 0,
+      "checkin": {
+        "from": "13:00",
+        "until": "00:00"
+      },
+      "urgency_room_c": 2,
+      "is_smart_deal": 0,
+      "extended": 0,
+      "updated_checkin": null,
+      "price_is_final": 0,
+      "city": "surat",
+      "review_nr": null,
+      "deals": {
+        "deal_attributes": {},
+        "deal_events_killswitch": 0,
+        "deals_available": {}
+      },
+      "native_ad_id": "",
+      "preferred": 0,
+      "districts": "",
+      "hotel_id": 10429890,
+      "is_mobile_deal": 0,
+      "default_language": "xu"
+    },
+    {
+      "price_breakdown": {
+        "gross_price": "8310.60",
+        "has_tax_exceptions": 0,
+        "has_incalculable_charges": 0,
+        "currency": "INR",
+        "has_fine_print_charges": 0,
+        "sum_excluded_raw": 997.27,
+        "all_inclusive_price": 9307.87
+      },
+      "has_free_parking": 1,
+      "has_swimming_pool": 1,
+      "city_in_trans": "in Surat",
+      "default_wishlist_name": "Surat",
+      "city_name_en": "Surat",
+      "district": "",
+      "city_trans": "Surat",
+      "soldout": 0,
+      "type": "property_card",
+      "native_ads_cpc": 0,
+      "district_id": 0,
+      "booking_home": {
+        "is_single_unit_property": 1,
+        "quality_class": 3,
+        "is_booking_home": 1,
+        "group": "apartment_like",
+        "segment": 2
+      },
+      "cc_required": 1,
+      "badges": [
+        {
+          "text": "Mobile-only price",
+          "id": "Mobile Rate",
+          "badge_variant": "constructive"
+        }
+      ],
+      "accommodation_type": 201,
+      "zip": "395007",
+      "distance": "12.77",
+      "native_ads_tracking": "",
+      "block_ids": [
+        "827244301_347224042_3_2_0"
+      ],
+      "distance_to_cc": "12.80",
+      "currencycode": "INR",
+      "checkout": {
+        "until": "10:00",
+        "from": ""
+      },
+      "is_genius_deal": 0,
+      "review_recommendation": "",
+      "countrycode": "in",
+      "id": "property_card_8272443",
+      "cc1": "in",
+      "matching_units_configuration": {
+        "matching_units_common_config": {
+          "unit_type_id": 1,
+          "localized_area": "93"
+        }
+      },
+      "longitude": 72.719133086508,
+      "ufi": -2112243,
+      "in_best_district": 0,
+      "min_total_price": 8310.6,
+      "hotel_facilities": "418,107,466,109,46,3,158,305,11,451,222,425,54,449,424,47,467,454,185,2,455,160,301,63,187,459,433,457,58,159,29,460,5,450,485,96,121,453,25,452,48,103,468,423,458,127,161,462,16",
+      "address_trans": "Rajhans Belliza A 1217 Rajhans Belliza, Silent Zone, Dumas, Surat",
+      "country_trans": "India",
+      "latitude": 21.123650868364,
+      "hotel_name": "Luxurious Studio Homes At Rajhans Belliza By Nirvana Hospitality",
+      "accommodation_type_name": "Apartments",
+      "hotel_include_breakfast": 0,
+      "timezone": "Asia/Kolkata",
+      "mobile_discount_percentage": 923.4,
+      "url": "https://www.booking.com/hotel/in/rajhans-belliza-2bhk-luxurious-home.html",
+      "bwallet": {
+        "hotel_eligibility": 0
+      },
+      "extended": 0,
+      "is_smart_deal": 0,
+      "urgency_room_c": 2,
+      "class": 0,
+      "children_not_allowed": 0,
+      "checkin": {
+        "from": "13:00",
+        "until": ""
+      },
+      "native_ad_id": "",
+      "deals": {
+        "deal_events_killswitch": 0,
+        "deal_attributes": {},
+        "deals_available": {}
+      },
+      "review_nr": 26,
+      "city": "Surat",
+      "updated_checkin": null,
+      "price_is_final": 0,
+      "districts": "",
+      "preferred": 1,
+      "default_language": "en",
+      "hotel_id": 8272443,
+      "is_mobile_deal": 1,
+      "review_score": 9,
+      "updated_checkout": null,
+      "wishlist_count": 0,
+      "main_photo_id": 344544650,
+      "is_free_cancellable": 0,
+      "class_is_estimated": 0,
+      "currency_code": "INR",
+      "hotel_has_vb_boost": 1,
+      "review_score_word": "Wonderful",
+      "is_city_center": 0,
+      "selected_review_topic": null,
+      "address": "Rajhans Belliza A 1217 Rajhans Belliza, Silent Zone, Dumas, Surat",
+      "is_no_prepayment_block": 0,
+      "preferred_plus": 0,
+      "genius_discount_percentage": 0,
+      "hotel_name_trans": "Luxurious Studio Homes At Rajhans Belliza By Nirvana Hospitality",
+      "main_photo_url": "https://cf.bstatic.com/xdata/images/hotel/square60/344544650.jpg?k=1d51c39c1cae6e9f0e3775c65fc9b31cdfb316e1f3962df61be4f1edb18fab41&o=",
+      "cant_book": 0,
+      "is_geo_rate": ""
+    },
+    {
+      "id": "property_card_9952112",
+      "cc1": "in",
+      "matching_units_configuration": {
+        "matching_units_common_config": {
+          "unit_type_id": 7,
+          "localized_area": null
+        }
+      },
+      "countrycode": "in",
+      "is_genius_deal": 0,
+      "review_recommendation": "",
+      "currencycode": "INR",
+      "distance_to_cc": "30.00",
+      "checkout": {
+        "from": "",
+        "until": "11:00"
+      },
+      "bwallet": {
+        "hotel_eligibility": 0
+      },
+      "accommodation_type_name": "Hotels",
+      "mobile_discount_percentage": 0,
+      "timezone": "Asia/Kolkata",
+      "hotel_include_breakfast": 0,
+      "url": "https://www.booking.com/hotel/in/oyo-flagship-81156-lotus.html",
+      "country_trans": "India",
+      "latitude": 21.125805,
+      "hotel_name": "OYO Flagship 81156 Hotel Lotus",
+      "ufi": -2112243,
+      "in_best_district": 0,
+      "longitude": 73.11894,
+      "min_total_price": 1095.84,
+      "hotel_facilities": "440,492,8,458,457,436,91,506,443,462,446,495,467,452,455,423,499,426,468,497,454,448,451,450,453,439,449,425,490,491,489,5,461,435,445,158",
+      "address_trans": " 3rd floor shivaji chowk lotus mall,tulsi marg near rto, bardoli, Surat",
+      "district": "",
+      "soldout": 0,
+      "city_trans": "Surat",
+      "type": "property_card",
+      "city_in_trans": "in Surat",
+      "default_wishlist_name": "Surat",
+      "city_name_en": "Surat",
+      "price_breakdown": {
+        "has_incalculable_charges": 0,
+        "all_inclusive_price": 1323.34,
+        "has_fine_print_charges": 0,
+        "sum_excluded_raw": "227.50",
+        "currency": "INR",
+        "gross_price": 1095.84,
+        "has_tax_exceptions": 0
+      },
+      "native_ads_tracking": "",
+      "block_ids": [
+        "995211202_375711934_3_0_0"
+      ],
+      "zip": "394601",
+      "distance": "29.97",
+      "cc_required": 1,
+      "accommodation_type": 204,
+      "badges": [
+        {
+          "badge_variant": "constructive",
+          "id": "Getaway 2021 Deals",
+          "text": "Getaway Deal "
+        }
+      ],
+      "native_ads_cpc": 0,
+      "district_id": 0,
+      "class_is_estimated": 0,
+      "currency_code": "INR",
+      "main_photo_id": 461292617,
+      "is_free_cancellable": 1,
+      "wishlist_count": 0,
+      "review_score": null,
+      "updated_checkout": null,
+      "main_photo_url": "https://cf.bstatic.com/xdata/images/hotel/square60/461292617.jpg?k=437559be8105648c15a58deb6c019242e17f1f7b018e5b835928716d6d4a4b4f&o=",
+      "cant_book": 0,
+      "is_geo_rate": "",
+      "hotel_name_trans": "OYO Flagship 81156 Hotel Lotus",
+      "genius_discount_percentage": 0,
+      "is_no_prepayment_block": 1,
+      "preferred_plus": 0,
+      "hotel_has_vb_boost": 1,
+      "review_score_word": "Very Poor",
+      "is_city_center": 0,
+      "selected_review_topic": null,
+      "address": " 3rd floor shivaji chowk lotus mall,tulsi marg near rto, bardoli, Surat",
+      "updated_checkin": null,
+      "price_is_final": 1,
+      "deals": {
+        "deals_available": {
+          "has_preset": 1
+        },
+        "deal_events": [
+          {
+            "discount_percentage": 40,
+            "name_translation_tag": "deals_getaway23_customer_label",
+            "bg_color": "#FF8000",
+            "icon_url": "https://summer_deal.com",
+            "localized_description": "You’re getting a reduced rate because this property is offering a discount on stays between April 4 and September 28, 2023.",
+            "text_color": "#FFFFFF",
+            "code": 123,
+            "icon_name": "percentage-circle",
+            "preset_id": null,
+            "description_translation_tag": "deals_getaway23_customer_tooltip",
+            "disabled": 0,
+            "localized_name": "Getaway Deal"
+          }
+        ],
+        "deal_events_killswitch": 0,
+        "deal_attributes": {}
+      },
+      "native_ad_id": "",
+      "review_nr": 2,
+      "city": "Surat",
+      "is_smart_deal": 0,
+      "urgency_room_c": 4,
+      "checkin": {
+        "until": "",
+        "from": "12:00"
+      },
+      "class": 3,
+      "children_not_allowed": 0,
+      "extended": 0,
+      "is_mobile_deal": 0,
+      "hotel_id": 9952112,
+      "default_language": "en",
+      "preferred": 0,
+      "districts": ""
+    },
+    {
+      "address_trans": "Weekend Address, Near Delhi Public School Silent Zone Road, Opposite Surat Airport, Dumas, Surat",
+      "longitude": 72.727296,
+      "ufi": -2112243,
+      "in_best_district": 0,
+      "hotel_facilities": "160,301,28,14,15,161,109,46,16,2,433",
+      "min_total_price": 5398.2,
+      "hotel_name": "WEEKEND ADDRESS by Guest Pals",
+      "country_trans": "India",
+      "latitude": 21.124609,
+      "hotel_include_breakfast": 0,
+      "timezone": "Asia/Kolkata",
+      "mobile_discount_percentage": 599.8,
+      "url": "https://www.booking.com/hotel/in/weekend-address-surat6.html",
+      "accommodation_type_name": "Condo Hotels",
+      "bwallet": {
+        "hotel_eligibility": 0
+      },
+      "checkout": {
+        "until": "11:00",
+        "from": "10:00"
+      },
+      "distance_to_cc": "11.95",
+      "currencycode": "INR",
+      "is_genius_deal": 0,
+      "review_recommendation": "",
+      "countrycode": "in",
+      "matching_units_configuration": {
+        "matching_units_common_config": {
+          "localized_area": "532",
+          "unit_type_id": 1
+        }
+      },
+      "id": "property_card_9484059",
+      "cc1": "in",
+      "district_id": 0,
+      "native_ads_cpc": 0,
+      "badges": [
+        {
+          "text": "Mobile-only price",
+          "id": "Mobile Rate",
+          "badge_variant": "constructive"
+        }
+      ],
+      "cc_required": 1,
+      "accommodation_type": 219,
+      "booking_home": {
+        "is_single_unit_property": 1,
+        "quality_class": 0,
+        "group": "apartment_like",
+        "is_booking_home": 1,
+        "segment": 2
+      },
+      "zip": "395007",
+      "distance": "11.95",
+      "native_ads_tracking": "",
+      "block_ids": [
+        "948405901_367476334_3_0_0"
+      ],
+      "price_breakdown": {
+        "gross_price": "5398.20",
+        "has_tax_exceptions": 0,
+        "has_incalculable_charges": 0,
+        "has_fine_print_charges": 0,
+        "sum_excluded_raw": 647.78,
+        "currency": "INR",
+        "all_inclusive_price": 6045.98
+      },
+      "default_wishlist_name": "Surat",
+      "city_name_en": "Surat",
+      "has_free_parking": 1,
+      "city_in_trans": "in Surat",
+      "city_trans": "Surat",
+      "soldout": 0,
+      "type": "property_card",
+      "district": "",
+      "selected_review_topic": null,
+      "address": "Weekend Address, Near Delhi Public School Silent Zone Road, Opposite Surat Airport, Dumas, Surat",
+      "is_city_center": 0,
+      "hotel_has_vb_boost": 0,
+      "review_score_word": "Exceptional",
+      "is_no_prepayment_block": 1,
+      "preferred_plus": 0,
+      "hotel_name_trans": "WEEKEND ADDRESS by Guest Pals",
+      "genius_discount_percentage": 0,
+      "is_geo_rate": "",
+      "main_photo_url": "https://cf.bstatic.com/xdata/images/hotel/square60/421603338.jpg?k=ff64a5f926697d629f28e207cd93721ddac6695d9b0c023cc91e7d95bc542450&o=",
+      "cant_book": 0,
+      "updated_checkout": null,
+      "review_score": null,
+      "wishlist_count": 0,
+      "is_free_cancellable": 0,
+      "main_photo_id": 421603338,
+      "currency_code": "INR",
+      "class_is_estimated": 0,
+      "preferred": 0,
+      "districts": "",
+      "default_language": "en",
+      "hotel_id": 9484059,
+      "is_mobile_deal": 1,
+      "extended": 0,
+      "class": 0,
+      "checkin": {
+        "from": "12:00",
+        "until": "00:00"
+      },
+      "children_not_allowed": 0,
+      "is_smart_deal": 0,
+      "urgency_room_c": 6,
+      "review_nr": 1,
+      "city": "Surat",
+      "native_ad_id": "",
+      "deals": {
+        "deals_available": {},
+        "deal_attributes": {},
+        "deal_events_killswitch": 0
+      },
+      "updated_checkin": null,
+      "price_is_final": 0
+    },
+    {
+      "cc_required": 1,
+      "badges": [
+        {
+          "id": "Getaway 2021 Deals",
+          "badge_variant": "constructive",
+          "text": "Getaway Deal "
+        }
+      ],
+      "accommodation_type": 204,
+      "district_id": 0,
+      "native_ads_cpc": 0,
+      "block_ids": [
+        "209077805_372241427_2_34_0"
+      ],
+      "native_ads_tracking": "",
+      "zip": "395003",
+      "distance": "4.05",
+      "city_name_en": "Sūrat",
+      "default_wishlist_name": "Surat",
+      "city_in_trans": "in Surat",
+      "price_breakdown": {
+        "all_inclusive_price": 3606.4,
+        "has_fine_print_charges": 0,
+        "currency": "INR",
+        "sum_excluded_raw": "386.40",
+        "has_incalculable_charges": 0,
+        "has_tax_exceptions": 0,
+        "gross_price": "3220.00"
+      },
+      "type": "property_card",
+      "city_trans": "Surat",
+      "soldout": 0,
+      "district": "",
+      "hotel_name": "Hotel Comfort - Near Railway Station Surat, Gujarat",
+      "latitude": 21.2027500990226,
+      "country_trans": "India",
+      "address_trans": "Oposite Delhi Gate, Police Chowky, Near Railway Station Gujarat,India",
+      "hotel_facilities": "16,44,96,8,127,500,5,305,109,107,47,28",
+      "min_total_price": 3220,
+      "ufi": -2112243,
+      "longitude": 72.8385266661644,
+      "in_best_district": 0,
+      "bwallet": {
+        "hotel_eligibility": 0
+      },
+      "url": "https://www.booking.com/hotel/in/comfort-surat.html",
+      "mobile_discount_percentage": 0,
+      "timezone": "Asia/Kolkata",
+      "hotel_include_breakfast": 0,
+      "accommodation_type_name": "Hotels",
+      "review_recommendation": "",
+      "is_genius_deal": 0,
+      "checkout": {
+        "until": "11:00",
+        "from": ""
+      },
+      "distance_to_cc": "4.05",
+      "currencycode": "INR",
+      "matching_units_configuration": {
+        "matching_units_common_config": {
+          "unit_type_id": 24,
+          "localized_area": null
+        }
+      },
+      "cc1": "in",
+      "id": "property_card_2090778",
+      "countrycode": "in",
+      "preferred": 1,
+      "districts": "",
+      "hotel_id": 2090778,
+      "is_mobile_deal": 0,
+      "default_language": "xu",
+      "class": 3,
+      "checkin": {
+        "from": "12:00",
+        "until": ""
+      },
+      "children_not_allowed": 0,
+      "urgency_room_c": 7,
+      "is_smart_deal": 0,
+      "extended": 0,
+      "price_is_final": 0,
+      "updated_checkin": null,
+      "city": "Sūrat",
+      "review_nr": 7,
+      "deals": {
+        "deals_available": {
+          "has_preset": 1
+        },
+        "deal_attributes": {},
+        "deal_events_killswitch": 0,
+        "deal_events": [
+          {
+            "localized_description": "You’re getting a reduced rate because this property is offering a discount on stays between April 4 and September 28, 2023.",
+            "icon_url": "https://summer_deal.com",
+            "localized_name": "Getaway Deal",
+            "disabled": 0,
+            "description_translation_tag": "deals_getaway23_customer_tooltip",
+            "preset_id": null,
+            "text_color": "#FFFFFF",
+            "code": 123,
+            "icon_name": "percentage-circle",
+            "bg_color": "#FF8000",
+            "discount_percentage": 40,
+            "name_translation_tag": "deals_getaway23_customer_label"
+          }
+        ]
+      },
+      "native_ad_id": "",
+      "preferred_plus": 0,
+      "is_no_prepayment_block": 1,
+      "selected_review_topic": null,
+      "address": "Oposite Delhi Gate, Police Chowky, Near Railway Station Gujarat,India",
+      "is_city_center": 0,
+      "review_score_word": "Okay",
+      "hotel_has_vb_boost": 0,
+      "is_geo_rate": "",
+      "cant_book": 0,
+      "main_photo_url": "https://cf.bstatic.com/xdata/images/hotel/square60/102512672.jpg?k=5d2bfa2e82d2bc87c1acd0fe3b92c8946cda3e597a6f08cf32ef97fe55de3fc5&o=",
+      "hotel_name_trans": "Hotel Comfort - Near Railway Station Surat, Gujarat",
+      "genius_discount_percentage": 0,
+      "wishlist_count": 0,
+      "updated_checkout": null,
+      "review_score": 5.6,
+      "currency_code": "INR",
+      "class_is_estimated": 0,
+      "is_free_cancellable": 0,
+      "main_photo_id": 102512672
+    },
+    {
+      "bwallet": {
+        "hotel_eligibility": 0
+      },
+      "accommodation_type_name": "Condo Hotels",
+      "url": "https://www.booking.com/hotel/in/luxurious-studio-apartment-at-rajhans-belliza.html",
+      "timezone": "Asia/Kolkata",
+      "mobile_discount_percentage": 574.02,
+      "hotel_include_breakfast": 0,
+      "latitude": 21.123691,
+      "country_trans": "India",
+      "hotel_name": "Royal treats Home stays at Belliza Near Airport",
+      "hotel_facilities": "97,458,161,440,492,118,443,177,48,423,468,174,485,437,439,58,14,490,29,478,301,258,464,240,457,459,142,28,483,467,220,185,426,454,101,222,451,425,418,242,109,445,158,496,49,461,219,192,127,144,188,462,436,452,473,15,103,470,4,450,200,484,176,121,453,224,25,487,489,194,460,51,244,8,160,465,433,421,56,172,10,455,2,170,11,449,403,456,424,253,57,491,80,46,305,3,488",
+      "min_total_price": 5166.18,
+      "in_best_district": 0,
+      "ufi": -2112243,
+      "longitude": 72.719101,
+      "address_trans": "Silent Zone Road RAJHANS BELLIZA-2 APT-B, G-6, GROUND FLOOR DUMAS, SURAT, GUJARAT",
+      "cc1": "in",
+      "id": "property_card_8339307",
+      "matching_units_configuration": {
+        "matching_units_common_config": {
+          "unit_type_id": 12,
+          "localized_area": "916"
+        }
+      },
+      "countrycode": "in",
+      "review_recommendation": "",
+      "is_genius_deal": 0,
+      "currencycode": "INR",
+      "distance_to_cc": "12.80",
+      "checkout": {
+        "until": "12:00",
+        "from": "10:00"
+      },
+      "block_ids": [
+        "833930701_348676940_4_0_0"
+      ],
+      "native_ads_tracking": "",
+      "distance": "12.77",
+      "zip": "395007",
+      "booking_home": {
+        "segment": 2,
+        "is_single_unit_property": 1,
+        "quality_class": 3,
+        "is_booking_home": 1,
+        "group": "apartment_like"
+      },
+      "accommodation_type": 219,
+      "cc_required": 1,
+      "badges": [
+        {
+          "text": "Mobile-only price",
+          "badge_variant": "constructive",
+          "id": "Mobile Rate"
+        }
+      ],
+      "native_ads_cpc": 0,
+      "district_id": 0,
+      "district": "",
+      "type": "property_card",
+      "city_trans": "Surat",
+      "soldout": 0,
+      "city_in_trans": "in Surat",
+      "has_free_parking": 1,
+      "has_swimming_pool": 1,
+      "city_name_en": "Surat",
+      "default_wishlist_name": "Surat",
+      "price_breakdown": {
+        "gross_price": 5166.18,
+        "has_tax_exceptions": 0,
+        "has_incalculable_charges": 0,
+        "all_inclusive_price": 5786.12,
+        "sum_excluded_raw": 619.94,
+        "has_fine_print_charges": 0,
+        "currency": "INR"
+      },
+      "cant_book": 0,
+      "main_photo_url": "https://cf.bstatic.com/xdata/images/hotel/square60/348095736.jpg?k=7eed83617073be919156aee8588f835c3ff1cebe56b07f9b1e587e80fc9d4dba&o=",
+      "is_geo_rate": "",
+      "hotel_name_trans": "Royal treats Home stays at Belliza Near Airport",
+      "genius_discount_percentage": 0,
+      "preferred_plus": 0,
+      "is_no_prepayment_block": 1,
+      "review_score_word": "Pleasant",
+      "hotel_has_vb_boost": 0,
+      "address": "Silent Zone Road RAJHANS BELLIZA-2 APT-B, G-6, GROUND FLOOR DUMAS, SURAT, GUJARAT",
+      "selected_review_topic": null,
+      "is_city_center": 0,
+      "class_is_estimated": 0,
+      "currency_code": "INR",
+      "main_photo_id": 348095736,
+      "is_free_cancellable": 0,
+      "wishlist_count": 0,
+      "review_score": 6.7,
+      "updated_checkout": null,
+      "is_mobile_deal": 1,
+      "hotel_id": 8339307,
+      "default_language": "en",
+      "districts": "",
+      "preferred": 0,
+      "updated_checkin": null,
+      "price_is_final": 0,
+      "native_ad_id": "",
+      "deals": {
+        "deals_available": {},
+        "deal_events_killswitch": 0,
+        "deal_attributes": {}
+      },
+      "city": "Surat",
+      "review_nr": 18,
+      "urgency_room_c": 8,
+      "is_smart_deal": 0,
+      "checkin": {
+        "from": "12:00",
+        "until": "12:00"
+      },
+      "class": 0,
+      "children_not_allowed": 0,
+      "extended": 0
+    },
+    {
+      "city": "Surat",
+      "review_nr": 22,
+      "native_ad_id": "",
+      "deals": {
+        "deals_available": {},
+        "deal_attributes": {},
+        "deal_events_killswitch": 0
+      },
+      "price_is_final": 0,
+      "updated_checkin": null,
+      "extended": 0,
+      "class": 0,
+      "children_not_allowed": 0,
+      "checkin": {
+        "until": "12:00",
+        "from": "12:00"
+      },
+      "urgency_room_c": 9,
+      "is_smart_deal": 0,
+      "default_language": "en",
+      "hotel_id": 9021248,
+      "is_mobile_deal": 0,
+      "districts": "",
+      "preferred": 0,
+      "is_free_cancellable": 0,
+      "main_photo_id": 390165241,
+      "currency_code": "INR",
+      "class_is_estimated": 0,
+      "updated_checkout": null,
+      "review_score": 6.7,
+      "wishlist_count": 0,
+      "hotel_name_trans": "Weekend Address managed by Global Hospitality",
+      "genius_discount_percentage": 0,
+      "is_geo_rate": "",
+      "cant_book": 0,
+      "main_photo_url": "https://cf.bstatic.com/xdata/images/hotel/square60/390165241.jpg?k=3f6e59a5f88e2da49ec00be8732c4b004fa795745bb24754076ffa88c1c41892&o=",
+      "address": "Silent Zone Road Near Delhi Public School",
+      "selected_review_topic": null,
+      "is_city_center": 0,
+      "review_score_word": "Pleasant",
+      "hotel_has_vb_boost": 0,
+      "preferred_plus": 0,
+      "is_no_prepayment_block": 0,
+      "type": "property_card",
+      "soldout": 0,
+      "city_trans": "Surat",
+      "district": "",
+      "price_breakdown": {
+        "gross_price": "4678.20",
+        "has_tax_exceptions": 0,
+        "has_incalculable_charges": 0,
+        "has_fine_print_charges": 0,
+        "sum_excluded_raw": 561.38,
+        "currency": "INR",
+        "all_inclusive_price": 5239.58
+      },
+      "city_name_en": "Surat",
+      "default_wishlist_name": "Surat",
+      "city_in_trans": "in Surat",
+      "has_free_parking": 1,
+      "has_swimming_pool": 1,
+      "distance": "11.90",
+      "zip": "395007",
+      "block_ids": [
+        "902124801_361019978_3_0_0"
+      ],
+      "native_ads_tracking": "",
+      "district_id": 0,
+      "native_ads_cpc": 0,
+      "cc_required": 1,
+      "badges": [],
+      "accommodation_type": 219,
+      "booking_home": {
+        "segment": 2,
+        "group": "apartment_like",
+        "quality_class": 3,
+        "is_booking_home": 1,
+        "is_single_unit_property": 1
+      },
+      "countrycode": "in",
+      "matching_units_configuration": {
+        "matching_units_common_config": {
+          "localized_area": null,
+          "unit_type_id": 13
+        }
+      },
+      "cc1": "in",
+      "id": "property_card_9021248",
+      "checkout": {
+        "from": "10:00",
+        "until": "10:00"
+      },
+      "distance_to_cc": "11.90",
+      "currencycode": "INR",
+      "review_recommendation": "",
+      "is_genius_deal": 0,
+      "url": "https://www.booking.com/hotel/in/weekend-address-managed-by-global-hospitality.html",
+      "timezone": "Asia/Kolkata",
+      "mobile_discount_percentage": 0,
+      "hotel_include_breakfast": 0,
+      "accommodation_type_name": "Condo Hotels",
+      "bwallet": {
+        "hotel_eligibility": 0
+      },
+      "address_trans": "Silent Zone Road Near Delhi Public School",
+      "min_total_price": 4678.2,
+      "hotel_facilities": "8,160,465,503,23,433,476,421,56,172,6,455,2,11,449,456,253,491,502,46,305,3,488,127,462,16,436,452,473,147,15,481,470,450,448,484,110,472,453,224,25,487,489,194,460,301,258,464,119,117,44,495,457,459,142,28,467,185,426,454,104,438,451,222,425,418,143,242,109,445,158,496,49,461,458,440,492,443,64,257,486,48,423,22,468,174,485,422,437,439,58,14,490,504,29,108,419",
+      "in_best_district": 0,
+      "ufi": -2112243,
+      "longitude": 72.72719,
+      "hotel_name": "Weekend Address managed by Global Hospitality",
+      "latitude": 21.126044,
+      "country_trans": "India"
+    },
+    {
+      "external_reviews": {
+        "should_display": "",
+        "score_word": "Good",
+        "num_reviews": 5,
+        "score": 7
+      },
+      "price_is_final": 0,
+      "updated_checkin": null,
+      "city": "surat",
+      "review_nr": 5,
+      "native_ad_id": "",
+      "deals": {
+        "deal_events": [
+          {
+            "bg_color": "#FF8000",
+            "discount_percentage": 40,
+            "name_translation_tag": "deals_getaway23_customer_label",
+            "localized_name": "Getaway Deal",
+            "disabled": 0,
+            "preset_id": null,
+            "description_translation_tag": "deals_getaway23_customer_tooltip",
+            "text_color": "#FFFFFF",
+            "code": 123,
+            "icon_name": "percentage-circle",
+            "localized_description": "You’re getting a reduced rate because this property is offering a discount on stays between April 4 and September 28, 2023.",
+            "icon_url": "https://summer_deal.com"
+          }
+        ],
+        "deal_events_killswitch": 0,
+        "deal_attributes": {},
+        "deals_available": {
+          "has_preset": 1
+        }
+      },
+      "class": 0,
+      "checkin": {
+        "until": "00:00",
+        "from": "13:00"
+      },
+      "children_not_allowed": 0,
+      "urgency_room_c": 2,
+      "is_smart_deal": 0,
+      "extended": 0,
+      "is_mobile_deal": 0,
+      "hotel_id": 9498561,
+      "default_language": "xu",
+      "preferred": 0,
+      "districts": "",
+      "currency_code": "INR",
+      "class_is_estimated": 0,
+      "is_free_cancellable": 1,
+      "main_photo_id": 421304586,
+      "wishlist_count": 0,
+      "updated_checkout": null,
+      "review_score": 7.2,
+      "is_geo_rate": "",
+      "cant_book": 0,
+      "main_photo_url": "https://cf.bstatic.com/xdata/images/hotel/square60/421304586.jpg?k=ae7b03d9db91fd774262c10071bc9b2befaa28670241f4776a643d8b4d48bb63&o=",
+      "genius_discount_percentage": 0,
+      "hotel_name_trans": "Royal Home stay inn",
+      "preferred_plus": 0,
+      "is_no_prepayment_block": 0,
+      "is_city_center": 0,
+      "selected_review_topic": null,
+      "address": "rajhans belliza",
+      "review_score_word": "Good",
+      "hotel_has_vb_boost": 0,
+      "type": "property_card",
+      "soldout": 0,
+      "city_trans": "Surat",
+      "district": "",
+      "city_name_en": "surat",
+      "default_wishlist_name": "Surat",
+      "city_in_trans": "in Surat",
+      "has_free_parking": 1,
+      "has_swimming_pool": 1,
+      "price_breakdown": {
+        "gross_price": "6075.00",
+        "has_tax_exceptions": 0,
+        "has_incalculable_charges": 0,
+        "currency": "INR",
+        "has_fine_print_charges": 0,
+        "sum_excluded_raw": "729.00",
+        "all_inclusive_price": 6804
+      },
+      "block_ids": [
+        "949856101_367633359_4_2_0"
+      ],
+      "native_ads_tracking": "",
+      "distance": "12.81",
+      "zip": "395007",
+      "cc_required": 1,
+      "badges": [
+        {
+          "badge_variant": "constructive",
+          "id": "Getaway 2021 Deals",
+          "text": "Getaway Deal "
+        }
+      ],
+      "accommodation_type": 201,
+      "booking_home": {
+        "quality_class": 0,
+        "group": "apartment_like",
+        "is_booking_home": 1,
+        "is_single_unit_property": 1,
+        "segment": 2
+      },
+      "district_id": 0,
+      "native_ads_cpc": 0,
+      "matching_units_configuration": {
+        "matching_units_common_config": {
+          "unit_type_id": 1,
+          "localized_area": "1,000"
+        }
+      },
+      "cc1": "in",
+      "id": "property_card_9498561",
+      "countrycode": "in",
+      "review_recommendation": "",
+      "is_genius_deal": 0,
+      "checkout": {
+        "from": "08:00",
+        "until": "11:00"
+      },
+      "currencycode": "INR",
+      "distance_to_cc": "12.85",
+      "bwallet": {
+        "hotel_eligibility": 0
+      },
+      "url": "https://www.booking.com/hotel/in/royal-home-stay-inn.html",
+      "hotel_include_breakfast": 0,
+      "timezone": "Asia/Kolkata",
+      "mobile_discount_percentage": 0,
+      "accommodation_type_name": "Apartments",
+      "hotel_name": "Royal Home stay inn",
+      "latitude": 21.123752401734,
+      "country_trans": "India",
+      "address_trans": "rajhans belliza",
+      "min_total_price": 6075,
+      "hotel_facilities": "457,16,433,459,163,462,63,161,301,160,500,458,464,4,455,2,15,103,486,47,28,456,121,96,461,488,305,460,46,109,463,107,487,14",
+      "longitude": 72.718708448385,
+      "ufi": -2112243,
+      "in_best_district": 0
+    },
+    {
+      "wishlist_count": 0,
+      "updated_checkout": null,
+      "review_score": 6.8,
+      "currency_code": "INR",
+      "class_is_estimated": 0,
+      "is_free_cancellable": 0,
+      "main_photo_id": 364724607,
+      "is_no_prepayment_block": 1,
+      "preferred_plus": 0,
+      "address": "RAJHANS BELLIZA NEAR DELHI PUBLIC SCHOOL DUMAS",
+      "selected_review_topic": null,
+      "is_city_center": 0,
+      "hotel_has_vb_boost": 0,
+      "review_score_word": "Pleasant",
+      "is_geo_rate": "",
+      "main_photo_url": "https://cf.bstatic.com/xdata/images/hotel/square60/364724607.jpg?k=7a6446da3bccda8a900162cfeae17bc9134c9fc2b8f63601d20ce0b1fbabcc14&o=",
+      "cant_book": 0,
+      "hotel_name_trans": "Homestays at Rajhans BELLIZA Near Airport",
+      "genius_discount_percentage": 0,
+      "checkin": {
+        "from": "12:00",
+        "until": "00:00"
+      },
+      "class": 0,
+      "children_not_allowed": 0,
+      "is_smart_deal": 0,
+      "urgency_room_c": 10,
+      "extended": 0,
+      "updated_checkin": null,
+      "price_is_final": 0,
+      "review_nr": 12,
+      "city": "Surat",
+      "native_ad_id": "",
+      "deals": {
+        "deal_events_killswitch": 0,
+        "deal_attributes": {},
+        "deals_available": {}
+      },
+      "districts": "",
+      "preferred": 0,
+      "hotel_id": 8618976,
+      "is_mobile_deal": 0,
+      "default_language": "en",
+      "is_genius_deal": 0,
+      "review_recommendation": "",
+      "checkout": {
+        "from": "10:00",
+        "until": "11:00"
+      },
+      "distance_to_cc": "12.80",
+      "currencycode": "INR",
+      "matching_units_configuration": {
+        "matching_units_common_config": {
+          "localized_area": "85",
+          "unit_type_id": 1
+        }
+      },
+      "id": "property_card_8618976",
+      "cc1": "in",
+      "countrycode": "in",
+      "hotel_name": "Homestays at Rajhans BELLIZA Near Airport",
+      "country_trans": "India",
+      "latitude": 21.123735,
+      "address_trans": "RAJHANS BELLIZA NEAR DELHI PUBLIC SCHOOL DUMAS",
+      "longitude": 72.719132,
+      "ufi": -2112243,
+      "in_best_district": 0,
+      "min_total_price": 5918.4,
+      "hotel_facilities": "176,110,121,472,256,224,453,200,450,448,460,51,487,194,462,436,16,127,144,4,470,452,15,103,449,253,424,456,403,170,11,305,3,488,57,80,502,491,46,503,433,160,6,455,2,421,172,56,10,437,439,485,126,422,108,493,29,504,419,478,58,14,490,159,177,118,443,64,257,458,161,492,440,254,423,468,48,125,411,54,425,438,451,496,158,49,445,461,219,192,418,242,109,495,457,142,459,258,301,464,240,454,426,78,101,483,28,467",
+      "bwallet": {
+        "hotel_eligibility": 0
+      },
+      "timezone": "Asia/Kolkata",
+      "hotel_include_breakfast": 0,
+      "mobile_discount_percentage": 0,
+      "url": "https://www.booking.com/hotel/in/rajhans-belliza-by-homesphere.html",
+      "accommodation_type_name": "Condo Hotels",
+      "default_wishlist_name": "Surat",
+      "city_name_en": "Surat",
+      "has_free_parking": 1,
+      "has_swimming_pool": 1,
+      "city_in_trans": "in Surat",
+      "price_breakdown": {
+        "has_incalculable_charges": 0,
+        "all_inclusive_price": 6628.61,
+        "has_fine_print_charges": 0,
+        "currency": "INR",
+        "sum_excluded_raw": 710.21,
+        "gross_price": "5918.40",
+        "has_tax_exceptions": 0
+      },
+      "soldout": 0,
+      "city_trans": "Surat",
+      "type": "property_card",
+      "district": "",
+      "badges": [],
+      "cc_required": 1,
+      "accommodation_type": 219,
+      "booking_home": {
+        "segment": 2,
+        "is_single_unit_property": 1,
+        "is_booking_home": 1,
+        "quality_class": 0,
+        "group": "apartment_like"
+      },
+      "district_id": 0,
+      "native_ads_cpc": 0,
+      "native_ads_tracking": "",
+      "block_ids": [
+        "861897601_354111920_3_0_0"
+      ],
+      "distance": "12.77",
+      "zip": "395007"
+    },
+    {
+      "block_ids": [
+        "962998701_378435905_4_42_0"
+      ],
+      "native_ads_tracking": "",
+      "zip": "394210",
+      "distance": "1.28",
+      "booking_home": {
+        "is_single_unit_property": 1,
+        "group": "hotels_and_others",
+        "quality_class": 0,
+        "is_booking_home": 1,
+        "segment": 0
+      },
+      "badges": [
+        {
+          "badge_variant": "accent",
+          "id": "new_to_booking",
+          "text": "New to Booking.com"
+        }
+      ],
+      "cc_required": 1,
+      "accommodation_type": 222,
+      "native_ads_cpc": 0,
+      "district_id": 0,
+      "district": "",
+      "type": "property_card",
+      "soldout": 0,
+      "city_trans": "Surat",
+      "city_in_trans": "in Surat",
+      "city_name_en": "Surat",
+      "default_wishlist_name": "Surat",
+      "price_breakdown": {
+        "all_inclusive_price": 3581.76,
+        "has_fine_print_charges": 0,
+        "sum_excluded_raw": 383.76,
+        "currency": "INR",
+        "has_incalculable_charges": 0,
+        "has_tax_exceptions": 0,
+        "gross_price": "3198.00"
+      },
+      "bwallet": {
+        "hotel_eligibility": 0
+      },
+      "accommodation_type_name": "Homestays",
+      "url": "https://www.booking.com/hotel/in/super-cozy-room-with-balcony-2-4-people-ac.html",
+      "hotel_include_breakfast": 0,
+      "timezone": "Asia/Kolkata",
+      "mobile_discount_percentage": 0,
+      "latitude": 21.155948778221,
+      "country_trans": "India",
+      "hotel_name": "Super cozy room with Balcony/2-4 People/AC",
+      "min_total_price": 3198,
+      "hotel_facilities": "459,163,16,457,183,176,96,405,205,455,461,305,108,107,109,15,486,47",
+      "longitude": 72.837580039047,
+      "ufi": -2112243,
+      "in_best_district": 0,
+      "address_trans": "Udhana Main Road",
+      "cc1": "in",
+      "id": "property_card_9629987",
+      "matching_units_configuration": {
+        "matching_units_common_config": {
+          "localized_area": null,
+          "unit_type_id": 9
+        }
+      },
+      "countrycode": "in",
+      "review_recommendation": "",
+      "is_genius_deal": 0,
+      "distance_to_cc": "1.30",
+      "currencycode": "INR",
+      "checkout": {
+        "from": "",
+        "until": ""
+      },
+      "hotel_id": 9629987,
+      "is_mobile_deal": 0,
+      "default_language": "xu",
+      "districts": "",
+      "preferred": 0,
+      "updated_checkin": null,
+      "price_is_final": 0,
+      "native_ad_id": "",
+      "deals": {
+        "deals_available": {},
+        "deal_attributes": {},
+        "deal_events_killswitch": 0
+      },
+      "city": "Surat",
+      "review_nr": null,
+      "urgency_room_c": 11,
+      "is_smart_deal": 0,
+      "class": 0,
+      "children_not_allowed": 0,
+      "checkin": {
+        "until": "",
+        "from": ""
+      },
+      "extended": 0,
+      "cant_book": 0,
+      "main_photo_url": "https://cf.bstatic.com/xdata/images/hotel/square60/429383699.jpg?k=35d63301581c3d41aefe5a24f9a0b4b249a9a0ed04862c162d607b807b1c6dbd&o=",
+      "is_geo_rate": "",
+      "hotel_name_trans": "Super cozy room with Balcony/2-4 People/AC",
+      "genius_discount_percentage": 0,
+      "preferred_plus": 0,
+      "is_no_prepayment_block": 1,
+      "review_score_word": "",
+      "hotel_has_vb_boost": 0,
+      "address": "Udhana Main Road",
+      "selected_review_topic": null,
+      "is_city_center": 0,
+      "class_is_estimated": 0,
+      "currency_code": "INR",
+      "main_photo_id": 429383699,
+      "is_free_cancellable": 0,
+      "wishlist_count": 0,
+      "review_score": null,
+      "updated_checkout": null
+    }
+  ],
+  "base_filters": [
+    {
+      "irene_resp_id": "pri",
+      "type": "multiple_union",
+      "layout": {
+        "is_collapsed": 0,
+        "collapsed_count": 5,
+        "is_collapsable": 0
+      },
+      "is_group": 0,
+      "iconfont": "pricetag",
+      "categories": [
+        {
+          "to": 5000,
+          "count": 67,
+          "id": "price_category::50",
+          "from": 0,
+          "selected": 0,
+          "display_format": "%LOWER% - %UPPER%",
+          "name": "Rs. 0 - Rs. 10,000 ",
+          "style_for_count": 0
+        },
+        {
+          "style_for_count": 0,
+          "display_format": "%LOWER% - %UPPER%",
+          "selected": 0,
+          "name": "Rs. 10,000 - Rs. 20,000 ",
+          "from": 5000,
+          "to": 10000,
+          "id": "price_category::100",
+          "count": 9
+        },
+        {
+          "style_for_count": 0,
+          "name": "Rs. 20,000 - Rs. 30,000 ",
+          "display_format": "%LOWER% - %UPPER%",
+          "selected": 0,
+          "from": 10000,
+          "id": "price_category::150",
+          "count": 2,
+          "to": 15000
+        },
+        {
+          "name": "Rs. 30,000 - Rs. 40,000 ",
+          "selected": 0,
+          "display_format": "%LOWER% + ",
+          "style_for_count": 0,
+          "count": 1,
+          "id": "price_category::200",
+          "to": 20000,
+          "from": 15000
+        }
+      ],
+      "any_text": "No price range selected",
+      "id": "price_category",
+      "subtitle": "",
+      "title": "Your budget (for 2 nights)"
+    },
+    {
+      "categories": [
+        {
+          "popular_rank": 2,
+          "style_for_count": 0,
+          "selected": 0,
+          "popular": 1,
+          "count": 45,
+          "id": "facility::107",
+          "name": "Free WiFi"
+        },
+        {
+          "experiment_tracking_data": {
+            "track_on_select": [
+              {
+                "value": 1,
+                "experiment_tag": "families_app_family_rooms_blackout",
+                "type": 1
+              }
+            ]
+          },
+          "popular": 1,
+          "count": 30,
+          "id": "facility::28",
+          "selected": 0,
+          "name": "Family rooms",
+          "popular_rank": 3,
+          "style_for_count": 0
+        },
+        {
+          "style_for_count": 0,
+          "popular_rank": 5,
+          "count": 18,
+          "name": "Breakfast Included",
+          "id": "mealplan::breakfast_included",
+          "selected": 0,
+          "popular": 1
+        },
+        {
+          "style_for_count": 0,
+          "popular_rank": 11,
+          "name": "Hotels",
+          "selected": 0,
+          "count": 55,
+          "id": "property_type::204",
+          "popular": 1,
+          "experiment_tracking_data": {
+            "track_on_view": [
+              {
+                "type": 0,
+                "experiment_tag": "srx_apps_include_resorts_with_hotels",
+                "value": 1
+              }
+            ],
+            "track_on_deselect": [
+              {
+                "type": 1,
+                "experiment_tag": "srx_apps_include_resorts_with_hotels",
+                "value": 2
+              }
+            ],
+            "track_on_select": [
+              {
+                "type": 1,
+                "value": 1,
+                "experiment_tag": "srx_apps_include_resorts_with_hotels"
+              }
+            ]
+          }
+        },
+        {
+          "popular": 1,
+          "selected": 0,
+          "name": "Air conditioning",
+          "id": "room_facility::11",
+          "count": 70,
+          "popular_rank": 12,
+          "style_for_count": 0
+        },
+        {
+          "selected": 0,
+          "popular": 1,
+          "count": 7,
+          "name": "Very Good: 8+",
+          "id": "reviewscorebuckets::80",
+          "popular_rank": 13,
+          "style_for_count": 0
+        }
+      ],
+      "subtitle": "",
+      "any_text": "No rating selected",
+      "id": "popular",
+      "title": "Popular Filters",
+      "type": "multiple_intersection",
+      "is_group": 0,
+      "layout": {
+        "is_collapsable": 0,
+        "collapsed_count": 5,
+        "is_collapsed": 0
+      },
+      "iconfont": "aconfirmation",
+      "irene_resp_id": "popular"
+    },
+    {
+      "irene_resp_id": "fc",
+      "any_text": null,
+      "id": "free_cancellation",
+      "subtitle": "",
+      "title": "Free cancellation ",
+      "categories": [
+        {
+          "count": 28,
+          "id": "free_cancellation::1",
+          "name": "Free cancellation",
+          "selected": 0,
+          "style_for_count": 0
+        }
+      ],
+      "is_group": 0,
+      "layout": {
+        "is_collapsable": 0,
+        "collapsed_count": 5,
+        "is_collapsed": 0
+      },
+      "iconfont": "aconfirmation",
+      "type": "single_option"
+    },
+    {
+      "categories": [
+        {
+          "count": 21,
+          "id": "class::0",
+          "name": "Unrated",
+          "selected": 0,
+          "style_for_count": 0
+        },
+        {
+          "count": 3,
+          "id": "class::2",
+          "name": "2 stars",
+          "selected": 0,
+          "style_for_count": 0
+        },
+        {
+          "selected": 0,
+          "count": 42,
+          "name": "3 stars",
+          "id": "class::3",
+          "style_for_count": 0
+        },
+        {
+          "style_for_count": 0,
+          "selected": 0,
+          "count": 1,
+          "name": "4 stars",
+          "id": "class::4"
+        },
+        {
+          "name": "5 stars",
+          "id": "class::5",
+          "count": 3,
+          "selected": 0,
+          "style_for_count": 0
+        }
+      ],
+      "experiment_tracking_data": {
+        "track_on_view": [
+          {
+            "type": 0,
+            "experiment_tag": "srx_property_rating_copy_change_android",
+            "value": 1
+          },
+          {
+            "experiment_tag": "srx_property_rating_copy_change_android",
+            "value": 2,
+            "type": 0
+          }
+        ]
+      },
+      "layout": {
+        "collapsed_count": 5,
+        "is_collapsed": 0,
+        "is_collapsable": 0
+      },
+      "is_group": 0,
+      "iconfont": "acstar",
+      "irene_resp_id": "class",
+      "id": "class",
+      "subtitle": "",
+      "any_text": "No stars selected",
+      "title": "Property rating",
+      "type": "multiple_union"
+    },
+    {
+      "irene_resp_id": "ht_id",
+      "categories": [
+        {
+          "popular_rank": 11,
+          "style_for_count": 0,
+          "selected": 0,
+          "name": "Hotels",
+          "experiment_tracking_data": {
+            "track_on_select": [
+              {
+                "experiment_tag": "srx_apps_include_resorts_with_hotels",
+                "value": 1,
+                "type": 1
+              }
+            ],
+            "track_on_deselect": [
+              {
+                "type": 1,
+                "experiment_tag": "srx_apps_include_resorts_with_hotels",
+                "value": 2
+              }
+            ],
+            "track_on_view": [
+              {
+                "type": 0,
+                "experiment_tag": "srx_apps_include_resorts_with_hotels",
+                "value": 1
+              }
+            ]
+          },
+          "popular": 1,
+          "count": 55,
+          "id": "property_type::204"
+        },
+        {
+          "selected": 0,
+          "count": 35,
+          "name": "Family-Friendly Properties",
+          "id": "family_friendly_property::1",
+          "style_for_count": 0
+        },
+        {
+          "name": "Apartments",
+          "id": "property_type::201",
+          "count": 19,
+          "selected": 0,
+          "style_for_count": 0
+        },
+        {
+          "selected": 0,
+          "id": "property_type::208",
+          "name": "Bed and Breakfasts",
+          "count": 1,
+          "style_for_count": 0
+        },
+        {
+          "style_for_count": 0,
+          "selected": 0,
+          "count": 1,
+          "id": "property_type::222",
+          "name": "Homestays"
+        }
+      ],
+      "experiment_tracking_data": {
+        "track_on_view": [
+          {
+            "value": 1,
+            "experiment_tag": "bhgwe_apps_sr_unify_chalet_and_cabin_filters",
+            "type": 0
+          }
+        ]
+      },
+      "is_group": 0,
+      "layout": {
+        "is_collapsable": 0,
+        "collapsed_count": 5,
+        "is_collapsed": 0
+      },
+      "iconfont": "homecrop",
+      "subtitle": "",
+      "id": "property_type",
+      "any_text": "No property type selected",
+      "title": "Property Type",
+      "type": "multiple_union"
+    },
+    {
+      "irene_resp_id": "entire_place_bedroom_count",
+      "layout": {
+        "is_collapsable": 0,
+        "collapsed_count": 5,
+        "is_collapsed": 0
+      },
+      "is_group": 0,
+      "iconfont": null,
+      "type": "multiple_single_selection",
+      "any_text": null,
+      "subtitle": "",
+      "id": "entire_place_bedroom_count",
+      "title": "Number of bedrooms",
+      "categories": [
+        {
+          "selected": 0,
+          "name": "1+ bedrooms",
+          "id": "entire_place_bedroom_count::1",
+          "count": 22,
+          "style_for_count": 0
+        },
+        {
+          "style_for_count": 0,
+          "name": "2+ bedrooms",
+          "id": "entire_place_bedroom_count::2",
+          "count": 12,
+          "selected": 0
+        }
+      ]
+    },
+    {
+      "type": "multiple_intersection",
+      "id": "facility",
+      "any_text": "No facilities selected",
+      "subtitle": "",
+      "title": "Facilities",
+      "is_group": 0,
+      "layout": {
+        "is_collapsable": 1,
+        "is_collapsed": 1,
+        "collapsed_count": 5
+      },
+      "iconfont": "frontdesk",
+      "experiment_tracking_data": {
+        "track_on_view": [
+          {
+            "type": 0,
+            "experiment_tag": "families_app_family_rooms_blackout",
+            "value": 1
+          }
+        ]
+      },
+      "categories": [
+        {
+          "style_for_count": 0,
+          "count": 39,
+          "id": "facility::8",
+          "name": "24-hour front desk",
+          "selected": 0
+        },
+        {
+          "selected": 0,
+          "count": 13,
+          "name": "Airport shuttle",
+          "id": "facility::17",
+          "style_for_count": 0
+        },
+        {
+          "style_for_count": 0,
+          "selected": 0,
+          "name": "BBQ facilities",
+          "id": "facility::72",
+          "count": 1
+        },
+        {
+          "selected": 0,
+          "count": 2,
+          "id": "facility::182",
+          "name": "Electric vehicle charging station",
+          "style_for_count": 0
+        },
+        {
+          "count": 10,
+          "name": "Facilities for disabled guests",
+          "id": "facility::25",
+          "selected": 0,
+          "style_for_count": 0
+        },
+        {
+          "name": "Family rooms",
+          "selected": 0,
+          "style_for_count": 0,
+          "popular_rank": 3,
+          "count": 30,
+          "id": "facility::28",
+          "experiment_tracking_data": {
+            "track_on_select": [
+              {
+                "type": 1,
+                "value": 1,
+                "experiment_tag": "families_app_family_rooms_blackout"
+              }
+            ]
+          },
+          "popular": 1
+        },
+        {
+          "style_for_count": 0,
+          "selected": 0,
+          "count": 15,
+          "name": "Fitness center",
+          "id": "facility::11"
+        },
+        {
+          "style_for_count": 0,
+          "name": "Free parking",
+          "id": "facility::46",
+          "count": 40,
+          "selected": 0
+        },
+        {
+          "popular_rank": 2,
+          "style_for_count": 0,
+          "selected": 0,
+          "popular": 1,
+          "count": 45,
+          "name": "Free WiFi",
+          "id": "facility::107"
+        },
+        {
+          "count": 31,
+          "name": "Non-smoking rooms",
+          "id": "facility::16",
+          "selected": 0,
+          "style_for_count": 0
+        },
+        {
+          "selected": 0,
+          "id": "facility::2",
+          "name": "Parking",
+          "count": 40,
+          "style_for_count": 0
+        },
+        {
+          "style_for_count": 0,
+          "count": 13,
+          "id": "facility::4",
+          "name": "Pet friendly",
+          "selected": 0
+        },
+        {
+          "selected": 0,
+          "count": 24,
+          "id": "facility::3",
+          "name": "Restaurant",
+          "style_for_count": 0
+        },
+        {
+          "selected": 0,
+          "count": 37,
+          "id": "facility::5",
+          "name": "Room service",
+          "style_for_count": 0
+        },
+        {
+          "style_for_count": 0,
+          "name": "Spa",
+          "id": "facility::54",
+          "count": 4,
+          "selected": 0
+        },
+        {
+          "selected": 0,
+          "count": 21,
+          "name": "Swimming pool",
+          "id": "facility::433",
+          "style_for_count": 0
+        }
+      ],
+      "irene_resp_id": "hotelfacility"
+    },
+    {
+      "irene_resp_id": "distance",
+      "type": "multiple_single_selection",
+      "is_group": 0,
+      "layout": {
+        "is_collapsable": 0,
+        "collapsed_count": 5,
+        "is_collapsed": 0
+      },
+      "iconfont": null,
+      "categories": [
+        {
+          "style_for_count": 0,
+          "selected": 0,
+          "id": "distance::1000",
+          "name": "Less than 1 km",
+          "count": 1
+        },
+        {
+          "count": 3,
+          "name": "Less than 3 km",
+          "id": "distance::3000",
+          "selected": 0,
+          "style_for_count": 0
+        },
+        {
+          "style_for_count": 0,
+          "selected": 0,
+          "name": "Less than 5 km",
+          "id": "distance::5000",
+          "count": 16
+        }
+      ],
+      "any_text": "No Preference",
+      "subtitle": "",
+      "id": "distance",
+      "title": "Distance from city center"
+    },
+    {
+      "iconfont": "restaurants",
+      "layout": {
+        "is_collapsable": 0,
+        "collapsed_count": 5,
+        "is_collapsed": 0
+      },
+      "is_group": 0,
+      "type": "multiple_union",
+      "title": "Meals",
+      "id": "mealplan",
+      "any_text": "Any meal options",
+      "subtitle": "",
+      "categories": [
+        {
+          "popular_rank": 5,
+          "style_for_count": 0,
+          "popular": 1,
+          "selected": 0,
+          "id": "mealplan::breakfast_included",
+          "name": "Breakfast Included",
+          "count": 18
+        },
+        {
+          "selected": 0,
+          "count": 7,
+          "name": "Breakfast & dinner included",
+          "id": "mealplan::breakfast_and_dinner",
+          "style_for_count": 0
+        },
+        {
+          "style_for_count": 0,
+          "selected": 0,
+          "count": 2,
+          "name": "Breakfast & lunch included",
+          "id": "mealplan::breakfast_and_lunch"
+        },
+        {
+          "style_for_count": 0,
+          "selected": 0,
+          "name": "Kitchen amenities",
+          "id": "mealplan::999",
+          "count": 16
+        }
+      ],
+      "irene_resp_id": "mealplan"
+    },
+    {
+      "categories": [
+        {
+          "style_for_count": 0,
+          "count": 1,
+          "name": "Marriott Hotels & Resorts",
+          "id": "chaincode::1080",
+          "selected": 0
+        },
+        {
+          "style_for_count": 0,
+          "selected": 0,
+          "count": 1,
+          "id": "chaincode::12853",
+          "name": "Marriott International"
+        },
+        {
+          "style_for_count": 0,
+          "name": "OYO Rooms",
+          "id": "chaincode::6015",
+          "count": 24,
+          "selected": 0
+        },
+        {
+          "style_for_count": 0,
+          "name": "Park Inn by Radisson",
+          "id": "chaincode::8645",
+          "count": 1,
+          "selected": 0
+        }
+      ],
+      "any_text": "No chain selected",
+      "id": "chaincode",
+      "subtitle": "",
+      "title": "Chain",
+      "type": "multiple_union",
+      "is_group": 0,
+      "layout": {
+        "is_collapsable": 0,
+        "is_collapsed": 0,
+        "collapsed_count": 5
+      },
+      "iconfont": "hotel",
+      "irene_resp_id": "chaincode"
+    },
+    {
+      "irene_resp_id": "review_score",
+      "any_text": "No score selected",
+      "subtitle": "",
+      "id": "reviewscorebuckets",
+      "title": "Review Score",
+      "categories": [
+        {
+          "style_for_count": 0,
+          "count": 29,
+          "id": "reviewscorebuckets::50",
+          "name": "Fair: 5+",
+          "selected": 0
+        },
+        {
+          "selected": 0,
+          "name": "Pleasant: 6+",
+          "id": "reviewscorebuckets::60",
+          "count": 26,
+          "style_for_count": 0
+        },
+        {
+          "style_for_count": 0,
+          "selected": 0,
+          "name": "Good: 7+",
+          "id": "reviewscorebuckets::70",
+          "count": 16
+        },
+        {
+          "count": 7,
+          "name": "Very Good: 8+",
+          "id": "reviewscorebuckets::80",
+          "selected": 0,
+          "popular": 1,
+          "style_for_count": 0,
+          "popular_rank": 13
+        },
+        {
+          "style_for_count": 0,
+          "count": 1,
+          "id": "reviewscorebuckets::90",
+          "name": "Wonderful: 9+",
+          "selected": 0
+        },
+        {
+          "style_for_count": 0,
+          "selected": 0,
+          "id": "reviewscorebuckets::999",
+          "name": "No rating",
+          "count": 15
+        }
+      ],
+      "is_group": 0,
+      "layout": {
+        "is_collapsable": 1,
+        "is_collapsed": 1,
+        "collapsed_count": 5
+      },
+      "iconfont": "reviews",
+      "type": "multiple_single_selection"
+    },
+    {
+      "title": "Room Facilities",
+      "any_text": "No room facilities selected",
+      "subtitle": "",
+      "id": "room_facility",
+      "categories": [
+        {
+          "selected": 0,
+          "name": "Private bathroom",
+          "id": "room_facility::38",
+          "count": 44,
+          "style_for_count": 0
+        },
+        {
+          "style_for_count": 0,
+          "popular_rank": 12,
+          "name": "Air conditioning",
+          "id": "room_facility::11",
+          "count": 70,
+          "popular": 1,
+          "selected": 0
+        },
+        {
+          "style_for_count": 0,
+          "selected": 0,
+          "id": "room_facility::75",
+          "name": "Flat-screen TV",
+          "count": 43
+        },
+        {
+          "selected": 0,
+          "name": "Kitchen/Kitchenette",
+          "id": "room_facility::999",
+          "count": 16,
+          "style_for_count": 0
+        },
+        {
+          "count": 21,
+          "name": "Balcony",
+          "id": "room_facility::17",
+          "selected": 0,
+          "style_for_count": 0
+        },
+        {
+          "style_for_count": 0,
+          "selected": 0,
+          "name": "Bathtub",
+          "id": "room_facility::5",
+          "count": 10
+        },
+        {
+          "style_for_count": 0,
+          "id": "room_facility::34",
+          "name": "Washing machine",
+          "count": 1,
+          "selected": 0
+        },
+        {
+          "style_for_count": 0,
+          "selected": 0,
+          "name": "Coffee/Tea maker",
+          "id": "room_facility::998",
+          "count": 19
+        },
+        {
+          "selected": 0,
+          "name": "View",
+          "id": "room_facility::81",
+          "count": 32,
+          "style_for_count": 0
+        },
+        {
+          "style_for_count": 0,
+          "selected": 0,
+          "id": "room_facility::123",
+          "name": "Terrace",
+          "count": 4
+        },
+        {
+          "style_for_count": 0,
+          "count": 9,
+          "id": "room_facility::93",
+          "name": "Private pool",
+          "selected": 0
+        },
+        {
+          "id": "room_facility::37",
+          "name": "Patio",
+          "count": 1,
+          "selected": 0,
+          "style_for_count": 0
+        },
+        {
+          "style_for_count": 0,
+          "selected": 0,
+          "count": 8,
+          "id": "room_facility::79",
+          "name": "Soundproof"
+        },
+        {
+          "count": 18,
+          "name": "Electric kettle",
+          "id": "room_facility::86",
+          "selected": 0,
+          "style_for_count": 0
+        }
+      ],
+      "iconfont": "bath",
+      "layout": {
+        "collapsed_count": 5,
+        "is_collapsed": 1,
+        "is_collapsable": 1
+      },
+      "is_group": 0,
+      "type": "multiple_intersection",
+      "irene_resp_id": "roomfacility"
+    },
+    {
+      "irene_resp_id": "tdb",
+      "iconfont": null,
+      "layout": {
+        "collapsed_count": 5,
+        "is_collapsed": 0,
+        "is_collapsable": 0
+      },
+      "is_group": 0,
+      "experiment_tracking_data": {
+        "track_on_view": [
+          {
+            "experiment_tag": "android_fax_cribs_filter",
+            "value": 1,
+            "type": 0
+          }
+        ]
+      },
+      "categories": [
+        {
+          "id": "twin_double_bed::2",
+          "name": "2 single beds",
+          "count": 0,
+          "selected": 0,
+          "style_for_count": 0
+        },
+        {
+          "style_for_count": 0,
+          "selected": 0,
+          "id": "twin_double_bed::3",
+          "name": "Double bed",
+          "count": 0
+        }
+      ],
+      "type": "multiple_union",
+      "title": "Bed Preference",
+      "any_text": "Select bed type",
+      "id": "twin_double_bed",
+      "subtitle": ""
+    }
+  ],
+  "map_bounding_box": {
+    "sw_long": 72.716226406158,
+    "sw_lat": 21.1054,
+    "ne_long": 73.11894,
+    "ne_lat": 21.386246
+  },
+  "count": 70,
+  "ranking_version": 5,
+  "unfiltered_count": 185,
+  "primary_count": 70,
+  "total_count_with_filters": 70
+}

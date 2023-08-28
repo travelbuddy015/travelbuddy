@@ -2,14 +2,50 @@
 
 <head>
     <%- include('layouts/header.ejs'); -%>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
 </head>
 
 <body>
     <%- include('layouts/navbar.ejs'); -%>
+        <style>
+            #search-books {
+                text-align: center;
+                /* Center the form */
+                margin-top: 20px;
+            }
+
+            label {
+                font-weight: bold;
+            }
+
+            input[type="text"] {
+                padding: 8px;
+                border: 2px solid black;
+                border-radius: 4px;
+                font-size: 14px;
+                width: 200px;
+            }
+
+            button[type="submit"] {
+                background-color: rgb(8, 141, 170);
+                color: white;
+                border: none;
+                border-radius: 4px;
+                padding: 8px 12px;
+                cursor: pointer;
+                font-size: 14px;
+            }
+
+            button[type="submit"]:hover {
+                transition: 0.5s;
+                background-color: rgb(22, 189, 189);
+            }
+        </style>
         <form id="search-books" method="get">
             <label for="search">Search:</label>
-            <input type="text" name="search" id="search">
-            <button type="submit">Search</button>
+            <input type="text" name="search" id="search" placeholder="Enter Train Name ">
+            <button type="submit">&#128269; </button>
         </form>
         <% trains.forEach(function(train) { %>
             <div class="container mt-5">
@@ -66,16 +102,42 @@
                             </p>
                         </div>
                         <div class="col-4 check-availability">
-                            <a href="https://www.ixigo.com/trains/<%=train.train_number%>?orgn=<%=train.from%>&dstn=<%=train.to%>&departDate=<%=startdate%>"
+                            <a style="text-decoration: none;"
+                                href="https://www.ixigo.com/trains/<%=train.train_number%>?orgn=<%=train.from%>&dstn=<%=train.to%>&departDate=<%=startdate%>"
                                 target="_blank">
                                 <button class="form-control">Check Availability</button>
                             </a>
+                            <form action="" method="post">
+                                <input type="hidden" name="train" value="<%= train.train_number %>">
+                                <button class="form-control save-btn" style="background-color: #dbdada; color: #000;"
+                                    type="submit">Save
+                                    this</button>
+                            </form>
                         </div>
                     </div>
                 </div>
             </div>
             </div>
             <% }); %>
+                <script>
+                    $(document).ready(function () {
+                        function updatePlaceholder() {
+                            const currentTime = new Date();
+                            const currentSecond = currentTime.getSeconds();
+
+                            // Change the placeholder every second
+                            if (currentSecond % 2 === 0) {
+                                $("#search").attr("placeholder", "Enter Train Number");
+                            } else {
+                                $("#search").attr("placeholder", "Enter Train Name");
+                            }
+                        }
+
+                        // Update placeholder every 1 second
+                        updatePlaceholder();
+                        setInterval(updatePlaceholder, 1500);
+                    });
+                </script>
 </body>
 
 </html>

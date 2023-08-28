@@ -813,8 +813,158 @@ section .next {
 }
 
 /* trainlist end */
-/* daterangepicker start */
+
+/* hotelist start */
+.title-and-price {
+  display: flex;
+  flex-direction: column;
+}
+
+.card-content h2 {
+  font-size: 2.5rem;
+  /* margin-bottom: 120px; */
+  margin-top: 5px;
+  font-family: poppins;
+  color: black;
+}
+
+.price {
+  font-size: 2.5rem;
+  /* margin-bottom: 50px;
+      margin-left: 100px; */
+  font-family: poppins;
+  color: black;
+  margin-top: 15px;
+  /* Adjust this margin */
+  margin-bottom: 100px;
+  margin-left: 150px;
+
+}
+
+.center-container {
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  /* Change this line */
+  min-height: 100vh;
+  padding-top: 40px;
+}
+
+/*button*/
+.center-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.details-button {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #12A09D;
+  color: white;
+  border-radius: 30px;
+  text-align: center;
+  text-decoration: none;
+}
+
+.details-button:hover {
+  background-color: #0C9E9B;
+}
+
+.card-hotel {
+  display: flex;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  padding: 10px;
+  margin: 10px;
+  align-items: center;
+  box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2);
+  height: 300px;
+  width: 900px;
+  position: relative;
+  /* Add this position property */
+}
+
+.card-image {
+  flex: 1;
+  padding: 10px;
+  margin-bottom: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
 
 
 
-/* daterangepicker ends */
+.card-content {
+  flex: 2;
+  padding: 10px;
+}
+
+.card-image img {
+  /* max-width: 100%; Remove or adjust this line */
+  width: 190px;
+  /* Add this line to make the image take up the entire width of its container */
+  height: 250px;
+  border-radius: 4px;
+
+
+
+}
+
+.vertical-line {
+  border-left: 1px solid rgb(30, 151, 153);
+  height: 100%;
+  margin-left: 14px;
+}
+
+.vertical-line2 {
+  border-left: 1px solid rgb(30, 151, 153);
+  height: 100%;
+  margin-right: 60px;
+}
+
+/* Star Rating */
+.star-rating {
+  position: absolute;
+  bottom: 160px;
+  /* Adjust this value as needed */
+  right: 10px;
+  /* Adjust this value as needed */
+}
+
+.star {
+  font-size: 40px;
+  color: gold;
+  margin-right: 15px;
+}
+
+.reviews {
+  margin-left: 10px;
+  color: gray;
+  font-size: 20px;
+}
+
+.ratings-circles {
+  display: flex;
+  align-items: center;
+  margin-top: 5px;
+}
+
+.circle {
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  background-color: gray;
+  border-color: black;
+  margin-right: 5px;
+}
+
+.circle.filled {
+  background-color: green;
+}
+
+/* hotelist end */

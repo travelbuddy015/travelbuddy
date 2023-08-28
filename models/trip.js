@@ -11,7 +11,7 @@ const TripSchema = new mongoose.Schema({
   members: { type: Number, required: true },
   children: { type: Number },
   // triptype: { type: String },
-  // StoD_train: { type: Train },
+  StoD_train: { type: Train },
   // DtoS_train: { type: Train },
   // places : [{type: Place}],
   // resturant: {type: Resturant},

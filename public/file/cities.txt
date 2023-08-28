@@ -121,7 +121,8 @@ SurgujaDadraandNagarHaveliDaman
 Diu
 Delhi
 NorthGoa
-SouthGoaAhmedabad
+SouthGoa
+Ahmedabad
 Amrelidistrict
 Anand
 Banaskantha
@@ -324,7 +325,6 @@ Tikamgarh
 Ujjain
 Umaria
 Vidisha
-
 Ahmednagar
 Akola
 Amravati

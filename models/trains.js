@@ -26,4 +26,4 @@ const Trains = {
 };
 const Train = mongoose.model("Train", Trains);
 
-module.exports = Train;
+module.exports = { Trains, Train };
