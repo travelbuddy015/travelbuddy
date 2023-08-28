@@ -45,7 +45,7 @@ exports.getTrainlist = (req, res, next) => {
 
           if (tokens.length) {
             var searchTermRegex = new RegExp(tokens.join("|"), "gim");
-            // console.log(searchTermRegex);
+            console.log(searchTermRegex);
 
             var filteredList = train.filter(function (train) {
               var trainString = "";
@@ -57,8 +57,6 @@ exports.getTrainlist = (req, res, next) => {
 
               return trainString.match(searchTermRegex);
             });
-
-            console.log(filteredList);
           }
           res.render("trainlist", {
             startdate: startdate,
@@ -72,13 +70,20 @@ exports.getTrainlist = (req, res, next) => {
       });
     });
 };
-exports.searchtrain = (req, res, next) => {
-  var handleSearch = function (event) {
-    event.preventDefault();
 
-    var searchTerm = event.target.elements["search"].value;
-    // Tokenize the search terms and remove empty spaces
-  };
+exports.postTrainlist = (req, res, next) => {
+  var train_number = req.body.train;
+  Train.find({
+    train_number: train_number,
+  })
+    .limit(1)
+    .then((train) => {
+      Trip.findById(req.params.id).then((trip) => {
+        trip.StoD_train = train[0];
+        trip.save();
+        res.redirect("hotellist");
+      });
+    });
 };
 const getstationname = (name) => {
   const regex = new RegExp(name + "\\s", "i");
