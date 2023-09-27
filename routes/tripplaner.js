@@ -10,6 +10,7 @@ const {
   saveCity,
   saveMembers,
   getHotellist,
+  postHotel,
 } = require("../controller/tripplaner_controller");
 const {
   getTrainlist,
@@ -27,5 +28,6 @@ router.post("/trip", postTrip);
 router.post("/trip/save-city", saveCity);
 router.post("/trip/save-member", saveMembers);
 router.post("/trip/edit/:id/trainlist", postTrainlist);
+router.post("/trip/edit/:id/hotellist", postHotel);
 
 module.exports = router;

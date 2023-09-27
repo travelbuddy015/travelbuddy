@@ -265,12 +265,11 @@
             <div class="main-txt">
                 <h1>Choose Your <span>Mode of Transport </span></h1>
             </div>
-
             <div class="row d-flex justify-content-center" style="margin-top: 30px;">
                 <div class="col-md-3 py-3 py-md-0">
                     <a href="<%=trip.id%>/trainlist" style="text-decoration: none;color: #000000;">
                         <div class="card train_card">
-                            <i class="fas fa-train" style="color: #ec2222;"></i>
+                            <i class="fas fa-train" style="color: rgb(67,176,178);"></i>
                             <div class="card-body">
                                 <h3>Train</h3>
                             </div>
@@ -280,7 +279,7 @@
                 <div class="col-md-3 py-3 py-md-0">
 
                     <div class="card">
-                        <i class="fas fa-plane" style="color: #179193;"></i>
+                        <i class="fas fa-plane" style="color: rgb(67,176,178);"></i>
                         <div class="card-body">
                             <h3>Airways</h3>
                         </div>
@@ -290,7 +289,7 @@
                 <div class="col-md-3 py-3 py-md-0">
 
                     <div class="card">
-                        <i class="fas fa-ellipsis-h" style="color:#0d7909;"></i>
+                        <i class="fas fa-ellipsis-h" style="color:rgb(67,176,178);"></i>
                         <div class="card-body">
                             <h3>Other</h3>
                         </div>
@@ -303,7 +302,7 @@
         <script src="/js/planner.js" trip-id="<%= trip._id %>"></script>
         <script>
             window.onload = function () {
-                window.scrollTo(0, 0);
+                window.scrollTo(-1, -1);
             };
         </script>
 

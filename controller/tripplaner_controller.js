@@ -3627,3 +3627,5 @@ async function getDestid(dest, options) {
     console.error(error);
   }
 }
+
+exports.postHotel = (req, res, next) => {};

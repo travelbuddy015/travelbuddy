@@ -1,0 +1,13 @@
+{
+  "status": true,
+  "message": "Success",
+  "timestamp": 1695783101618,
+  "data": [
+    {
+      "train_number": "20960",
+      "train_name": "VADNAGAR - VALSAD Intercity SF Express",
+      "eng_train_name": "VADNAGAR - VALSAD Intercity SF Express",
+      "new_train_number": ""
+    }
+  ]
+}

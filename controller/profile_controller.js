@@ -13,7 +13,6 @@ exports.updateProfile = async (req, res, next) => {
     user = req.user;
   }
   user.name = capitalize(req.body.name);
-  user.username = req.body.email;
   user.phone = req.body.phone;
   user.age = req.body.age;
   user.gender = req.body.gender;

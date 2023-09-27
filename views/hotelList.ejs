@@ -55,7 +55,12 @@
                                                         <%= hotels[i].review_score / 2 %>
                                                     </span>
                     </div>
-
+                    <form action="" method="post">
+                        <input type="hidden" name="hotel" value="<%= hotels[i].id %>">
+                        <button class="form-control save-btn" style="background-color: #dbdada; color: #000;"
+                            type="submit">Save
+                            this</button>
+                    </form>
                 </div>
                 <% } %>
         </div>
