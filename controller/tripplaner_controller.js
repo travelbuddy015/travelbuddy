@@ -52,7 +52,6 @@ exports.saveCity = (req, res, next) => {
     });
 };
 exports.saveMembers = (req, res, next) => {
-  console.log(req.body);
   const tripID = req.body.id;
   const { members, type, children, adults } = req.body;
 
@@ -3628,4 +3627,26 @@ async function getDestid(dest, options) {
   }
 }
 
-exports.postHotel = (req, res, next) => {};
+exports.postHotel = (req, res, next) => {
+  const tripId = req.params.id;
+  const hotelData = {
+    url: req.body.hotelUrl[0],
+    min_total_price: req.body.hotelMinTotalPrice,
+    hotel_name: req.body.hotelName,
+    main_photo_url: req.body.hotelMainPhotoUrl,
+    checkin: req.body.hotelCheckIn,
+  };
+
+  Trip.findById(tripId)
+    .then((trip) => {
+      trip.hotel = hotelData;
+      return trip.save();
+    })
+    .then((savedTrip) => {
+      console.log(savedTrip);
+    })
+    .catch((error) => {
+      console.error(error);
+      res.status(500).json({ error: "Internal Server Error" });
+    });
+};

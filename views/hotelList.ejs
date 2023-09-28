@@ -56,7 +56,13 @@
                                                     </span>
                     </div>
                     <form action="" method="post">
-                        <input type="hidden" name="hotel" value="<%= hotels[i].id %>">
+
+                        <input type="hidden" name="hotelUrl" value="<%= hotels[i].url %>">
+                        <input type="hidden" name="hotelMinTotalPrice" value="<%= hotels[i].min_total_price %>">
+                        <input type="hidden" name="hotelUrl" value="<%= hotels[i].url %>">
+                        <input type="hidden" name="hotelName" value="<%= hotels[i].hotel_name %>">
+                        <input type="hidden" name="hotelMainPhotoUrl" value="<%= hotels[i].main_photo_url %>">
+                        <input type="hidden" name="hotelCheckIn" value="<%= hotels[i].checkin %>">
                         <button class="form-control save-btn" style="background-color: #dbdada; color: #000;"
                             type="submit">Save
                             this</button>
