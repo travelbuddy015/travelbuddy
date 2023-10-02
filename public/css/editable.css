@@ -1,0 +1,22 @@
+.title{
+    font-weight: bolder;
+    font-size: 1.2vw;
+}
+.date-text{
+    color: #666;
+    font-size: 1vw;
+}
+
+.accomodation{
+    background-color: pink;
+    font-size: 1vw;
+}
+.transpotation{
+    background-color: #EFEFEF;
+    font-size: 1vw;
+}
+.attraction{
+    background-color: rgb(79, 224, 226);
+    font-size: 1vw;
+
+}
