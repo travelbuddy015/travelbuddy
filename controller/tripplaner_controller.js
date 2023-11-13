@@ -205,3 +205,7 @@ exports.postHotel = (req, res, next) => {
       res.status(500).json({ error: "Internal Server Error" });
     });
 };
+
+exports.getPlaces = (req,res,next)=>{
+  res.render("editable",{user : req.user});
+}
