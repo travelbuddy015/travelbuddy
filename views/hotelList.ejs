@@ -8,12 +8,12 @@
     <%- include('layouts/navbar.ejs'); -%>
         <!--Hotel cards-->
 
+
         <div class="center-container">
             <% for( let i=0; i < hotels.length; i++ ) { %>
                 <div class="card-hotel">
                     <div class="card-image">
                         <img src="<%= hotels[i].main_photo_url %>" alt="Image">
-                        <!-- <span class="like-symbol"><i class="fas fa-heart"></i></span> -->
                     </div>
                     <div class="vertical-line"></div>
                     <div class="card-content">
@@ -21,52 +21,36 @@
                             <h3>
                                 <%= hotels[i].hotel_name %>
                             </h3>
-                            <h4 class="price">
-                                ₹<%=hotels[i].min_total_price %>
+                            <h4 class="price">₹<%=hotels[i].min_total_price %>
                             </h4>
                         </div>
-                        <div class="center-button">
-                            <a class="details-button" href="<%= hotels[i].url %>" target="_blank">View Details</a>
+                        <div class="ratings-circles">
+                            <% const reviewScore=hotels[i].review_score / 2; %>
+                                <% const totalCircles=Math.floor(reviewScore); %>
+                                    <% for (let i=0; i < totalCircles; i++) { %>
+                                        <span class="circle filled"></span>
+                                        <% } %>
+                                            <% const remainingScore=5 - reviewScore; %>
+                                                <% for (let i=0; i < remainingScore; i++) { %>
+                                                    <span class="circle"></span>
+                                                    <% } %>
+                                                        <span class="reviews">
+                                                            <%= hotels[i].review_score / 2 %>
+                                                        </span>
                         </div>
+                        <form action="" method="post">
+                            <input type="hidden" name="hotelUrl" value="<%= hotels[i].url %>">
+                            <input type="hidden" name="hotelMinTotalPrice" value="<%= hotels[i].min_total_price %>">
+                            <input type="hidden" name="hotelUrl" value="<%= hotels[i].url %>">
+                            <input type="hidden" name="hotelName" value="<%= hotels[i].hotel_name %>">
+                            <input type="hidden" name="hotelMainPhotoUrl" value="<%= hotels[i].main_photo_url %>">
+                            <input type="hidden" name="hotelCheckIn" value="<%= hotels[i].checkin %>">
+                            <button class="form-control save-btn" style="background-color: #dbdada; color: #000;"
+                                type="submit">Save this</button>
+                        </form>
+                        <a class="details-button" href="<%= hotels[i].url %>" target="_blank">View Details</a>
                     </div>
                     <div class="vertical-line2"></div>
-                    <!-- <div class="star-rating">
-                        <span class="star">&#9733;</span>
-                        <span class="star">&#9733;</span>
-                        <span class="star">&#9733;</span>
-                        <span class="star">&#9733;</span>
-                        <span class="star">&#9733;</span>
-                    </div> -->
-                    <div class="ratings-circles">
-                        <% const reviewScore=hotels[i].review_score / 2; %>
-                            <% const totalCircles=Math.floor(reviewScore); %>
-
-                                <% for (let i=0; i < totalCircles; i++) { %>
-                                    <span class="circle filled"></span>
-                                    <% } %>
-
-                                        <% const remainingScore=5 - reviewScore; %>
-
-                                            <% for (let i=0; i < remainingScore; i++) { %>
-                                                <span class="circle"></span>
-                                                <% } %>
-
-                                                    <span class="reviews">
-                                                        <%= hotels[i].review_score / 2 %>
-                                                    </span>
-                    </div>
-                    <form action="" method="post">
-
-                        <input type="hidden" name="hotelUrl" value="<%= hotels[i].url %>">
-                        <input type="hidden" name="hotelMinTotalPrice" value="<%= hotels[i].min_total_price %>">
-                        <input type="hidden" name="hotelUrl" value="<%= hotels[i].url %>">
-                        <input type="hidden" name="hotelName" value="<%= hotels[i].hotel_name %>">
-                        <input type="hidden" name="hotelMainPhotoUrl" value="<%= hotels[i].main_photo_url %>">
-                        <input type="hidden" name="hotelCheckIn" value="<%= hotels[i].checkin %>">
-                        <button class="form-control save-btn" style="background-color: #dbdada; color: #000;"
-                            type="submit">Save
-                            this</button>
-                    </form>
                 </div>
                 <% } %>
         </div>

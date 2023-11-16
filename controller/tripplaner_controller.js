@@ -141,6 +141,7 @@ exports.getHotellist = async (req, res, next) => {
     const departure_date = helper.formatDateToCustomFormat(trip.enddate);
     const adults = trip.members;
     const children_qty = trip.children ? trip.children : 0;
+    console.log(trip);
     const dest_ids = await getDestid(trip.destination, options);
     const url = `https://apidojo-booking-v1.p.rapidapi.com/properties/list?offset=0&arrival_date=${arrival_date}&departure_date=${departure_date}&guest_qty=${adults}&dest_ids=${dest_ids}&room_qty=1&search_type=city&children_qty=${children_qty}&search_id=none&price_filter_currencycode=INR&order_by=popularity&languagecode=en-us&travel_purpose=leisure`;
     const response = await fetch(url, options);
@@ -198,7 +199,7 @@ exports.postHotel = (req, res, next) => {
       return trip.save();
     })
     .then((savedTrip) => {
-      console.log(savedTrip);
+      res.redirect(`/trip/edit/${savedTrip._id}/places`);
     })
     .catch((error) => {
       console.error(error);
@@ -206,6 +207,56 @@ exports.postHotel = (req, res, next) => {
     });
 };
 
-exports.getPlaces = (req,res,next)=>{
-  res.render("editable",{user : req.user});
-}
+exports.getPlaces = async (req, res, next) => {
+  try {
+    const tripId = req.params.id;
+    const trip = await Trip.findById(tripId);
+    const requestOptions = {
+      method: "GET",
+    };
+
+    // const place = await getPlaceDetails(req, res, trip.destination);
+    // const response = await fetch(
+    //   `https://api.geoapify.com/v2/places?categories=tourism.attraction,entertainment&filter=circle:${place.lon},${place.lat},20000&bias=proximity:${place.lon},${place.lat}&limit=20&apiKey=4586f907a0144e8d9db4ff9ccd2ff555`,
+    //   requestOptions
+    // );
+    // const result = await response.json();
+    // const filteredData = result.features.filter(
+    //   (feature) =>
+    //     !feature.properties.categories.includes("entertainment.cinema")
+    // );
+
+    // res.send(filteredData);
+    res.render("editable", {
+      user: req.user,
+      trip: trip,
+      // places: filteredData,
+    });
+  } catch (error) {
+    console.log("error", error);
+  }
+};
+
+// https://api.geoapify.com/v2/places?categories=tourism.attraction,entertainment&filter=place:512fb9f6aa3a355240597edd8e15a1353540f00103f901e31fd45502000000c002079203055375726174&limit=20&apiKey=YOUR_API_KEY
+// place id
+// https://api.geoapify.com/v1/geocode/search?text=surat&format=json&apiKey=4586f907a0144e8d9db4ff9ccd2ff555
+getPlaceDetails = async (req, res, placeName) => {
+  try {
+    const response = await fetch(
+      `https://api.geoapify.com/v1/geocode/search?text=${placeName}&format=json&apiKey=4586f907a0144e8d9db4ff9ccd2ff555`,
+      { method: "GET" }
+    );
+    const result = await response.json();
+    const indiaRes = result.results.filter(
+      (place) => place.country_code === "in"
+    );
+    if (indiaRes.length > 0) {
+      const firstPlace = indiaRes[0];
+      const { lon, lat, name, place_id } = firstPlace;
+      const finalPlace = { lon, lat, name, place_id };
+      return finalPlace;
+    }
+  } catch (error) {
+    console.log("error", error);
+  }
+};

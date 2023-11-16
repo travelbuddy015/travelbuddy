@@ -76,6 +76,7 @@ exports.getTrainlist = async (req, res, next) => {
         });
 
         res.render("trainlist", {
+          search_input: search_input,
           startdate: startdate,
           enddate: enddate,
           user: req.user,
