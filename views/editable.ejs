@@ -80,98 +80,122 @@
                 <h4 class="my-4">
                     <%= totalDays %> Day Trip to <%= trip.destination %> from <%= trip.source %>
                 </h4>
-                <div class="row">
-                    <% for (let index=0; index < totalDays; index++) { %>
-                        <div class="col-4">
-                            <div class="card">
-                                <div class="card-body">
-                                    <p class="h6 title">Day-<%= index + 1 %>
-                                    </p>
-                                    <% const currentDate=new Date(startDate); currentDate.setDate(currentDate.getDate()
-                                        + index); %>
-                                        <p class="card-text date-text">
-                                            <%= currentDate.toDateString() %>
-                                        </p>
-                                </div>
-                            </div>
-
-                            <!-- Transportation -->
-                            <% if (index==0) { %>
+                <% var i=0; %>
+                    <div class="row">
+                        <% for (let index=0; index < totalDays; index++) { %>
+                            <div class="col-4">
                                 <div class="card">
                                     <div class="card-body">
-                                        <div class="row">
-                                            <div class="col-4">
-                                                <img class="img-fluid"
-                                                    src="https://static.thenounproject.com/png/1175692-200.png" alt="">
-                                            </div>
-                                            <div class="col-8">
-                                                <span class="transpotation">
-                                                    <i class="fa-solid fa-road"></i>
-                                                    Transportation
-                                                </span>
-                                                <p class="h6 title">
-                                                    <%= trip.StoD_train.train_number %>: <%= trip.StoD_train.train_name
-                                                            %>
-                                                </p>
-                                                <div class="row">
-                                                    <div class="col">
-                                                        <div class="title">Departure</div>
-                                                        <div class="date-text">
-                                                            <%= trip.StoD_train.from_std %>
-                                                        </div>
-                                                    </div>
-                                                    <div class="col">
-                                                        <i class="fa-solid fa-arrow-right "></i>
-                                                    </div>
-                                                    <div class="col">
-                                                        <div class="title">Arrival</div>
-                                                        <div class="date-text">
-                                                            <%= trip.StoD_train.to_std %>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
+                                        <p class="h6 title">Day-<%= index + 1 %>
+                                        </p>
+                                        <% const currentDate=new Date(startDate);
+                                            currentDate.setDate(currentDate.getDate() + index); %>
+                                            <p class="card-text date-text">
+                                                <%= currentDate.toDateString() %>
+                                            </p>
                                     </div>
                                 </div>
-                                <% } %>
-                                    <!-- Hotels -->
+
+                                <!-- Transportation -->
+                                <% if (index==0) { %>
                                     <div class="card">
                                         <div class="card-body">
                                             <div class="row">
                                                 <div class="col-4">
-                                                    <a href="<%= trip.hotel.url %>" target="_blank">
-                                                        <img class="rounded img-fluid"
-                                                            src="<%= trip.hotel.main_photo_url %>" alt="">
-                                                    </a>
+                                                    <img class="img-fluid"
+                                                        src="https://static.thenounproject.com/png/1175692-200.png"
+                                                        alt="">
                                                 </div>
                                                 <div class="col-8">
-                                                    <span class="accommodation rounded-pill">
-                                                        <i class="fa-solid fa-house"></i>
-                                                        Hotel
+                                                    <span class="transpotation">
+                                                        <i class="fa-solid fa-road"></i>
+                                                        Transportation
                                                     </span>
-                                                    <h6 class="title"><a href="<%= trip.hotel.url %>"
-                                                            style="text-decoration: none;color:black ;" target="_blank">
-                                                            <%= trip.hotel.hotel_name %>
-                                                        </a></h6>
+                                                    <p class="h6 title">
+                                                        <%= trip.StoD_train.train_number %>: <%=
+                                                                trip.StoD_train.train_name %>
+                                                    </p>
                                                     <div class="row">
                                                         <div class="col">
-                                                            <div class="date-text">08:30</div>
+                                                            <div class="title">Departure</div>
+                                                            <div class="date-text">
+                                                                <%= trip.StoD_train.from_std %>
+                                                            </div>
                                                         </div>
                                                         <div class="col">
                                                             <i class="fa-solid fa-arrow-right "></i>
                                                         </div>
                                                         <div class="col">
-                                                            <div class="date-text">10:30</div>
+                                                            <div class="title">Arrival</div>
+                                                            <div class="date-text">
+                                                                <%= trip.StoD_train.to_std %>
+
+                                                            </div>
                                                         </div>
                                                     </div>
                                                 </div>
                                             </div>
                                         </div>
                                     </div>
-                        </div>
-                        <% } %>
-                </div>
+                                    <% } %>
+                                        <!-- Hotels -->
+                                        <div class="card">
+                                            <div class="card-body">
+                                                <div class="row">
+                                                    <div class="col-4">
+                                                        <a href="<%= trip.hotel.url %>" target="_blank">
+                                                            <img class="rounded img-fluid"
+                                                                src="<%= trip.hotel.main_photo_url %>" alt="">
+                                                        </a>
+                                                    </div>
+                                                    <div class="col-8">
+                                                        <span class="accommodation rounded-pill">
+                                                            <i class="fa-solid fa-house"></i>
+                                                            Hotel
+                                                        </span>
+                                                        <h6 class="title"><a href="<%= trip.hotel.url %>"
+                                                                style="text-decoration: none;color:black ;"
+                                                                target="_blank">
+                                                                <%= trip.hotel.hotel_name %>
+                                                            </a></h6>
+                                                        <div class="row">
+                                                            <div class="col">
+                                                                <div class="date-text">08:30</div>
+                                                            </div>
+                                                            <div class="col">
+                                                                <i class="fa-solid fa-arrow-right "></i>
+                                                            </div>
+                                                            <div class="col">
+                                                                <div class="date-text">10:30</div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <% while (trip_time <20 && trip_time>=9) { %>
+                                            <% if(i<places.length) { %>
+                                                <% if(places[i].properties.name){ %>
+                                                    <%- include('layouts/places.ejs',{index: i});-%>
+                                                        <% } %>
+                                                            <% i++ %>
+                                                                <% } %>
+                                                                    <% trip_time +=3 %>
+                                                                        <% }; %>
+
+
+
+
+                            </div>
+                            <%trip_time=11 %>
+                                <% continue %>
+
+                                    <% } %>
+
+
+                    </div>
+
             </div>
 
 </body>

@@ -1,0 +1,37 @@
+<div class="card">
+    <div class="card-body">
+        <div class="row">
+            <div class="col-4">
+                <a href="<%= trip.hotel.url %>" target="_blank">
+                    <img class="rounded img-fluid"
+                        src="<%= trip.hotel.main_photo_url %>" alt="">
+                </a>
+            </div>
+            <div class="col-8">
+                <span class="accommodation rounded-pill">
+                    <i class="fa-solid fa-house"></i>
+                    Hotel
+                </span>
+                <h6 class="title"><a href="<%= trip.hotel.url %>"
+                        style="text-decoration: none;color:black ;" target="_blank">
+                        <%= places[index].properties.name %>
+                    </a></h6>
+                <div class="row">
+                    <div class="col">
+                        <div class="date-text">
+                            <%= trip_time %>:00
+                        </div>
+                    </div>
+                    <div class="col">
+                        <i class="fa-solid fa-arrow-right "></i>
+                    </div>
+                    <div class="col">
+                        <div class="date-text">
+                            <%= trip_time + 3 %>:00
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
