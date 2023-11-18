@@ -2,15 +2,22 @@
     <div class="card-body">
         <div class="row">
             <div class="col-4">
-                <a href="<%= trip.hotel.url %>" target="_blank">
+                
                     <img class="rounded img-fluid"
-                        src="<%= trip.hotel.main_photo_url %>" alt="">
-                </a>
+                    <% if (index%3 == 0) { %>
+                        src="/image/places1.jpg" alt="">
+                        <% }; %>
+                        <% if (index%3 == 1) { %>
+                            src="/image/places2.jpg" alt="">
+                            <% }; %>
+                            <% if (index%3 == 2) { %>
+                                src="/image/places3.jpg" alt="">
+                                <% }; %>
             </div>
             <div class="col-8">
-                <span class="accommodation rounded-pill">
-                    <i class="fa-solid fa-house"></i>
-                    Hotel
+                <span class="attraction rounded-pill">
+                    <i class="fa-solid fa-map-location-dot"></i>
+                    Attraction
                 </span>
                 <h6 class="title"><a href="<%= trip.hotel.url %>"
                         style="text-decoration: none;color:black ;" target="_blank">

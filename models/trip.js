@@ -2,6 +2,7 @@ const mongoose = require("mongoose");
 const Train = require("./trains").Trains;
 const User = require("./user");
 const Hotel = require("./hotel").hotelSchema;
+const Place = require("./place").placeSchema;
 const TripSchema = new mongoose.Schema({
   source: { type: String },
   return_city: { type: String },
@@ -15,7 +16,7 @@ const TripSchema = new mongoose.Schema({
   hotel: { type: Hotel },
   // triptype: { type: String },
   // DtoS_train: { type: Train },
-  // places : [{type: Place}],
+  places : [{type: Place}],
   // resturant: {type: Resturant},
   user: {
     type: mongoose.Schema.Types.ObjectId,

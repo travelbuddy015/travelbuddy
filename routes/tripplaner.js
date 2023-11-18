@@ -12,6 +12,7 @@ const {
   getHotellist,
   postHotel,
   getPlaces,
+  viewTrip
 } = require("../controller/tripplaner_controller");
 const {
   getTrainlist,
@@ -31,5 +32,5 @@ router.post("/trip/save-member", saveMembers);
 router.post("/trip/edit/:id/trainlist", postTrainlist);
 router.post("/trip/edit/:id/hotellist", postHotel);
 router.get("/trip/edit/:id/places", getPlaces);
-
+router.get("/trip/edit/:id/places/view",viewTrip);
 module.exports = router;

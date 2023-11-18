@@ -37,7 +37,7 @@
                 color: #6c757d;
             }
 
-            .transpotation,
+            
             .accommodation {
                 background-color: #88e0ff;
 
@@ -47,9 +47,17 @@
                 display: inline-block;
             }
 
-            .transpotation i,
+            
             .accommodation i {
                 margin-right: 5px;
+            }
+            .attraction {
+                background-color: pink;;
+
+                padding: 5px 10px;
+                border-radius: 5px;
+                margin-bottom: 10px;
+                display: inline-block;
             }
 
             .img-fluid {
@@ -107,7 +115,7 @@
                                                         alt="">
                                                 </div>
                                                 <div class="col-8">
-                                                    <span class="transpotation">
+                                                    <span class="accommodation" style="background-color: #EFEFEF;">
                                                         <i class="fa-solid fa-road"></i>
                                                         Transportation
                                                     </span>
@@ -158,27 +166,23 @@
                                                                 target="_blank">
                                                                 <%= trip.hotel.hotel_name %>
                                                             </a></h6>
-                                                        <div class="row">
+                                                        <div class="row ">
+                                                            
                                                             <div class="col">
-                                                                <div class="date-text">08:30</div>
-                                                            </div>
-                                                            <div class="col">
-                                                                <i class="fa-solid fa-arrow-right "></i>
-                                                            </div>
-                                                            <div class="col">
-                                                                <div class="date-text">10:30</div>
+                                                                <div class="date-text"><b>Rs.<%= trip.hotel.min_total_price %></b></div>
                                                             </div>
                                                         </div>
                                                     </div>
                                                 </div>
                                             </div>
+                                            
                                         </div>
 
-                                        <% while (trip_time <20 && trip_time>=9) { %>
+                                        <% while (trip_time <20 && trip_time>=11) { %>
                                             <% if(i<places.length) { %>
-                                                <% if(places[i].properties.name){ %>
+                                                
                                                     <%- include('layouts/places.ejs',{index: i});-%>
-                                                        <% } %>
+                                                        
                                                             <% i++ %>
                                                                 <% } %>
                                                                     <% trip_time +=3 %>

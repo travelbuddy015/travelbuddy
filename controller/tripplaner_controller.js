@@ -207,7 +207,28 @@ exports.postHotel = (req, res, next) => {
       res.status(500).json({ error: "Internal Server Error" });
     });
 };
+exports.viewTrip = async (req, res, next) =>{
+  try {
+    const tripId = req.params.id;
+    const trip = await Trip.findById(tripId);
+    const places_data = trip.places;
+// Read the contents of temp.txt
+  var time = timeToFloat(trip.StoD_train.to_std + ':00');
+  if(time < 11){
+    time=11;
+  }
 
+    res.render("editable", {
+      user: req.user,
+      trip: trip,
+      places: places_data,
+      trip_time : time
+      
+    });
+  } catch (error) {
+    console.log("error", error);
+  }
+}
 exports.getPlaces = async (req, res, next) => {
   try {
     const tripId = req.params.id;
@@ -615,14 +636,19 @@ var  dummydata = [
     geometry: { type: 'Point', coordinates: [Array] }
   }
 ]
+trip.places = dummydata;
+trip.save();
 // Read the contents of temp.txt
-
+  var time = timeToFloat(trip.StoD_train.to_std + ':00');
+  if(time < 11){
+    time=11;
+  }
 
     res.render("editable", {
       user: req.user,
       trip: trip,
       places: dummydata,
-      trip_time : timeToFloat(trip.StoD_train.to_std + ':00'),
+      trip_time : time
       
     });
   } catch (error) {
