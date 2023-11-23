@@ -37,7 +37,7 @@
                 color: #6c757d;
             }
 
-            
+
             .accommodation {
                 background-color: #88e0ff;
 
@@ -47,12 +47,14 @@
                 display: inline-block;
             }
 
-            
+
             .accommodation i {
                 margin-right: 5px;
             }
+
             .attraction {
-                background-color: pink;;
+                background-color: pink;
+                ;
 
                 padding: 5px 10px;
                 border-radius: 5px;
@@ -76,6 +78,13 @@
                 padding-left: 15px;
                 padding-right: 15px;
             }
+
+            .fa-arrows-rotate:before,
+            .fa-refresh:before,
+            .fa-sync:before {
+                content: "\f021";
+                margin-left: 0.5rem;
+            }
         </style>
 </head>
 
@@ -86,7 +95,9 @@
 
             <div class="container">
                 <h4 class="my-4">
-                    <%= totalDays %> Day Trip to <%= trip.destination %> from <%= trip.source %>
+                    <%= totalDays %> Day Trip to <%= trip.destination %> from <%= trip.source %> <i
+                                    class="fa fa-refresh " id="refreshIcon" style="cursor: pointer;"
+                                    aria-hidden="true"></i>
                 </h4>
                 <% var i=0; %>
                     <div class="row">
@@ -147,46 +158,66 @@
                                     </div>
                                     <% } %>
                                         <!-- Hotels -->
+
                                         <div class="card">
                                             <div class="card-body">
                                                 <div class="row">
                                                     <div class="col-4">
-                                                        <a href="<%= trip.hotel.url %>" target="_blank">
-                                                            <img class="rounded img-fluid"
-                                                                src="<%= trip.hotel.main_photo_url %>" alt="">
-                                                        </a>
+                                                        <% if (trip.hotel) { %>
+                                                            <a href="<%= trip.hotel.url %>" target="_blank">
+                                                                <img class="rounded img-fluid"
+                                                                    src="<%= trip.hotel.main_photo_url %>" alt="">
+                                                            </a>
+                                                            <% } else { %>
+                                                                <!-- Display default hotel image or placeholder -->
+                                                                <img class="rounded img-fluid"
+                                                                    src="https://images.unsplash.com/photo-1618773928121-c32242e63f39?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                                                                    alt="Default Hotel">
+                                                                <% } %>
                                                     </div>
                                                     <div class="col-8">
                                                         <span class="accommodation rounded-pill">
                                                             <i class="fa-solid fa-house"></i>
                                                             Hotel
                                                         </span>
-                                                        <h6 class="title"><a href="<%= trip.hotel.url %>"
-                                                                style="text-decoration: none;color:black ;"
-                                                                target="_blank">
-                                                                <%= trip.hotel.hotel_name %>
-                                                            </a></h6>
-                                                        <div class="row ">
-                                                            
-                                                            <div class="col">
-                                                                <div class="date-text"><b>Rs.<%= trip.hotel.min_total_price %></b></div>
+                                                        <% if (trip.hotel) { %>
+                                                            <h6 class="title"><a href="<%= trip.hotel.url %>"
+                                                                    style="text-decoration: none;color:black ;"
+                                                                    target="_blank">
+                                                                    <%= trip.hotel.hotel_name %>
+                                                                </a></h6>
+                                                            <div class="row">
+                                                                <div class="col">
+                                                                    <div class="date-text"><b>Rs.<%=
+                                                                                trip.hotel.min_total_price %></b></div>
+                                                                </div>
                                                             </div>
-                                                        </div>
+                                                            <% } else { %>
+                                                                <div class="row">
+
+                                                                    <h6 class="title">Hotel</h6>
+                                                                </div>
+                                                                <div class="row">
+
+                                                                    <a href="https://www.booking.com/searchresults.html?ss=<%= encodeURIComponent(destination) %>&checkin=<%= arrival_date %>&checkout=<%= departure_date %>&group_adults=<%= adults %>&group_children=<%= children_qty %>"
+                                                                        class="default-hotel-button"
+                                                                        style="text-decoration: none;color: black;"
+                                                                        target="_blank">Explore
+                                                                        Hotels</a>
+
+                                                                </div>
+                                                                <% } %>
                                                     </div>
                                                 </div>
                                             </div>
-                                            
                                         </div>
-
                                         <% while (trip_time <20 && trip_time>=11) { %>
                                             <% if(i<places.length) { %>
-                                                
-                                                    <%- include('layouts/places.ejs',{index: i});-%>
-                                                        
-                                                            <% i++ %>
-                                                                <% } %>
-                                                                    <% trip_time +=3 %>
-                                                                        <% }; %>
+                                                <%- include('layouts/places.ejs',{index: i});-%>
+                                                    <% i++ %>
+                                                        <% } %>
+                                                            <% trip_time +=3 %>
+                                                                <% }; %>
 
 
 
@@ -201,7 +232,12 @@
                     </div>
 
             </div>
-
+            <script>
+                document.getElementById("refreshIcon").addEventListener("click", function () {
+                    window.location.reload();
+                });
+            </script>
+            <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
 </body>
 
 </html>

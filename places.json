@@ -1,0 +1,583 @@
+{
+  "_id": {
+    "$oid": "655e39575d2016ad68c8708e"
+  },
+  "destination": ["New delhi"],
+  "startdate": {
+    "$date": "2023-11-22T00:00:00.000Z"
+  },
+  "enddate": {
+    "$date": "2023-11-25T00:00:00.000Z"
+  },
+  "members": 1,
+  "places": [
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Nehru Planetarium",
+        "country": "India",
+        "country_code": "in",
+        "state": "Delhi",
+        "city": "New Delhi",
+        "postcode": "110011",
+        "suburb": "Chanakya Puri Tehsil",
+        "street": "Teen Murti Marg",
+        "lon": 77.19813329582415,
+        "lat": 28.60385195,
+        "state_code": "DL",
+        "formatted": "Nehru Planetarium, Teen Murti Marg, Chanakya Puri Tehsil, New Delhi - 110011, Delhi, India",
+        "address_line1": "Nehru Planetarium, Teen Murti Marg",
+        "address_line2": "Chanakya Puri Tehsil, New Delhi - 110011, Delhi, India",
+        "categories": [
+          "building",
+          "entertainment",
+          "entertainment.planetarium"
+        ],
+        "details": ["details", "details.contact", "details.wiki_and_media"]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": ["77.19812115162088", "28.603819256061705"]
+      },
+      "_id": {
+        "$oid": "655e3f6d927a70d17e431414"
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Gandhi Smriti",
+        "country": "India",
+        "country_code": "in",
+        "state": "Delhi",
+        "city": "New Delhi",
+        "postcode": "110011",
+        "suburb": "Chanakya Puri Tehsil",
+        "street": "Tees January Road",
+        "lon": 77.2143897684837,
+        "lat": 28.6018543,
+        "state_code": "DL",
+        "formatted": "Gandhi Smriti, 5, Tees January Road, Chanakya Puri Tehsil, New Delhi - 110011, Delhi, India",
+        "address_line1": "Gandhi Smriti",
+        "address_line2": "5, Tees January Road, Chanakya Puri Tehsil, New Delhi - 110011, Delhi, India",
+        "categories": [
+          "building",
+          "building.tourism",
+          "entertainment",
+          "entertainment.museum"
+        ],
+        "details": ["details", "details.contact", "details.wiki_and_media"]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": ["77.21437179416772", "28.601873088016088"]
+      },
+      "_id": {
+        "$oid": "655e3f6d927a70d17e431415"
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Teen Murti Bhavan",
+        "country": "India",
+        "country_code": "in",
+        "state": "Delhi",
+        "city": "New Delhi",
+        "postcode": "110011",
+        "suburb": "Chanakya Puri Tehsil",
+        "street": "Teen Murti Marg",
+        "lon": 77.19878110123034,
+        "lat": 28.60259435,
+        "state_code": "DL",
+        "formatted": "Nehru Memorial Museum & Library (Teen Murti Bhavan), Teen Murti Marg, Chanakya Puri Tehsil, New Delhi - 110011, Delhi, India",
+        "address_line1": "Nehru Memorial Museum & Library (Teen Murti Bhavan)",
+        "address_line2": "Teen Murti Marg, Chanakya Puri Tehsil, New Delhi - 110011, Delhi, India",
+        "categories": [
+          "building",
+          "building.tourism",
+          "entertainment",
+          "entertainment.museum"
+        ],
+        "details": ["details", "details.contact", "details.wiki_and_media"]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": ["77.19877889407842", "28.602601255742137"]
+      },
+      "_id": {
+        "$oid": "655e3f6d927a70d17e431416"
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Teen Murti Bhavan",
+        "country": "India",
+        "country_code": "in",
+        "state": "Delhi",
+        "city": "New Delhi",
+        "postcode": "110021",
+        "suburb": "Chanakyapuri",
+        "street": "Kautilya Marg",
+        "lon": 77.19903824322274,
+        "lat": 28.60164395,
+        "state_code": "DL",
+        "formatted": "Teen Murti Bhavan, Kautilya Marg, Chanakyapuri, New Delhi - 110021, Delhi, India",
+        "address_line1": "Teen Murti Bhavan",
+        "address_line2": "Kautilya Marg, Chanakyapuri, New Delhi - 110021, Delhi, India",
+        "categories": ["entertainment", "entertainment.museum"],
+        "details": ["details"]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": ["77.19886911592707", "28.602417987761033"]
+      },
+      "_id": {
+        "$oid": "655e3f6d927a70d17e431417"
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Indira Gandhi Memorial Museum",
+        "country": "India",
+        "country_code": "in",
+        "state": "Delhi",
+        "city": "New Delhi",
+        "postcode": "110011",
+        "suburb": "Chanakya Puri Tehsil",
+        "street": "Safdarjung Road",
+        "lon": 77.20617580273222,
+        "lat": 28.599899299999997,
+        "state_code": "DL",
+        "formatted": "Indira Gandhi Memorial Museum, 1, Safdarjung Road, Chanakya Puri Tehsil, New Delhi - 110011, Delhi, India",
+        "address_line1": "Indira Gandhi Memorial Museum",
+        "address_line2": "1, Safdarjung Road, Chanakya Puri Tehsil, New Delhi - 110011, Delhi, India",
+        "categories": [
+          "building",
+          "building.tourism",
+          "entertainment",
+          "entertainment.museum",
+          "no_fee",
+          "no_fee.no"
+        ],
+        "details": ["details", "details.contact"]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": ["77.20620495976908", "28.599897387975837"]
+      },
+      "_id": {
+        "$oid": "655e3f6d927a70d17e431418"
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Entry Parliament Museum",
+        "country": "India",
+        "country_code": "in",
+        "state": "Delhi",
+        "city": "New Delhi",
+        "postcode": "110004",
+        "suburb": "Chanakya Puri Tehsil",
+        "street": "Pandit Pant Marg",
+        "lon": 77.2062638,
+        "lat": 28.6184657,
+        "state_code": "DL",
+        "formatted": "Entry Parliament Museum, Pandit Pant Marg, Chanakya Puri Tehsil, New Delhi - 110004, Delhi, India",
+        "address_line1": "Entry Parliament Museum",
+        "address_line2": "Pandit Pant Marg, Chanakya Puri Tehsil, New Delhi - 110004, Delhi, India",
+        "categories": ["tourism", "tourism.attraction"],
+        "details": []
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": ["77.2062638", "28.61846569987808"]
+      },
+      "_id": {
+        "$oid": "655e3f6d927a70d17e431419"
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Teen Murti",
+        "country": "India",
+        "country_code": "in",
+        "state": "Delhi",
+        "city": "New Delhi",
+        "postcode": "110004",
+        "suburb": "Chanakya Puri Tehsil",
+        "street": "Teen Murti",
+        "lon": 77.1989178,
+        "lat": 28.6046922,
+        "state_code": "DL",
+        "formatted": "Teen Murti - Haifa Chowk, Teen Murti, Chanakya Puri Tehsil, New Delhi - 110004, Delhi, India",
+        "address_line1": "Teen Murti - Haifa Chowk",
+        "address_line2": "Teen Murti, Chanakya Puri Tehsil, New Delhi - 110004, Delhi, India",
+        "categories": ["tourism", "tourism.attraction"],
+        "details": ["details"]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": ["77.1989178", "28.60469219987956"]
+      },
+      "_id": {
+        "$oid": "655e3f6d927a70d17e43141a"
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Parliament Museum",
+        "country": "India",
+        "country_code": "in",
+        "state": "Delhi",
+        "city": "New Delhi",
+        "postcode": "110004",
+        "suburb": "Chanakya Puri Tehsil",
+        "street": "Red Cross Road",
+        "lon": 77.20728570048176,
+        "lat": 28.618812,
+        "state_code": "DL",
+        "formatted": "Parliament Museum, Red Cross Road, Chanakya Puri Tehsil, New Delhi - 110004, Delhi, India",
+        "address_line1": "Parliament Museum",
+        "address_line2": "Red Cross Road, Chanakya Puri Tehsil, New Delhi - 110004, Delhi, India",
+        "categories": [
+          "building",
+          "building.tourism",
+          "entertainment",
+          "entertainment.museum"
+        ],
+        "details": ["details", "details.building", "details.wiki_and_media"]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": ["77.20723494811325", "28.618802327758107"]
+      },
+      "_id": {
+        "$oid": "655e3f6d927a70d17e43141b"
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Vigyan Bhavan",
+        "country": "India",
+        "country_code": "in",
+        "state": "Delhi",
+        "city": "New Delhi",
+        "postcode": "110001",
+        "suburb": "Chanakya Puri Tehsil",
+        "street": "Kartavya Path",
+        "lon": 77.22071322423142,
+        "lat": 28.6107692,
+        "state_code": "DL",
+        "formatted": "Vigyan Bhavan, Kartavya Path, Chanakya Puri Tehsil, New Delhi - 110001, Delhi, India",
+        "address_line1": "Vigyan Bhavan",
+        "address_line2": "Kartavya Path, Chanakya Puri Tehsil, New Delhi - 110001, Delhi, India",
+        "categories": [
+          "building",
+          "building.office",
+          "building.tourism",
+          "entertainment",
+          "entertainment.museum",
+          "office",
+          "office.government"
+        ],
+        "details": ["details", "details.building"]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": ["77.22068034516913", "28.610928719496922"]
+      },
+      "_id": {
+        "$oid": "655e3f6d927a70d17e43141c"
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Ashok Stambh",
+        "country": "India",
+        "country_code": "in",
+        "state": "Delhi",
+        "city": "New Delhi",
+        "postcode": "110004",
+        "suburb": "Chanakya Puri Tehsil",
+        "street": "Red Cross Road",
+        "lon": 77.21006745683297,
+        "lat": 28.617103200000003,
+        "state_code": "DL",
+        "formatted": "Ashok Stambh, Red Cross Road, Chanakya Puri Tehsil, New Delhi - 110004, Delhi, India",
+        "address_line1": "Ashok Stambh",
+        "address_line2": "Red Cross Road, Chanakya Puri Tehsil, New Delhi - 110004, Delhi, India",
+        "categories": [
+          "tourism",
+          "tourism.attraction",
+          "tourism.attraction.artwork"
+        ],
+        "details": ["details.artwork"]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": ["77.21008391280924", "28.617107091412443"]
+      },
+      "_id": {
+        "$oid": "655e3f6d927a70d17e43141d"
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Akshara",
+        "country": "India",
+        "country_code": "in",
+        "state": "Delhi",
+        "city": "New Delhi",
+        "postcode": "110004",
+        "suburb": "Chanakya Puri Tehsil",
+        "street": "Baba Kharak Singh Marg",
+        "lon": 77.2032745,
+        "lat": 28.6259776,
+        "state_code": "DL",
+        "formatted": "Akshara, Baba Kharak Singh Marg, Chanakya Puri Tehsil, New Delhi - 110004, Delhi, India",
+        "address_line1": "Akshara",
+        "address_line2": "Baba Kharak Singh Marg, Chanakya Puri Tehsil, New Delhi - 110004, Delhi, India",
+        "categories": [
+          "entertainment",
+          "entertainment.culture",
+          "entertainment.culture.theatre"
+        ],
+        "details": ["details"]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": ["77.20327449999999", "28.625977599877277"]
+      },
+      "_id": {
+        "$oid": "655e3f6d927a70d17e43141e"
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Rashtrapati Bhavan",
+        "country": "India",
+        "country_code": "in",
+        "state": "Delhi",
+        "city": "New Delhi",
+        "postcode": "110004",
+        "suburb": "Chanakya Puri Tehsil",
+        "street": "Kartavya Path",
+        "lon": 77.19958884029813,
+        "lat": 28.614359450000002,
+        "state_code": "DL",
+        "formatted": "Rashtrapati Bhavan, Kartavya Path, Chanakya Puri Tehsil, New Delhi - 110004, Delhi, India",
+        "address_line1": "Rashtrapati Bhavan",
+        "address_line2": "Kartavya Path, Chanakya Puri Tehsil, New Delhi - 110004, Delhi, India",
+        "categories": [
+          "access",
+          "access.yes",
+          "tourism",
+          "tourism.attraction",
+          "tourism.sights",
+          "tourism.sights.castle"
+        ],
+        "details": [
+          "details",
+          "details.contact",
+          "details.historic",
+          "details.wiki_and_media"
+        ]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": ["77.1994433825606", "28.61442793342518"]
+      },
+      "_id": {
+        "$oid": "655e3f6d927a70d17e43141f"
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Jantar Mantar",
+        "country": "India",
+        "country_code": "in",
+        "state": "Delhi",
+        "city": "New Delhi",
+        "postcode": "110001",
+        "suburb": "Connaught Place",
+        "street": "Sansad Marg",
+        "lon": 77.2163845064627,
+        "lat": 28.627201999999997,
+        "state_code": "DL",
+        "formatted": "Jantar Mantar Astronomical Observatory, Delhi, Sansad Marg, Connaught Place, New Delhi - 110001, Delhi, India",
+        "address_line1": "Jantar Mantar Astronomical Observatory, Delhi",
+        "address_line2": "Sansad Marg, Connaught Place, New Delhi - 110001, Delhi, India",
+        "categories": [
+          "fee",
+          "tourism",
+          "tourism.attraction",
+          "tourism.sights",
+          "tourism.sights.archaeological_site",
+          "wheelchair",
+          "wheelchair.yes"
+        ],
+        "details": ["details", "details.facilities", "details.wiki_and_media"]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": ["77.21648500833976", "28.627049718951525"]
+      },
+      "_id": {
+        "$oid": "655e3f6d927a70d17e431420"
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Baba Baghel Sikh Museum",
+        "country": "India",
+        "country_code": "in",
+        "state": "Delhi",
+        "city": "New Delhi",
+        "postcode": "110001",
+        "suburb": "Chanakya Puri Tehsil",
+        "street": "Ashoka Road",
+        "lon": 77.20903245401001,
+        "lat": 28.62598325,
+        "state_code": "DL",
+        "formatted": "Baba Baghel Sikh Museum, Ashoka Road, Chanakya Puri Tehsil, New Delhi - 110001, Delhi, India",
+        "address_line1": "Baba Baghel Sikh Museum",
+        "address_line2": "Ashoka Road, Chanakya Puri Tehsil, New Delhi - 110001, Delhi, India",
+        "categories": [
+          "building",
+          "building.tourism",
+          "entertainment",
+          "entertainment.museum"
+        ],
+        "details": ["details.place_of_worship"]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": ["77.20903215868599", "28.62598241981058"]
+      },
+      "_id": {
+        "$oid": "655e3f6d927a70d17e431421"
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "National Museum",
+        "country": "India",
+        "country_code": "in",
+        "state": "Delhi",
+        "city": "New Delhi",
+        "postcode": "110011",
+        "suburb": "Chanakya Puri Tehsil",
+        "street": "Janpath",
+        "lon": 77.21929158508428,
+        "lat": 28.6118887,
+        "state_code": "DL",
+        "formatted": "National Museum, Janpath, Chanakya Puri Tehsil, New Delhi - 110011, Delhi, India",
+        "address_line1": "National Museum",
+        "address_line2": "Janpath, Chanakya Puri Tehsil, New Delhi - 110011, Delhi, India",
+        "categories": [
+          "building",
+          "building.tourism",
+          "entertainment",
+          "entertainment.museum",
+          "internet_access"
+        ],
+        "details": ["details", "details.facilities", "details.wiki_and_media"]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": ["77.21930471932511", "28.611917524101585"]
+      },
+      "_id": {
+        "$oid": "655e3f6d927a70d17e431422"
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Progressive Art Gallery",
+        "country": "India",
+        "country_code": "in",
+        "state": "Delhi",
+        "city": "New Delhi",
+        "postcode": "110004",
+        "suburb": "Chanakyapuri",
+        "street": "Teen Murti Marg",
+        "lon": 77.1957177,
+        "lat": 28.6035907,
+        "state_code": "DL",
+        "formatted": "Progressive Art Gallery, Teen Murti Marg, Chanakyapuri, New Delhi - 110004, Delhi, India",
+        "address_line1": "Progressive Art Gallery",
+        "address_line2": "Teen Murti Marg, Chanakyapuri, New Delhi - 110004, Delhi, India",
+        "categories": [
+          "entertainment",
+          "entertainment.culture",
+          "entertainment.culture.gallery"
+        ],
+        "details": []
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": ["77.1957177", "28.603590699879696"]
+      },
+      "_id": {
+        "$oid": "655e3f6d927a70d17e431423"
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "राष्ट्रपति भवन संग्रहालय",
+        "country": "India",
+        "country_code": "in",
+        "state": "Delhi",
+        "city": "New Delhi",
+        "postcode": "110004",
+        "suburb": "Chanakya Puri Tehsil",
+        "street": "Talkatora Road",
+        "lon": 77.1962713,
+        "lat": 28.6189699,
+        "state_code": "DL",
+        "formatted": "Rashtrapati Bhavan Museum, Talkatora Road, Chanakya Puri Tehsil, New Delhi - 110004, Delhi, India",
+        "address_line1": "Rashtrapati Bhavan Museum",
+        "address_line2": "Talkatora Road, Chanakya Puri Tehsil, New Delhi - 110004, Delhi, India",
+        "categories": ["entertainment", "entertainment.museum"],
+        "details": ["details", "details.contact"]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": ["77.1962713", "28.61896989987802"]
+      },
+      "_id": {
+        "$oid": "655e3f6d927a70d17e431424"
+      }
+    }
+  ],
+  "__v": 8,
+  "return_city": "Surat",
+  "source": "Surat",
+  "StoD_train": {
+    "train_number": "12449",
+    "train_name": "GOA SMPRK K",
+    "run_days": [],
+    "from_std": "23:53",
+    "to_std": "14:25",
+    "duration": "14:17",
+    "class_type": [],
+    "_id": {
+      "$oid": "655e395d5d2016ad68c8709f"
+    }
+  }
+}

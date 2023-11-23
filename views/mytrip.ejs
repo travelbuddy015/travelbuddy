@@ -67,8 +67,13 @@
                                                         <%= days %> Days
                                     </small>
                                     <small class="flex-fill text-center py-2"><i class="fa fa-user  me-2"></i>
-                                        <%= user.trips[i].members %> Person
+                                        <%= user.trips[i].members %> Adults
                                     </small>
+                                    <% if (user.trips[i].children) { %>
+                                        <small class="flex-fill text-center py-2"><i class="fa fa-user  me-2"></i>
+                                            <%= user.trips[i].children%> Children
+                                        </small>
+                                        <% } %>
                                 </div>
                                 <div class="overflow-hidden">
                                     <img class="img-fluid" src="image/g5.jpg" alt="">

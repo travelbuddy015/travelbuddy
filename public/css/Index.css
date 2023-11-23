@@ -816,7 +816,7 @@ section .next {
 }
 
 .circle.filled {
-  background-color: green;
+  background-color: rgb(79, 224, 226);
 }
 
 .reviews {
