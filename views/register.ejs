@@ -108,7 +108,7 @@
                                 placeholder="Password">
                         </div>
                         <div class="form-group">
-                            <input type="submit" value="Sign Up" class="btn float-right login_btn">
+                            <input type="submit" id="submit" value="Sign Up" class="btn float-right login_btn">
                         </div>
                     </form>
                 </div>
@@ -124,7 +124,31 @@
         </div>
     </div>
 
+    <script>
+        $(document).ready(() => {
+            $('#submit').click(() => {
+                if ($('#username').val() == '') {
+                    alert('Please enter username')
+                    return false
+                }
+                if ($('#name').val() == '') {
+                    alert('Please enter name')
+                    return false
+                }
 
+                if ($('#current-password').val() == '') {
+                    alert('Please enter password')
+                    return false
+                }
+                if($('#current-password').val().length < 8){
+                    alert('Password must be at least 8 characters long')
+                    return false
+                }
+                return true
+            }
+            )
+        });
+    </script>
 
 </body>
 

@@ -17,6 +17,7 @@ exports.getDashboard = (req, res, next) => {
 exports.postTrip = function (req, res, next) {
   const trip = new Trip({
     members: 0,
+    source: req.body.source,
     destination: req.body.destination,
     startdate: req.body.startdate,
     enddate: req.body.enddate,
@@ -28,7 +29,7 @@ exports.postTrip = function (req, res, next) {
     // }
     // req.user.trips.push(trip);
     // req.user.save();
-    res.redirect(`/trip/edit/${trip._id}#city-shuffle`);
+    res.redirect(`/trip/edit/${trip._id}#user-profile`);
   });
 };
 exports.saveCity = (req, res, next) => {

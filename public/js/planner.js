@@ -64,44 +64,44 @@ $(document).ready(() => {
     return Array.from(options).some((option) => option.value === city);
   }
 
-  $("#next_city_page").click(function (e) {
-    e.preventDefault();
-    const sourceCityInput = $("#box1Content");
-    const returnCityInput = $("#box2Content");
+  // $("#next_city_page").click(function (e) {
+  //   e.preventDefault();
+  //   const sourceCityInput = $("#box1Content");
+  //   const returnCityInput = $("#box2Content");
 
-    const sourceCity = sourceCityInput.val();
-    const returnCity = returnCityInput.val();
+  //   const sourceCity = sourceCityInput.val();
+  //   const returnCity = returnCityInput.val();
 
-    if (
-      !sourceCity.trim() ||
-      !isValidCity(sourceCity) ||
-      !returnCity.trim() ||
-      !isValidCity(returnCity)
-    ) {
-      alert("Please select a valid source city from the options.");
-      return;
-    }
+  //   if (
+  //     !sourceCity.trim() ||
+  //     !isValidCity(sourceCity) ||
+  //     !returnCity.trim() ||
+  //     !isValidCity(returnCity)
+  //   ) {
+  //     alert("Please select a valid source city from the options.");
+  //     return;
+  //   }
 
-    const data = {
-      sourceCity: sourceCity,
-      returnCity: returnCity,
-      id: tripId,
-    };
+  //   const data = {
+  //     sourceCity: sourceCity,
+  //     returnCity: returnCity,
+  //     id: tripId,
+  //   };
 
-    $.ajax({
-      type: "POST",
-      url: "/trip/save-city",
-      data: data,
-      success: (response) => {
-        window.location.href = "/trip/edit/" + tripId + "#user-profile";
-      },
-      error: (error) => {
-        // Handle the error response
-        console.log("Failed to update the trip:", error);
-        alert("An error occurred while updating the trip.");
-      },
-    });
-  });
+  //   $.ajax({
+  //     type: "POST",
+  //     url: "/trip/save-city",
+  //     data: data,
+  //     success: (response) => {
+  //       window.location.href = "/trip/edit/" + tripId + "#user-profile";
+  //     },
+  //     error: (error) => {
+  //       // Handle the error response
+  //       console.log("Failed to update the trip:", error);
+  //       alert("An error occurred while updating the trip.");
+  //     },
+  //   });
+  // });
 
   $(".select-member").click(function (e) {
     e.preventDefault();

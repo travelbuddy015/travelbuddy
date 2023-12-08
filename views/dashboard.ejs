@@ -38,8 +38,6 @@
 </head>
 
 <body>
-
-
     <%- include('layouts/navbar.ejs'); -%>
         <section class="book" id="book" style="background-image: url('image/g5.jpg'); background-size: cover;">
             <div class="container">
@@ -54,9 +52,13 @@
                         <div class="col-md-6 py-4 py-md-6">
 
                             <form action="/trip" id="myForm" method="post">
-                                <input type="text" class="form-control" id="destinationInput"
-                                    placeholder="Where do you want to go?" name="destination" list="destinationOptions"
-                                    required>
+                                <div class="div" style="display: flex;">
+                                    <input type="text" class="form-control" id="destinationInput" value="<%=user.city%>"
+                                        placeholder="Source" name="source" list="destinationOptions" required>
+                                    <i class="fas fa-exchange-alt" style="margin: 1rem;"></i>
+                                    <input type="text" class="form-control" id="destinationInput"
+                                        placeholder="Destination" name="destination" list="destinationOptions" required>
+                                </div>
                                 <br>
                                 <datalist id="destinationOptions">
                                 </datalist>
