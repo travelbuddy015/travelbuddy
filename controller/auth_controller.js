@@ -1,7 +1,7 @@
 const passport = require("passport");
 const User = require("../models/user");
-const nodemailer = require('nodemailer');
-const jwt = require('jsonwebtoken');
+const nodemailer = require("nodemailer");
+const jwt = require("jsonwebtoken");
 var smtpConfig = {
   service: "gmail",
   // use SSL
@@ -11,12 +11,9 @@ var smtpConfig = {
 const transporter = nodemailer.createTransport(smtpConfig);
 
 const generateVerificationToken = function (user) {
-
-  const verificationToken = jwt.sign(
-    { ID: user._id },
-    "hakunnamata",
-    { expiresIn: "7d" }
-  );
+  const verificationToken = jwt.sign({ ID: user._id }, "hakunnamata", {
+    expiresIn: "7d",
+  });
   return verificationToken;
 };
 exports.getLogin = (req, res) => {
@@ -39,27 +36,25 @@ exports.getRegistration = (req, res) => {
 };
 
 exports.postLogin = (req, res, next) => {
-  
-    passport.authenticate("userlocal", (err, user, info) => {
-      if (!user ) {
-        req.flash("error", "Invalid email or password");
+  passport.authenticate("userlocal", (err, user, info) => {
+    if (!user) {
+      req.flash("error", "Invalid email or password");
+      return res.redirect("/login");
+    }
+    req.logIn(user, (err) => {
+      if (err) {
+        console.error(err);
+        return next(err);
+      }
+      if (user.emailVerified) {
+        return res.redirect("/dashboard");
+      } else {
+        req.flash("error", "email not verified");
         return res.redirect("/login");
       }
-      req.logIn(user, (err) => {
-        if (err) {
-          console.error(err);
-          return next(err);
-        }
-        if(user.emailVerified){
-        return res.redirect("/dashboard");
-        }else{
-          req.flash("error", "email not verified");
-          return res.redirect('/login');
-        }
-      });
-    })(req, res, next);
-   
-  }
+    });
+  })(req, res, next);
+};
 
 exports.postRegistration = async (req, res) => {
   const newUser = new User({
@@ -89,7 +84,6 @@ exports.postRegistration = async (req, res) => {
     }
   });
 
-
   User.register(newUser, req.body.password, (err, user) => {
     if (err) {
       console.log(err);
@@ -99,7 +93,6 @@ exports.postRegistration = async (req, res) => {
       res.redirect("/login");
     });
   });
-
 };
 
 const capitalize = (s) => {
@@ -107,6 +100,24 @@ const capitalize = (s) => {
   return s.charAt(0).toUpperCase() + s.slice(1);
 };
 
+exports.sendMail = async (req, res) => {
+  const email = req.body.email;
+  const link = req.body.link;
+  const mailOptions = {
+    from: "medigo777@gmail.com",
+    to: email,
+    subject: "My Day-wise Trip",
+    html: `<p>Hello, here is the link to my day-wise trip: ${link} </p>`,
+  };
+  try {
+    await transporter.sendMail(mailOptions);
+    console.log("The email was sent successfully ");
+    res.status(200).send("Email sent successfully");
+  } catch (error) {
+    console.error("Error sending email:", error);
+    res.status(500).send("Error sending email");
+  }
+};
 exports.verifyUser = async (req, res, next) => {
   const token = req.params.token;
   // console.log(token);
@@ -122,11 +133,11 @@ exports.verifyUser = async (req, res, next) => {
   } catch (err) {
     return res.status(500).send(err);
   }
-  
+
   try {
     // Step 2 - Find user with matching ID
     const user = await User.findOne({ _id: payload.ID }).exec();
-    
+
     if (!user) {
       return res.status(404).send({
         message: "User does not  exists",

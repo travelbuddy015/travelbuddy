@@ -4,6 +4,24 @@
     <%- include('layouts/header.ejs'); -%>
         <link rel="stylesheet" href="/css/editable.css">
         <style>
+            .share-button {
+                background-color: #007bff;
+                color: #fff;
+                border: none;
+                padding: 5px 10px;
+                border-radius: 5px;
+                cursor: pointer;
+                transition: background-color 0.3s;
+            }
+
+            .share-button:hover {
+                background-color: #0056b3;
+            }
+
+            .share-button:focus {
+                outline: none;
+            }
+
             body {
                 background-color: #f8f9fa;
                 color: #495057;
@@ -98,6 +116,8 @@
                     <%= totalDays %> Day Trip to <%= trip.destination %> from <%= trip.source %> <i
                                     class="fa fa-refresh " id="refreshIcon" style="cursor: pointer;"
                                     aria-hidden="true"></i>
+
+                                <button class="share-button">Share</button>
                 </h4>
                 <% var i=0; %>
                     <div class="row">
@@ -233,6 +253,31 @@
 
             </div>
             <script>
+                document.getElementById("refreshIcon").addEventListener("click", function () {
+                    window.location.reload();
+                });
+
+                document.querySelectorAll('.share-button').forEach(button => {
+                    button.addEventListener('click', () => {
+                        const email = prompt('Enter your email:');
+                        const link = window.location.href;
+                        if (email) {
+                            $.ajax({
+                                url: '/send-email',
+                                method: 'POST',
+                                data: { email: email, link: link },
+                                success: function (response) {
+                                    alert('Email sent successfully');
+                                },
+                                error: function (xhr, status, error) {
+                                    alert('Error sending email: ' + error);
+                                }
+                            });
+                        } else {
+                            alert('Please enter an email address');
+                        }
+                    });
+                });
                 document.getElementById("refreshIcon").addEventListener("click", function () {
                     window.location.reload();
                 });
