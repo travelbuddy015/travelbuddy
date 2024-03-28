@@ -1,0 +1,113 @@
+<html>
+
+<head>
+    <%- include('layouts/header.ejs'); -%>
+        <style>
+            .center-container {
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: space-around;
+            }
+
+
+            .no-hotels-message {
+                text-align: center;
+                padding: 20px;
+                margin: 20px;
+                border: 1px solid #ccc;
+                border-radius: 8px;
+                background-color: #f8f8f8;
+            }
+
+            .no-hotels-message p {
+                margin: 10px 0;
+            }
+
+            .no-hotels-message a {
+                color: #007BFF;
+                text-decoration: none;
+                font-weight: bold;
+            }
+
+            .no-hotels-message a:hover {
+                text-decoration: underline;
+            }
+        </style>
+</head>
+
+<body>
+    <%- include('layouts/navbar.ejs'); -%>
+
+        <div class="center-container">
+            <% if (hotels.length> 0) { %>
+                <!--Hotel cards-->
+                <div class="center-container">
+                    <% for( let i=0; i < hotels.length; i++ ) { %>
+                        <div class="card-hotel">
+                            <div class="card-image">
+                                <img src="<%= hotels[i].main_photo_url %>" alt="Image">
+                            </div>
+                            <div class="vertical-line"></div>
+                            <div class="card-content">
+                                <div class="title-and-price">
+                                    <h3>
+                                        <%= hotels[i].hotel_name %>
+                                    </h3>
+                                    <h4 class="price">₹<%=hotels[i].min_total_price %>
+                                    </h4>
+                                </div>
+                                <div class="ratings-circles">
+                                    <% const reviewScore=hotels[i].review_score / 2; %>
+                                        <% const totalCircles=Math.floor(reviewScore); %>
+                                            <% for (let i=0; i < totalCircles; i++) { %>
+                                                <span class="circle filled"></span>
+                                                <% } %>
+                                                    <% const remainingScore=5 - reviewScore; %>
+                                                        <% for (let i=0; i < remainingScore; i++) { %>
+                                                            <span class="circle"></span>
+                                                            <% } %>
+                                                                <span class="reviews">
+                                                                    <%= hotels[i].review_score / 2 %>
+                                                                </span>
+                                </div>
+                                <form action="" method="post">
+                                    <input type="hidden" name="hotelUrl" value="<%= hotels[i].url %>">
+                                    <input type="hidden" name="hotelMinTotalPrice"
+                                        value="<%= hotels[i].min_total_price %>">
+                                    <input type="hidden" name="hotelUrl" value="<%= hotels[i].url %>">
+                                    <input type="hidden" name="hotelName" value="<%= hotels[i].hotel_name %>">
+                                    <input type="hidden" name="hotelMainPhotoUrl"
+                                        value="<%= hotels[i].main_photo_url %>">
+                                    <input type="hidden" name="hotelCheckIn" value="<%= hotels[i].checkin %>">
+                                    <button class="form-control save-btn"
+                                        style="background-color: #dbdada; color: #000;" type="submit">Save this</button>
+                                </form>
+                                <a class="details-button" href="<%= hotels[i].url %>" target="_blank">View Details</a>
+                            </div>
+                            <div class="vertical-line2"></div>
+                        </div>
+                        <% } %>
+                </div>
+                <% } else { %>
+                    <div class="no-hotels-message">
+                        <p>No hotels are available for the selected dates and destination.</p>
+                        <p>
+                        <div class="row">
+
+                            <a href="https://www.booking.com/searchresults.html?ss=<%=encodeURIComponent(destination)%>&checkin=<%= arrival_date %>&checkout=<%= departure_date %>&group_adults=<%= adults %>&group_children=<%= children_qty %>"
+                                target="_blank">
+                                Explore Hotels
+                            </a>
+
+                        </div>
+                        <div class="row mt-3">
+                            <a href="places">Create Trip</a>
+                        </div>
+                        </p>
+                    </div>
+                    <% } %>
+        </div>
+
+</body>
+
+</html>

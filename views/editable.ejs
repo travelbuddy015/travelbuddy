@@ -1,0 +1,288 @@
+<html>
+
+<head>
+    <%- include('layouts/header.ejs'); -%>
+        <link rel="stylesheet" href="/css/editable.css">
+        <style>
+            .share-button {
+                background-color: #007bff;
+                color: #fff;
+                border: none;
+                padding: 5px 10px;
+                border-radius: 5px;
+                cursor: pointer;
+                transition: background-color 0.3s;
+            }
+
+            .share-button:hover {
+                background-color: #0056b3;
+            }
+
+            .share-button:focus {
+                outline: none;
+            }
+
+            body {
+                background-color: #f8f9fa;
+                color: #495057;
+                font-family: 'Arial', sans-serif;
+            }
+
+            .container {
+                margin-top: 20px;
+            }
+
+            .card {
+                margin-bottom: 20px;
+                border: 1px solid #ddd;
+                border-radius: 10px;
+                overflow: hidden;
+                transition: box-shadow 0.3s;
+            }
+
+            .card:hover {
+                box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+            }
+
+            .title {
+                font-size: 1rem;
+                font-weight: bold;
+                margin-bottom: 10px;
+            }
+
+            .date-text {
+                font-size: 1rem;
+                color: #6c757d;
+            }
+
+
+            .accommodation {
+                background-color: #88e0ff;
+
+                padding: 5px 10px;
+                border-radius: 5px;
+                margin-bottom: 10px;
+                display: inline-block;
+            }
+
+
+            .accommodation i {
+                margin-right: 5px;
+            }
+
+            .attraction {
+                background-color: pink;
+                ;
+
+                padding: 5px 10px;
+                border-radius: 5px;
+                margin-bottom: 10px;
+                display: inline-block;
+            }
+
+            .img-fluid {
+                max-width: 100%;
+                height: auto;
+                border-radius: 5px;
+            }
+
+            .row {
+                margin-left: -15px;
+                margin-right: -15px;
+            }
+
+            .col-4,
+            .col-8 {
+                padding-left: 15px;
+                padding-right: 15px;
+            }
+
+            .fa-arrows-rotate:before,
+            .fa-refresh:before,
+            .fa-sync:before {
+                content: "\f021";
+                margin-left: 0.5rem;
+            }
+        </style>
+</head>
+
+<body>
+    <%- include('layouts/navbar.ejs'); -%>
+        <% const startDate=new Date(trip.startdate); const endDate=new Date(trip.enddate); const
+            totalDays=Math.ceil((endDate - startDate) / (1000 * 60 * 60 * 24)); %>
+
+            <div class="container">
+                <h4 class="my-4">
+                    <%= totalDays %> Day Trip to <%= trip.destination %> from <%= trip.source %> <i
+                                    class="fa fa-refresh " id="refreshIcon" style="cursor: pointer;"
+                                    aria-hidden="true"></i>
+
+                                <button class="share-button">Share</button>
+                </h4>
+                <% var i=0; %>
+                    <div class="row">
+                        <% for (let index=0; index < totalDays; index++) { %>
+                            <div class="col-4">
+                                <div class="card">
+                                    <div class="card-body">
+                                        <p class="h6 title">Day-<%= index + 1 %>
+                                        </p>
+                                        <% const currentDate=new Date(startDate);
+                                            currentDate.setDate(currentDate.getDate() + index); %>
+                                            <p class="card-text date-text">
+                                                <%= currentDate.toDateString() %>
+                                            </p>
+                                    </div>
+                                </div>
+
+                                <!-- Transportation -->
+                                <% if (index==0) { %>
+                                    <div class="card">
+                                        <div class="card-body">
+                                            <div class="row">
+                                                <div class="col-4">
+                                                    <img class="img-fluid"
+                                                        src="https://static.thenounproject.com/png/1175692-200.png"
+                                                        alt="">
+                                                </div>
+                                                <div class="col-8">
+                                                    <span class="accommodation" style="background-color: #EFEFEF;">
+                                                        <i class="fa-solid fa-road"></i>
+                                                        Transportation
+                                                    </span>
+                                                    <p class="h6 title">
+                                                        <%= trip.StoD_train.train_number %>: <%=
+                                                                trip.StoD_train.train_name %>
+                                                    </p>
+                                                    <div class="row">
+                                                        <div class="col">
+                                                            <div class="title">Departure</div>
+                                                            <div class="date-text">
+                                                                <%= trip.StoD_train.from_std %>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col">
+                                                            <i class="fa-solid fa-arrow-right "></i>
+                                                        </div>
+                                                        <div class="col">
+                                                            <div class="title">Arrival</div>
+                                                            <div class="date-text">
+                                                                <%= trip.StoD_train.to_std %>
+
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <% } %>
+                                        <!-- Hotels -->
+
+                                        <div class="card">
+                                            <div class="card-body">
+                                                <div class="row">
+                                                    <div class="col-4">
+                                                        <% if (trip.hotel) { %>
+                                                            <a href="<%= trip.hotel.url %>" target="_blank">
+                                                                <img class="rounded img-fluid"
+                                                                    src="<%= trip.hotel.main_photo_url %>" alt="">
+                                                            </a>
+                                                            <% } else { %>
+                                                                <!-- Display default hotel image or placeholder -->
+                                                                <img class="rounded img-fluid"
+                                                                    src="https://images.unsplash.com/photo-1618773928121-c32242e63f39?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                                                                    alt="Default Hotel">
+                                                                <% } %>
+                                                    </div>
+                                                    <div class="col-8">
+                                                        <span class="accommodation rounded-pill">
+                                                            <i class="fa-solid fa-house"></i>
+                                                            Hotel
+                                                        </span>
+                                                        <% if (trip.hotel) { %>
+                                                            <h6 class="title"><a href="<%= trip.hotel.url %>"
+                                                                    style="text-decoration: none;color:black ;"
+                                                                    target="_blank">
+                                                                    <%= trip.hotel.hotel_name %>
+                                                                </a></h6>
+                                                            <div class="row">
+                                                                <div class="col">
+                                                                    <div class="date-text"><b>Rs.<%=
+                                                                                trip.hotel.min_total_price %></b></div>
+                                                                </div>
+                                                            </div>
+                                                            <% } else { %>
+                                                                <div class="row">
+
+                                                                    <h6 class="title">Hotel</h6>
+                                                                </div>
+                                                                <div class="row">
+
+                                                                    <a href="https://www.booking.com/searchresults.html?ss=<%= encodeURIComponent(destination) %>&checkin=<%= arrival_date %>&checkout=<%= departure_date %>&group_adults=<%= adults %>&group_children=<%= children_qty %>"
+                                                                        class="default-hotel-button"
+                                                                        style="text-decoration: none;color: black;"
+                                                                        target="_blank">Explore
+                                                                        Hotels</a>
+
+                                                                </div>
+                                                                <% } %>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <% while (trip_time <20 && trip_time>=11) { %>
+                                            <% if(i<places.length) { %>
+                                                <%- include('layouts/places.ejs',{index: i});-%>
+                                                    <% i++ %>
+                                                        <% } %>
+                                                            <% trip_time +=3 %>
+                                                                <% }; %>
+
+
+
+
+                            </div>
+                            <%trip_time=11 %>
+                                <% continue %>
+
+                                    <% } %>
+
+
+                    </div>
+
+            </div>
+            <script>
+                document.getElementById("refreshIcon").addEventListener("click", function () {
+                    window.location.reload();
+                });
+
+                document.querySelectorAll('.share-button').forEach(button => {
+                    button.addEventListener('click', () => {
+                        const email = prompt('Enter your email:');
+                        const link = window.location.href;
+                        if (email) {
+                            $.ajax({
+                                url: '/send-email',
+                                method: 'POST',
+                                data: { email: email, link: link },
+                                success: function (response) {
+                                    alert('Email sent successfully');
+                                },
+                                error: function (xhr, status, error) {
+                                    alert('Error sending email: ' + error);
+                                }
+                            });
+                        } else {
+                            alert('Please enter an email address');
+                        }
+                    });
+                });
+                document.getElementById("refreshIcon").addEventListener("click", function () {
+                    window.location.reload();
+                });
+            </script>
+            <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+</body>
+
+</html>

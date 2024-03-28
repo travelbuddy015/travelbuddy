@@ -18,19 +18,25 @@
         <li class="nav-item">
           <a class="nav-link" href="#about">About</a>
         </li>
-        <li class="nav-item">
-          <a class="nav-link" href="/mytrip">Your Itineraries</a>
-        </li>
+        <% if (user.name) { %>
+          <li class="nav-item">
+            <a class="nav-link" href="/mytrip">Your Itineraries</a>
+          </li>
+          <% } %>
 
       </ul>
       <div class="d-flex">
         <ul class="navbar-nav me-auto">
           <% if (user.name !='' ) { %>
             <li class="nav-item ">
-
-              <a class="nav-link" href="/profile">
-                <%= user.name %>
-              </a>
+              <% if(user.userType=='admin' ) { %>
+                <a href="/manageuser" class="nav-link">Manage Account</a>
+                <% } %>
+                  <% if(user.userType=='user' ) { %>
+                    <a class="nav-link" href="/profile">
+                      <%= user.name %>
+                    </a>
+                    <% } %>
 
             </li>
             <li class="nav-item ">

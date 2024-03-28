@@ -2,81 +2,131 @@
 
 <head>
     <%- include('layouts/header.ejs'); -%>
-    <style>
-        .text{
-            /* color: rgb(8, 141, 170); */
-            font-size: 21px;
-        }
-    </style>
+        <style>
+            .text {
+                font-size: 15px;
+                font-weight: 400;
+            }
+        </style>
+
 </head>
 
-<body style="background-color: rgb(8, 141, 170); ;">
-    <%- include('layouts/navbar.ejs'); -%>
-        <div class="container rounded bg-white mt-2 mb-5">
-
-            <div class="row">
-                <div class="col-md-5 border-right">
-                    <div class="d-flex flex-column align-items-center text-center p-3 py-5"><img
-                            class="rounded-circle mt-5" width="150px"
-                            src="https://st3.depositphotos.com/15648834/17930/v/600/depositphotos_179308454-stock-illustration-unknown-person-silhouette-glasses-profile.jpg"><span
-                            class="font-weight-bold">
-                            <%= user.name %>
-                        </span><span class="text-black-50">
-                            <%= user.username %>
-                        </span><span> </span></div>
-                </div>
-                <div class="col-md-7 border-right">
-                    <div class="p-3 py-5">
-                        <div class="d-flex justify-content-between align-items-center mb-3">
-                            <h4 class="text-right">Profile Settings</h4>
-                        </div>
-
-
-                        <div class="row mt-2">
-                            <form action="/profile" method="post">
-                                <div class="col-md-8 "><label class="labels text">Name</label><input type="text"
-                                        class="form-control text-center" placeholder="Name" value="<%= user.name %>" name="name">
-                                </div>
-                                <div class="col-md-8"><label class="labels text">Email</label><input type="text"
-                                        class="form-control text-center" placeholder="email id" value="<%= user.username %>"
-                                        name="email"></div>
-                                <div class="col-md-8"><label class="labels text">Mobile Number</label><input type="text"
-                                        class="form-control text-center" placeholder="phone number" value="<%= user.phone %>"
-                                        name="phone"></div>
-                                <div class="col-md-8"><label class="labels text">Gender</label>
-                                    <select name="gender" id="" class="form-control text-center">
-                                        <option value="Male">Male</option>
-                                        <option value="Female">Female</option>
-                                        <option value="Notdefined">Notdefined</option>
-                                    </select>
-                                </div>
-                                <div class="col-md-8 "><label class="labels text">Age</label><input type="number"
-                                        class="form-control text-center" placeholder="Age" value="<%= user.age %>" name="age"></div>
-                                <div class="col-md-8"><label class="labels text">City</label><input type="text"
-                                        class="form-control text-center" placeholder="city" value="<%= user.city %>" name="city">
-                                </div>
-
-
-                                <div class="mt-5 "  >
-                                    <a href="/dashboard">
-                                        <button class="btn btn-primary profile-button"
-                                        style="background-color:  #BA68C8;">Back 
-                                        to Dashboard</button></a>
-                                
-                                        <button class="btn btn-primary profile-button"
-                                            type="submit">Save
-                                            Profile</button>
-                                        </div>
-                                    
-                            </form>
-                        </div>
-                    </div>
+<body style="background-color: rgb(255, 255, 255); ;">
+    <nav class="navbar navbar-expand-lg " id="navbar">
+        <div class="container">
+            <a class="navbar-brand" href="/" id="logo"><span>Travel</span>Buddy</a>
+            <div class="collapse navbar-collapse" id="mynavbar">
+                <ul class="navbar-nav me-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="/">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/mytrip">Your Itineraries</a>
+                    </li>
+                </ul>
+                <div class="d-flex">
+                    <ul class="navbar-nav me-auto">
+                        <li class="nav-item ">
+                            <a class="nav-link" href="/profile">
+                                <%= user.name %>
+                            </a>
+                        </li>
+                        <li class="nav-item ">
+                            <a class="nav-link" href="/logout">
+                                Logout
+                            </a>
+                        </li>
 
                 </div>
             </div>
         </div>
+    </nav>
+    <div class="container rounded bg-white mt-2 mb-5 profile">
 
-        <%- include('layouts/footer.ejs'); -%>
+        <div class="row">
+            <div class="col-md-5 border-right">
+                <div class="d-flex flex-column align-items-center text-center p-3 py-5"><img class="rounded-circle mt-5"
+                        width="150px"
+                        src="https://img.freepik.com/premium-vector/man-avatar-profile-picture-vector-illustration_268834-538.jpg"><span
+                        class="font-weight-bold">
+                        <%= user.name %>
+                    </span><span class="text-black-50">
+                        <%= user.username %>
+                    </span><span> </span></div>
+            </div>
+            <div class="col-md-7 border-right">
+                <div class="p-3 py-5">
+                    <div class="d-flex justify-content-between align-items-center mb-3">
+                        <h4 class="text-right">Profile Settings</h4>
+                    </div>
+
+
+                    <div class="row mt-2">
+                        <form action="/profile" id="myForm" method="post">
+                            <div class="col-md-8 "><label class="labels text">Name</label><input type="text"
+                                    class="form-control text-center" placeholder="Name" value="<%= user.name %>"
+                                    name="name">
+                            </div>
+
+                            <div class="col-md-8"><label class="labels text">Mobile Number</label><input type="text"
+                                    class="form-control text-center" placeholder="Enter phone number"
+                                    value="<%= user.phone %>" name="phone">
+                            </div>
+                            <div class="col-md-8"><label class="labels text">Gender</label>
+                                <select name="gender" id="" class="form-control text-center">
+                                    <option value="default" <%=!user.gender ? 'selected' : '' %>>Select Gender
+                                    </option>
+                                    <option value="Male" <%=user.gender==='Male' ? 'selected' : '' %>>Male
+                                    </option>
+                                    <option value="Female" <%=user.gender==='Female' ? 'selected' : '' %>>Female
+                                    </option>
+                                    <option value="Notdefined" <%=user.gender==='Notdefined' ? 'selected' : '' %>
+                                        >Not Defined</option>
+                                </select>
+                            </div>
+                            <div class="col-md-8">
+                                <label class="labels text">Age</label>
+                                <input type="number" class="form-control text-center"
+                                    placeholder="<%= user.age === 0 ? 'Enter your age' : '' %>"
+                                    value="<%= user.age !== 0 ? user.age : '' %>" name="age" id="age">
+
+
+                            </div>
+                            <div class="col-md-8"><label class="labels text">City</label>
+                                <input type="text" class="form-control text-center" id="destinationInput"
+                                    placeholder="Enter city" value="<%= user.city %>" name="city"
+                                    list="destinationOptions">
+                                <br>
+                                <datalist id="destinationOptions">
+                                </datalist>
+                            </div>
+
+
+                            <div class="mt-5 ">
+                                <button class="btn  profile-button" style="background-color: rgb(79, 224, 226); color: black;"
+                                    type="submit" class="submit">Save
+                                    Profile</button>
+                            </div>
+
+                        </form>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <%- include('layouts/footer.ejs'); -%>
+        <script src="js/dashboard.js"></script>
+        <script>
+            form.addEventListener("submit", function (event) {
+                var age = document.getElementById('age');
+                if (age.value < 0) {
+                    event.preventDefault();
+                    alert("Age can not be neagative");
+                }
+            });
+        </script>
 </body>
 
 </html>

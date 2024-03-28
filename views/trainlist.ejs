@@ -1,0 +1,241 @@
+<html>
+
+<head>
+    <%- include('layouts/header.ejs'); -%>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+</head>
+
+<body>
+    <%- include('layouts/navbar.ejs'); -%>
+        <style>
+            body {
+                font-family: 'Arial', sans-serif;
+                background-color: #f5f5f5;
+                color: #333;
+            }
+
+            #search-books {
+                text-align: center;
+                margin-top: 20px;
+            }
+
+            label {
+                font-weight: bold;
+            }
+
+            input[type="text"] {
+                padding: 10px;
+                border: 2px solid #ddd;
+                border-radius: 4px;
+                font-size: 16px;
+                width: 50%;
+            }
+
+            button[type="submit"] {
+                background-color: #08adaa;
+                color: white;
+                border: none;
+                border-radius: 4px;
+                padding: 10px 15px;
+                cursor: pointer;
+                font-size: 16px;
+            }
+
+            button[type="submit"]:hover {
+                background-color: #16bdbd;
+            }
+
+            .card {
+                box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+                margin: 20px;
+                padding: 20px;
+                background-color: #fff;
+                border-radius: 8px;
+            }
+
+            .card-header {
+                color: #0b9a9a;
+            }
+
+            .card-body {
+                padding-top: 20px;
+            }
+
+            .train-section {
+                font-weight: bold;
+            }
+
+            .train-info {
+                text-align: center;
+            }
+
+            #redirect-button {
+                display: block;
+                text-align: center;
+                margin: 20px auto;
+                padding: 10px 20px;
+                background-color: #5bc0de;
+                width: 10rem;
+                color: #fff;
+                text-decoration: none;
+                border-radius: 4px;
+                font-size: 16px;
+                cursor: pointer;
+                transition: background-color 0.5s;
+            }
+
+            #redirect-button:hover {
+                background-color: #71d7f7;
+            }
+
+            #back-button {
+                color: #000000;
+                font-size: 16px;
+                text-decoration: none;
+                margin-top: 10px;
+                transition: color 0.3s;
+            }
+
+            #back-button:hover {
+                color: rgb(18, 99, 136);
+            }
+
+            #back-button i {
+                margin-right: 5px;
+            }
+
+            #no-train-message {
+                color: #000000;
+                font-size: 18px;
+                margin-top: 20px;
+            }
+        </style>
+        <script>
+            function goBack() {
+                window.history.back();
+            }
+            $(document).ready(function () {
+                function updatePlaceholder() {
+                    const currentTime = new Date();
+                    const currentSecond = currentTime.getSeconds();
+
+
+                    if (currentSecond % 2 === 0) {
+                        $("#search").attr("placeholder", "Enter Train Number");
+                    } else {
+                        $("#search").attr("placeholder", "Enter Train Name");
+                    }
+                }
+
+
+                updatePlaceholder();
+                setInterval(updatePlaceholder, 1500);
+            });
+        </script>
+        <% if (!trains.length) { %>
+            <div class="m-5">
+
+                <a href="#" id="back-button" onclick="goBack()"><i class="fas fa-arrow-left"></i> Back to Train List</a>
+                <div id="no-train-message">
+                    <i class="fas fa-exclamation-circle"></i> No trains found for "<%= search_input %>"...
+                </div>
+            </div>
+            <a href="hotellist" id="redirect-button">Explore Hotels</a>
+
+            <% } else { %>
+
+                <form id="search-books" method="get">
+                    <label for="search">Search:</label>
+                    <input type="text" name="search" id="search" placeholder="Enter Train Name ">
+                    <button type="submit">&#128269; </button>
+                </form>
+                <% trains.forEach(function(train) { %>
+                    <div class="container mt-5">
+                        <div class="card">
+                            <div class="card-header">
+                                <h4>
+                                    <span style="color: #0b9a9a">
+                                        <%= train.train_number %>
+                                    </span>
+                                    <a style="text-decoration: none; color: #000;"
+                                        href="https://www.ixigo.com/trains/<%=train.train_number%>?orgn=<%=train.from%>&dstn=<%=train.to%>&departDate=<%=startdate%>"
+                                        target="_blank">
+                                        <%= ': ' + train.train_name %>
+                                    </a>
+                                </h4>
+                            </div>
+                            <div class="card-body">
+                                <div class="row justify-content-center">
+                                    <div class="col-4 train-section">
+                                        <p style="font-weight: bold;">Runs on:
+                                            <% train.run_days.forEach(function(day){ %>
+                                                <span>
+                                                    <%= day[0] %>
+                                                </span>
+                                                <% }); %>
+                                        </p>
+                                    </div>
+
+                                    <div class="col-4 train-info">
+                                        <h4 style="font-weight:bold;">Duration</h4>
+                                        <p>
+                                            <%= train.duration + ' Hrs' %>
+                                        </p>
+                                    </div>
+
+                                </div>
+                            </div>
+                            <div class="row justify-content-center">
+                                <div class="col-3 train-info">
+                                    <h4 style="font-weight:bold;">
+                                        <%= source %>
+                                    </h4>
+                                    <p>
+                                        <%= train.from_std %>
+                                    </p>
+                                </div>
+                                <div class="col-2">
+                                    <h6><b>
+                                            <%= train.train_type %>
+                                        </b></h6>
+                                    <i class="fa-solid fa-arrow-right fa-2xl"></i>
+
+                                </div>
+                                <div class="col-3 train-info">
+                                    <h4 style="font-weight:bold;">
+                                        <%= destination %>
+                                    </h4>
+                                    <p>
+                                        <%= train.to_std %>
+                                    </p>
+                                </div>
+                                <div class="col-4 check-availability">
+                                    <a style="text-decoration: none;"
+                                        href="https://www.ixigo.com/trains/<%=train.train_number%>?orgn=<%=train.from%>&dstn=<%=train.to%>&departDate=<%=startdate%>"
+                                        target="_blank">
+                                        <button class="form-control">Check Availability</button>
+                                    </a>
+                                    <form action="" method="post">
+                                        <input type="hidden" name="trainNumber" value="<%= train.train_number %>">
+                                        <input type="hidden" name="trainName" value="<%= train.train_name %>">
+                                        <input type="hidden" name="duration" value="<%= train.duration %>">
+                                        <input type="hidden" name="startTime" value="<%= train.from_std %>">
+                                        <input type="hidden" name="endTime" value="<%= train.to_std %>">
+
+                                        <button class="form-control save-btn"
+                                            style="background-color: #dbdada; color: #000;" type="submit">Save
+                                            this</button>
+                                    </form>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                    </div>
+                    <% }); %>
+
+                        <% } %>
+</body>
+
+</html>

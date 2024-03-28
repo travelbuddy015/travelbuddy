@@ -1,0 +1,304 @@
+<html>
+
+<head>
+    <%- include('layouts/header.ejs'); -%>
+        <link rel="stylesheet" href="/css/duration.css">
+        <style>
+            .section {
+                display: none;
+            }
+
+            .section.active {
+                display: block;
+            }
+
+            .select-member {
+                text-decoration: none;
+                color: black;
+                transition: 0.3s ease;
+            }
+
+            .select-member:hover {
+                text-decoration: none;
+                color: rgb(12, 160, 157);
+            }
+        </style>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg " id="navbar">
+        <div class="container">
+            <a class="navbar-brand" href="/" id="logo"><span>Travel</span>Buddy</a>
+            <div class="collapse navbar-collapse" id="mynavbar" style="justify-content: right;">
+                <div class="d-flex">
+                    <ul class="navbar-nav me-auto">
+                        <li class="nav-item ">
+                            <a class="nav-link" href="/profile" disabled>
+                                <%= user.name %>
+                            </a>
+                        </li>
+                        <li class="nav-item ">
+                            <a class="nav-link" href="/logout">
+                                Logout
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <!-- <section class="section" id="city-shuffle">
+        <div class="container">
+
+            <div class="main-txt">
+                <h1>Select Duration For <span> Your Cities</span></h1>
+            </div>
+
+            <div class="row main" style="justify-content: center;margin-top: 5rem;">
+                <div class="col-md-6 py-3 py-md-0">
+                    <div class="container">
+                        <div class="row justify-content-center">
+                            <div class="col-md-8">
+                                <div class="card mb-4">
+                                    <div class="card-body">
+                                        <h4 class="card-title">Your Source City</h4>
+                                        <form id="myForm">
+                                            <input type="text" class="form-control" id="box1Content" name="source_city"
+                                                list="destinationOptions" <% if (trip.source) { %>
+                                            value="<%= trip.source %>"
+                                                <% } else if (user.city) { %>
+                                                    value="<%= user.city %>"
+                                                        <% } else { %>
+                                                            placeholder="Enter source city"
+                                                            <% } %>
+                                                                style="border: 1px solid black;">
+
+                                                                <datalist id="destinationOptions">
+                                                                </datalist>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row justify-content-center">
+                            <div class="col-md-8">
+                                <div class="card mb-4">
+                                    <div class="card-body">
+                                        <h4 class="card-title">Destination</h4>
+                                        <p class="card-text" style="color: black;">
+                                            <%= trip.destination %>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row justify-content-center">
+                            <div class="col-md-8">
+                                <div class="card mb-4">
+                                    <div class="card-body">
+                                        <h4 class="card-title">Your Return City</h4>
+                                        <form id="myForm">
+                                            <input type="text" class="form-control" id="box2Content" name="return_city"
+                                                list="destinationOptions" <% if (trip.return_city) { %>
+                                            value="<%= trip.return_city %>"
+                                                <% } else if (user.city) { %>
+                                                    value="<%= user.city %>"
+                                                        <% } else { %>
+                                                            placeholder="Enter return city"
+                                                            <% } %>
+                                                                style="border: 1px solid black;">
+
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row justify-content-center">
+                            <div class="col-md-8 justify-content-center" style="display: flex;gap: 1rem;">
+
+                                <a href="/dashboard" class="previous" id="previous_city_page"> Previous</a>
+                                <a href="#" class="next" id="next_city_page">Next </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+    </section> -->
+
+    <section id="user-profile" class="section services usp">
+        <div class="container">
+            <div class="main-txt">
+                <h1>Who Are You <span>Travelling With?</span></h1>
+            </div>
+
+            <div class="row d-flex" style="margin-top: 6rem;">
+                <a href="#" class="select-member" data-members="1" type="family">
+                    <div class="col-md-3 py-3 py-md-0">
+                        <div class="card">
+                            <img src="/image/solo.svg" alt="">
+                            <div class="card-body">
+                                <h3>Wander Solo</h3>
+                            </div>
+                        </div>
+                </a>
+            </div>
+            <div class="col-md-3 py-3 py-md-0">
+                <a href="#" class="select-member" data-members="2">
+                    <div class="card">
+                        <img src="/image/Travelers-pana.svg" alt="">
+                        <div class="card-body">
+                            <h3>Couple Trip</h3>
+
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="col-md-3 py-3 py-md-0">
+                <a href="#" class="select-member" data-members="0" id="family" data-type="family">
+                    <div class="card">
+                        <img src="/image/family.jpg" alt="">
+                        <div class="card-body" style="text-decoration: none;">
+                            <h3>Family Trip</h3>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="col-md-3 py-3 py-md-0">
+                <a href="#" class="select-member" data-members="0" id="friends" data-type="friends">
+                    <div class="card">
+                        <img src="/image/friends.svg" alt="">
+                        <div class="card-body">
+                            <h3>Friends Trip</h3>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </div>
+        <div class="row justify-content-center mt-5">
+            <div class="col-md-8 justify-content-center" style="display: flex;
+  justify-content: center;
+">
+                <a href="/dashboard" class="previous" id="previous_user_profile_page">Previous</a>
+            </div>
+        </div>
+
+
+    </section>
+    <section id="member-selection" class="section">
+        <div class="container">
+            <div class="main-txt">
+                <h1>How many of you are <span>travelling ?</span></h1>
+            </div>
+            <br>
+
+            <div class="row " style="flex-direction: column; justify-content: space-between;">
+                <!-- <div class="justify-content-around"> -->
+                <div class="col" id="adultCol">
+                    <div class="counter-card">
+                        <div class="card">
+                            <div class="card-body">
+                                <label for="adults">Number of Adults:</label>
+
+                                <div class="counter-container">
+
+                                    <i class="icon fas fa-user"></i>
+
+                                    <div class="btn btn-secondary" onclick="decrement('adults')">-</div>
+                                    <input type="number" class="form-control" id="adults" name="adults" min="0" max="10"
+                                        value="0">
+
+                                    <div class="btn btn-secondary" onclick="increment('adults')">+</div>
+
+
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col" id="childrenCol">
+                    <div class="counter-card">
+                        <div class="card">
+                            <div class="card-body">
+                                <label for="children">Number of Children:</label>
+                                <div class="counter-container">
+                                    <i class="icon fas fa-child"></i>
+                                    <div class="btn btn-secondary" onclick="decrement('children')">-
+                                    </div>
+                                    <input type="number" name="children" class="form-control" id="children" min="0"
+                                        max="10" value="0">
+
+                                    <div class="btn btn-secondary" onclick="increment('children')">+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <!-- </div> -->
+            <div class="row" style="flex-direction: column;">
+                <div class="col">
+                    <div class="counter-card">
+                        <div class="card">
+                            <a href="#transportation" id="next_member_selection" class="next">Next</a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+    <section id="transportation" class="section services trp" style="background-color: white;">
+        <div class="container">
+            <div class="main-txt">
+                <h1>Choose Your <span>Mode of Transport </span></h1>
+            </div>
+            <div class="row d-flex justify-content-center" style="margin-top: 30px;">
+                <div class="col-md-3 py-3 py-md-0">
+                    <a href="<%=trip.id%>/trainlist" style="text-decoration: none;color: #000000;">
+                        <div class="card train_card">
+                            <i class="fas fa-train" style="color: rgb(67,176,178);"></i>
+                            <div class="card-body">
+                                <h3>Train</h3>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-md-3 py-3 py-md-0">
+
+                    <div class="card">
+                        <i class="fas fa-plane" style="color: rgb(67,176,178);"></i>
+                        <div class="card-body">
+                            <h3>Airways</h3>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="col-md-3 py-3 py-md-0">
+
+                    <div class="card">
+                        <i class="fas fa-ellipsis-h" style="color:rgb(67,176,178);"></i>
+                        <div class="card-body">
+                            <h3>Other</h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <%- include('layouts/footer.ejs'); -%>
+        <script src="/js/planner.js" trip-id="<%= trip._id %>"></script>
+        <script>
+            window.onload = function () {
+                window.scrollTo(-1, -1);
+            };
+        </script>
+
+</html>

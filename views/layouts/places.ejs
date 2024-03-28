@@ -1,0 +1,51 @@
+<div class="card">
+    <div class="card-body">
+        <div class="row">
+            <div class="col-4">
+                <% if (places[index].properties.name) { %>
+                    <img class="rounded img-fluid" <% if (index % 3==0) { %> src="/image/places1.jpg" alt="">
+                    <% } else if (index % 3==1) { %> src="/image/places2.jpg" alt="">
+                        <% } else { %> src="/image/places3.jpg" alt="">
+                            <% } %>
+                                <% } %>
+            </div>
+            <div class="col-8">
+                <% if (places[index].properties.name) { %>
+                    <span class="attraction rounded-pill">
+                        <i class="fa-solid fa-map-location-dot"></i>
+                        Attraction
+                    </span>
+
+                    <a href="https://www.google.com/search?q=<%=encodeURIComponent(places[index].properties.name) %> in <%=encodeURIComponent(trip.destination) %>"
+                        target="_blank" style="text-decoration: none;color: black;">
+
+                        <h6 class="title">
+                            <%= places[index].properties.name %>
+                        </h6>
+                    </a>
+                    <div class="row">
+                        <div class="col">
+                            <div class="date-text">
+                                <%= trip_time %>:00
+                            </div>
+                        </div>
+                        <div class="col">
+                            <i class="fa-solid fa-arrow-right "></i>
+                        </div>
+                        <div class="col">
+                            <div class="date-text">
+                                <%= trip_time + 3 %>:00
+                            </div>
+                        </div>
+                    </div>
+                    <% } else { %>
+                        <span class="attraction rounded-pill">
+                            <i class="fa-solid fa-map-location-dot"></i>
+                            Attraction
+                        </span>
+                        <p class="title">Not Available</p>
+                        <% } %>
+            </div>
+        </div>
+    </div>
+</div>
