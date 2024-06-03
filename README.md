@@ -1,8 +1,8 @@
-#Travel Buddy
+# Travel Buddy
 
 Welcome to the TravelBuddy! This project aims to provide a comprehensive solution for all travel-related services, combining trains, attractions, and activities into a single, seamless daily schedule. Whether you're planning a vacation or a business trip, our platform makes it easier to organize your itinerary.
 
-##Video Link
+## Video Link
 [TravelBuddy Video](https://drive.google.com/file/d/1o2yv_bPy2cAjO3VEG8nnwnUFi_GYGsUS/view?usp=drive_link)
 
 ## Features
