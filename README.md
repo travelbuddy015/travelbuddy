@@ -1,13 +1,13 @@
 # Travel Buddy
 
+<img width="1894" height="965" alt="image" src="https://github.com/user-attachments/assets/35e84ee0-5b59-4a35-bd19-0a0631e3a8ab" />
+
 Welcome to the TravelBuddy! This project aims to provide a comprehensive solution for all travel-related services, combining trains, attractions, and activities into a single, seamless daily schedule. Whether you're planning a vacation or a business trip, our platform makes it easier to organize your itinerary.
 
-## Images
-<img width="1902" height="969" alt="image" src="https://github.com/user-attachments/assets/d46a2b5b-345f-48fc-8aa2-996cc3090334" />
 
 
 ## Video Link
-[TravelBuddy Video](https://drive.google.com/file/d/1o2yv_bPy2cAjO3VEG8nnwnUFi_GYGsUS/view?usp=drive_link)
+https://drive.google.com/file/d/1M4dTNVMA0tYmK8etaTXlPlzBmEdI07lc/view?usp=sharing
 
 ## Features
 
